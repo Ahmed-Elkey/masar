@@ -83,7 +83,7 @@ The final interaction review added vertical photo swiping, horizontal hero swipi
 
 Inter and Noto Sans Arabic are served from `public/fonts/`, with OFL licenses and source metadata alongside them. Decorative cloud assets and their 100-second motion follow the reference; sources are recorded in `public/map/sources.json`. They do not intercept map input and stop under reduced motion.
 
-`/video-preview` plays `public/videos/egypt-property-film.mp4`, a 15.8s cut documented in `public/videos/film-edit.json`. `scripts/build-hero-film.py` rebuilds it from two developer source clips that are deliberately kept outside the repository because their reuse rights are unverified; their download URLs are in `public/videos/sources.json`. `components/ExpandSearch.tsx` adds the expanding rail search, filtering project markers by name and area without moving the camera.
+`/video-preview` plays `public/videos/egypt-property-film.mp4`, a silent 24.5s 1080p cut documented in `public/videos/film-edit.json`. `scripts/build-hero-film.py` rebuilds it from the Mivida source clip, which is deliberately kept outside the repository because its reuse rights are unverified; download URLs for both source clips are in `public/videos/sources.json`. The ORA clip is available but unused — its logo and marketing captions are burned into almost every frame. `components/ExpandSearch.tsx` adds the expanding rail search, filtering project markers by name and area without moving the camera.
 
 Éclat uses the developer’s current images and 50-page official brochure. Its independent bilingual guide remains available as a supplemental document.
 

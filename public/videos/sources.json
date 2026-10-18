@@ -16,10 +16,10 @@
   "egypt-property-film.mp4": {
     "type": "Edited compilation",
     "sourceFiles": [
-      "mivida-official.mp4",
-      "ora-official.mp4"
+      "mivida-official.mp4"
     ],
     "edit": "film-edit.json",
-    "usage": "Local design preview; source footage credits retained. Public reuse rights not verified."
+    "usage": "Local design preview; source footage credits retained. Public reuse rights not verified.",
+    "note": "Cut from the Mivida clip only. The ORA clip is excluded because its logo and marketing captions are burned into nearly every frame."
   }
 }

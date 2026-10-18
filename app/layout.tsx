@@ -34,6 +34,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" dir="ltr">
       <head>
+        {/* The served shell is always English; this runs before first paint so ?lang=ar never ships dir="ltr". */}
+        <script dangerouslySetInnerHTML={{ __html: `(()=>{try{const p=new URLSearchParams(location.search),l=p.get("lang")==="ar"?"ar":"en",d=document.documentElement;d.lang=l;d.dir=l==="ar"?"rtl":"ltr";d.dataset.theme=p.get("theme")==="dark"?"dark":"light";}catch(e){}})()` }} />
         <link rel="preconnect" href="https://server.arcgisonline.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://services.arcgisonline.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://tiles.openfreemap.org" crossOrigin="anonymous" />
