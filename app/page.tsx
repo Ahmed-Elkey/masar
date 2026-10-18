@@ -1,22 +1,17 @@
 import type { Metadata } from "next";
 import MapLoader from "@/components/MapLoader";
 import { PROJECTS } from "@/lib/data";
+import { BRAND, SITE_DESCRIPTION, siteTitle } from "@/lib/i18n";
 import media from "@/lib/media.json";
 
 const SITE = (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, "");
 const MEDIA = media as Record<string, { images: { src: string }[] }>;
 
+const PUBLISHER = { "@type": "Organization", name: BRAND.en.credit, url: SITE };
+
 const COPY = {
-  en: {
-    title: "Egypt Investment Map | Nile Estates",
-    description:
-      "Interactive satellite map of real-estate investment projects across Egypt — New Capital, Sheikh Zayed, 6th of October, New Cairo and the North Coast.",
-  },
-  ar: {
-    title: "خريطة الاستثمار العقاري في مصر | نايل إستيتس",
-    description:
-      "خريطة تفاعلية بالأقمار الصناعية لمشاريع الاستثمار العقاري في مصر — العاصمة الإدارية، الشيخ زايد، ٦ أكتوبر، القاهرة الجديدة والساحل الشمالي.",
-  },
+  en: { title: siteTitle("en"), description: SITE_DESCRIPTION.en },
+  ar: { title: siteTitle("ar"), description: SITE_DESCRIPTION.ar },
 };
 
 export function generateMetadata({
@@ -52,16 +47,13 @@ export default function Page({
           latitude: project.lat,
           longitude: project.lng,
         },
-        provider: {
-          "@type": "Organization",
-          name: "Nile Estates",
-          url: SITE,
-        },
+        provider: PUBLISHER,
       }
     : {
         "@context": "https://schema.org",
         "@type": "ItemList",
         name: "Residential developments in Egypt",
+        publisher: PUBLISHER,
         numberOfItems: PROJECTS.length,
         itemListElement: PROJECTS.map((p, index) => ({
           "@type": "ListItem",

@@ -13,9 +13,11 @@ npm run build
 npm run start
 ```
 
-Open http://127.0.0.1:3000. `lang=en|ar`, `theme=light|dark`, `project=<id>`, and `landmark=<id>` preserve language, theme and the selected project when reloading or sharing. Arabic mirrors the interface and camera offset.
+Open http://127.0.0.1:3000. `lang=en|ar`, `theme=light|dark`, `project=<id>`, `landmark=<id>` and `poi=<id>` preserve language, theme and the selected project and destination when reloading or sharing. Arabic mirrors the interface and camera offset. `/video-preview` is an unlisted page: reachable by direct URL, disallowed in `robots.txt` and marked `noindex`.
 
 For a production check while the development server is running, use `NEXT_BUILD_DIR=.next-verify npm run build`. This avoids changing the development server's generated files.
+
+Before deploying, copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_SITE_URL` to the real origin. Metadata, Open Graph, `robots.txt` and `sitemap.xml` all build absolute URLs from it and otherwise emit `http://localhost:3000`.
 
 ## Interactions
 
@@ -47,17 +49,18 @@ Escape closes one visible level at a time. Gallery arrow keys navigate photos or
 - `lib/poi.ts`: education, shopping, transport and health locations. The two healthcare locations were read from the hospitals' official embedded maps.
 - `lib/media.json`: local photos, developer/project logos, PDF documents, all-page previews and their provenance.
 - `public/projects/`: project images downloaded from each project's own listing page, with byte-identical duplicates removed.
+- `scripts/make-responsive-images.py`: writes AVIF widths per source into `lib/imageVariants.json`; `components/ProjectImage.tsx` serves them as `srcset`, so the generated `-<width>.avif` files are committed alongside the webp masters.
 - `scripts/fetch-project-media.py` then `scripts/download-project-media.py`: optional manual media refresh. Source pages are data, never executable code.
 - `node scripts/validate-media.mjs`: verifies galleries, PDF signatures, all-page JPEG previews, logos and provenance.
 - `public/brochures/`: eight published Egyptian brochures, plus clearly labeled independent bilingual guides for all 23 developments; projects without a published brochure show their guide instead.
-- `scripts/brochure-candidates.json`: original PDF sources. `scripts/create-project-guides.py` and `scripts/render-brochures.py` build guides and document previews.
+- `scripts/brochure-candidates.json`: original PDF sources. `scripts/create-project-guides.py` and `scripts/render-brochures.py` build guides and document previews. The guide script needs ReportLab, Pillow, arabic-reshaper and python-bidi; the page renderer needs `pdftoppm` from poppler. Neither binary is installed on this machine, so both scripts are documented refresh paths rather than part of `npm run build`.
 - `/logos/`: sourced developer identities for 22 projects and original project marks for Scene 7 and ZED. Other project names retain text wordmarks.
 
 Project photos were obtained from DoEstate, Ahlan Homes, RealEstate.eg and the developer’s official site for Éclat. A listing placeholder and a photograph explicitly labeled IL BOSCO City / New Cairo were removed during review. Confirm image reuse rights before public release. Map imagery remains network-dependent and includes provider attribution. Project photos themselves are served locally.
 
 ## Remaining content dependencies
 
-The site brand remains **Nile Estates**. Published brochures are distinguished from independently prepared project guides; guides explicitly identify their publisher and sources. Fouka Bay’s published document covers The House Hotel & Residence Royale phase, while the 205 document covers the broader Arkan Palm development. No VR/video tour is invented. Mivida currently retains a text developer identity.
+The site brand remains **Nile Estates**, defined once in `BRAND` inside `lib/i18n.ts`: metadata, the map wordmark, the loading screen, the video preview and both guide notes read from it. Published brochures are distinguished from independently prepared project guides; guides explicitly identify their publisher and sources. Fouka Bay’s published document covers The House Hotel & Residence Royale phase, while the 205 document covers the broader Arkan Palm development. No VR/video tour is invented.
 
 Roads use OpenFreeMap vector tiles with custom colors and labels, plus Esri fallback. Rail infrastructure uses OpenRailwayMap. All overlays use Egyptian geography. If an enabled service category has no points in the current viewport, the camera reveals the nearest verified places; the service dataset is curated rather than exhaustive. Railway tiles show infrastructure, not a guarantee that a route is in passenger service. Some pre-existing coordinates are approximate; `areaApprox` is retained where supplied.
 
@@ -80,7 +83,9 @@ The final interaction review added vertical photo swiping, horizontal hero swipi
 
 Inter and Noto Sans Arabic are served from `public/fonts/`, with OFL licenses and source metadata alongside them. Decorative cloud assets and their 100-second motion follow the reference; sources are recorded in `public/map/sources.json`. They do not intercept map input and stop under reduced motion.
 
-Éclat uses the developer’s current images and 50-page official brochure. Its independent bilingual guide remains available as a supplemental document. `scripts/create-project-guides.py <project-id>` can refresh one guide; it needs ReportLab, Pillow, arabic-reshaper and python-bidi in the Python environment.
+`/video-preview` plays `public/videos/egypt-property-film.mp4`, a 15.8s cut documented in `public/videos/film-edit.json`. `scripts/build-hero-film.py` rebuilds it from two developer source clips that are deliberately kept outside the repository because their reuse rights are unverified; their download URLs are in `public/videos/sources.json`. `components/ExpandSearch.tsx` adds the expanding rail search, filtering project markers by name and area without moving the camera.
+
+Éclat uses the developer’s current images and 50-page official brochure. Its independent bilingual guide remains available as a supplemental document.
 
 ### Service-card imagery and mouse previews
 

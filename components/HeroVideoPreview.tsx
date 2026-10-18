@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { BRAND } from "@/lib/i18n";
 import styles from "./HeroVideoPreview.module.css";
 
 export default function HeroVideoPreview() {
@@ -31,7 +32,7 @@ export default function HeroVideoPreview() {
         <div className={styles.shade} />
       </div>
       <header className={styles.brand}>
-        <span className={styles.mark}>≈</span><span>NILE ESTATES<small>EGYPT INVESTMENT MAP</small></span>
+        <span className={styles.mark}>≈</span><span>{BRAND.en.name}<small>{BRAND.en.map.toUpperCase()}</small></span>
       </header>
       <section className={styles.caption} dir="rtl">
         <span>أماكن تستحق أن تعيشها</span>

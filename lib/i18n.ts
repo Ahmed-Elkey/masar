@@ -1,12 +1,22 @@
 import type { Lang, StatusId } from "./types";
 
-/** Temporary brand — replace with the real company name before shipping. */
-export const BRAND = { en: "NILE ESTATES", ar: "نايل إستيتس" } as const;
+/** Temporary brand — replace these four fields to rebrand the whole site. */
+export const BRAND = {
+  en: { name: "NILE ESTATES", credit: "Nile Estates", tag: "DEVELOPMENTS", map: "Egypt Investment Map" },
+  ar: { name: "نايل إستيتس", credit: "نايل إستيتس", tag: "للتطويرات", map: "خريطة الاستثمار العقاري في مصر" },
+} as const;
+
+export const siteTitle = (lang: Lang) => `${BRAND[lang].map} | ${BRAND[lang].credit}`;
+
+export const SITE_DESCRIPTION = {
+  en: "Interactive satellite map of real-estate investment projects across Egypt — New Capital, Sheikh Zayed, 6th of October, New Cairo and the North Coast.",
+  ar: "خريطة تفاعلية بالأقمار الصناعية لمشاريع الاستثمار العقاري في مصر — العاصمة الإدارية، الشيخ زايد، ٦ أكتوبر، القاهرة الجديدة والساحل الشمالي.",
+} as const;
 
 export const STRINGS = {
   en: {
-    brand: BRAND.en,
-    brandTag: "DEVELOPMENTS",
+    brand: BRAND.en.name,
+    brandTag: BRAND.en.tag,
     darkTheme: "Dark theme",
     lightTheme: "Light theme",
     language: "العربية",
@@ -23,7 +33,7 @@ export const STRINGS = {
     viewProject: "Details",
     amenities: "Amenities and Advantages",
     galleries: "Galleries",
-    brochure: "Brochure", projectGuide: "Project guide", downloadGuide: "Download guide", guideNote: "Prepared by Nile Estates from the project listing. Not issued by the developer.", brochurePage: "Page", openDocument: "Open PDF",
+    brochure: "Brochure", projectGuide: "Project guide", downloadGuide: "Download guide", guideNote: `Prepared by ${BRAND.en.credit} from the project listing. Not issued by the developer.`, brochurePage: "Page", openDocument: "Open PDF",
     gallery: "Site view",
     about: "About this map",
     aboutBody:
@@ -62,8 +72,8 @@ export const STRINGS = {
     emptyValue: "—",
   },
   ar: {
-    brand: "نايل إستيتس",
-    brandTag: "للتطويرات",
+    brand: BRAND.ar.name,
+    brandTag: BRAND.ar.tag,
     darkTheme: "الثيم الداكن",
     lightTheme: "الثيم الفاتح",
     language: "English",
@@ -80,7 +90,7 @@ export const STRINGS = {
     viewProject: "التفاصيل",
     amenities: "المميزات والمزايا",
     galleries: "الصور",
-    brochure: "البروشور", projectGuide: "الملف التعريفي", downloadGuide: "تحميل الملف", guideNote: "ملف من إعداد نايل إستيتس اعتمادًا على صفحة المشروع، وليس صادرًا عن المطور.", brochurePage: "صفحة", openDocument: "فتح PDF",
+    brochure: "البروشور", projectGuide: "الملف التعريفي", downloadGuide: "تحميل الملف", guideNote: `ملف من إعداد ${BRAND.ar.credit} اعتمادًا على صفحة المشروع، وليس صادرًا عن المطور.`, brochurePage: "صفحة", openDocument: "فتح PDF",
     gallery: "منظر الموقع",
     about: "عن الخريطة",
     aboutBody:

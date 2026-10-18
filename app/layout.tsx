@@ -1,27 +1,28 @@
 import type { Metadata, Viewport } from "next";
+import { BRAND, SITE_DESCRIPTION, siteTitle } from "@/lib/i18n";
 import "./fonts.css";
 import "./globals.css";
 
-const DESCRIPTION =
-  "Interactive satellite map of real-estate investment projects across Egypt — New Capital, Sheikh Zayed, 6th of October, New Cairo and the North Coast.";
+const TITLE = siteTitle("en");
+const DESCRIPTION = SITE_DESCRIPTION.en;
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
-  title: "Egypt Investment Map | Nile Estates",
+  title: TITLE,
   description: DESCRIPTION,
-  applicationName: "Nile Estates",
+  applicationName: BRAND.en.credit,
   openGraph: {
     type: "website",
-    siteName: "Nile Estates",
-    title: "Egypt Investment Map | Nile Estates",
+    siteName: BRAND.en.credit,
+    title: TITLE,
     description: DESCRIPTION,
     locale: "en_US",
     alternateLocale: ["ar_EG"],
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Egypt Investment Map — Nile Estates" }],
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: TITLE }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Egypt Investment Map | Nile Estates",
+    title: TITLE,
     description: DESCRIPTION,
     images: ["/og.jpg"],
   },

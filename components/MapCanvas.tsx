@@ -155,8 +155,6 @@ export default function MapCanvas({
   },[loaded,projects]);
 
   const visibleIds = useMemo(() => new Set(projects.map(p => p.id)), [projects]);
-  const showProjectDots = true;
-  const showLabels = true;
   const [mapError, setMapError] = useState(false);
   const [roadsFallback, setRoadsFallback] = useState(false);
   const [layerError, setLayerError] = useState<string|null>(null);
@@ -746,10 +744,6 @@ export default function MapCanvas({
         }
         const selected = selectedId === p.id;
         const faded = filterActive && !matchedIds.has(p.id) && !selected;
-        if (!showLabels && !selected) {
-          if (!showProjectDots) return null;
-          return createPortal(<button className={`loc-dot${faded ? " is-filtered-out" : ""}`} title={p.name[lang]} aria-label={p.name[lang]} onClick={() => handleProject(p.id)} />, s.el, s.key);
-        }
         const l = leader(p.dx || 45, p.dy || -55);
         return createPortal(
           <div className={`project-marker ${selected ? "is-selected" : ""}${faded ? " is-filtered-out" : ""}${hovered?.kind==='project'&&hovered.id===p.id?' is-hovered':''}`}>
