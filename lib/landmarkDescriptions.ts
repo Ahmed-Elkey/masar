@@ -1,0 +1,8 @@
+export const LANDMARK_DESCRIPTIONS: Record<string,{en:string;ar:string}>= {
+  pyramids:{en:"The Giza pyramid complex and the Great Sphinx form one of Egypt's most recognizable historic landscapes, on the western edge of Greater Cairo.",ar:"مجمع أهرامات الجيزة وأبو الهول من أشهر المعالم التاريخية في مصر، على الطرف الغربي للقاهرة الكبرى."},
+  gem:{en:"The Grand Egyptian Museum sits close to the Giza pyramids, bringing together Egyptian antiquities, exhibition spaces and landscaped public areas.",ar:"المتحف المصري الكبير بالقرب من أهرامات الجيزة، ويضم مجموعات من الآثار المصرية وقاعات عرض ومساحات خارجية للزوار."},
+  "cairo-tower":{en:"A landmark on Gezira Island overlooking the Nile, with panoramic views across central Cairo and its surrounding districts.",ar:"معلم بارز في جزيرة الزمالك يطل على النيل، ويتيح إطلالات بانورامية على وسط القاهرة والمناطق المحيطة."},
+  citadel:{en:"The historic Citadel of Saladin overlooks Cairo from the Mokattam hills. Its complex includes the Mosque of Muhammad Ali and museum spaces.",ar:"تطل قلعة صلاح الدين على القاهرة من تلال المقطم، ويضم مجمعها التاريخي مسجد محمد علي وعددًا من المتاحف."},
+  airport:{en:"Cairo International Airport serves Greater Cairo from the northeast of the city, with passenger terminals and connections to the main road network.",ar:"يخدم مطار القاهرة الدولي القاهرة الكبرى من شمال شرق المدينة، ويضم مباني للركاب ويرتبط بشبكة الطرق الرئيسية."},
+  "festival-city":{en:"A shopping, dining and entertainment destination in New Cairo, within the Cairo Festival City development.",ar:"وجهة للتسوق والمطاعم والترفيه في القاهرة الجديدة، ضمن تطوير كايرو فيستيفال سيتي."},
+};

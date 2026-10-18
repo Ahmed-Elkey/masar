@@ -1,0 +1,42 @@
+{
+  "jade-park": {
+    "src": "/brochures/jade-park-published.pdf",
+    "source": "https://cityedgedevelopments.com/cityedgedevelopmentswordpress/wp-content/uploads/2025/09/JP-Brochure.pdf",
+    "kind": "developer"
+  },
+  "oia": {
+    "src": "/brochures/oia-published.pdf",
+    "source": "https://renzo.app/uploads/projects/brochure%20-%20oia%20new%20capital%20r7%20edge%20holding%20%281%29.pdf",
+    "kind": "published"
+  },
+  "blanca": {
+    "src": "/brochures/blanca-published.pdf",
+    "source": "https://somabay.com/wp-content/uploads/Blanca-E-brochure-6-Nov-2023-numbered-MP_compressed.pdf",
+    "kind": "developer"
+  },
+  "garden-lakes": {
+    "src": "/brochures/garden-lakes-published.pdf",
+    "source": "https://platinum-egypt.com/wp-content/uploads/2023/12/Garden-Lakes-brochure.pdf",
+    "kind": "published"
+  },
+  "205-towers": {
+    "src": "/brochures/205-towers-published.pdf",
+    "source": "https://new-projects-media.propertyfinder.com/project/e64459c0-987e-4525-8823-1c40f84fbb94/brochure/application/rbvOrSG_bZOR16TKEhyioqVy27BwZAkdiavkAjcfqVs%3D/original.pdf",
+    "kind": "published"
+  },
+  "fouka-bay": {
+    "src": "/brochures/fouka-bay-published.pdf",
+    "source": "https://www.tatwermisr.com/_files/ugd/68be71_5f2ba31e8c82447d8b99a28f2a70df61.pdf?index=true",
+    "kind": "developer"
+  },
+  "city-gate": {
+    "src": "/brochures/city-gate-published.pdf",
+    "source": "https://citygatenewcairo.com/wp-content/uploads/2023/10/CityGate-New-Cairo-Project-Brochure-Digital-V1.pdf",
+    "kind": "published"
+  },
+  "eclat-port-said": {
+    "src": "/brochures/eclat-port-said-published.pdf",
+    "source": "https://dashboard.newplandevelopments.com/storage/88/%C3%89clat-Brochure.pdf",
+    "kind": "developer"
+  }
+}

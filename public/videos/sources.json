@@ -1,0 +1,25 @@
+{
+  "mivida-official.mp4": {
+    "project": "mivida",
+    "publisher": "Emaar Misr",
+    "page": "https://www.emaarmisr.com/our-communities/mivida-new-cairo/",
+    "source": "https://www.emaarmisr.com/wp-content/uploads/2025/10/Emaar-Misr-Communities-Mivida-New-Cairo-Cover-Video-Reduced-Comp.mp4",
+    "usage": "Local design preview; no reuse license verified for public release."
+  },
+  "ora-official.mp4": {
+    "publisher": "ORA Developers Egypt",
+    "page": "https://www.ora-egypt.com/",
+    "source": "https://d1nclmzht2jx0v.cloudfront.net/media/eee619f6-d599-472f-82d7-a6ee117995fa/OraHero.mp4",
+    "usage": "Local design preview; no reuse license verified for public release.",
+    "label": "General ORA destinations film; individual shots not attributed to ZED."
+  },
+  "egypt-property-film.mp4": {
+    "type": "Edited compilation",
+    "sourceFiles": [
+      "mivida-official.mp4",
+      "ora-official.mp4"
+    ],
+    "edit": "film-edit.json",
+    "usage": "Local design preview; source footage credits retained. Public reuse rights not verified."
+  }
+}

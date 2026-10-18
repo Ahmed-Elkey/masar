@@ -1,0 +1,26 @@
+# dependencies
+node_modules
+
+# next.js build output
+.next
+.next-*
+out
+next-env.d.ts
+*.tsbuildinfo
+
+# env
+.env
+.env.local
+.env*.local
+
+# local artifacts and scratch work
+output/
+tmp/
+.vercel
+
+# macOS
+.DS_Store
+
+# review screenshots
+_d-open.png
+preview-*

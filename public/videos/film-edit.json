@@ -1,0 +1,39 @@
+{
+  "output": "egypt-property-film.mp4",
+  "duration": 15.8,
+  "speed": 1,
+  "editing": "Native-speed cuts; no artificial slow motion or overlapping dissolves.",
+  "loopSeam": "Original Mivida garden shot at source time 3 seconds.",
+  "shots": [
+    {
+      "source": "mivida",
+      "start": 3,
+      "duration": 3,
+      "description": "Garden camera move: second half"
+    },
+    {
+      "source": "ora",
+      "start": 38,
+      "duration": 3.4,
+      "description": "Interior"
+    },
+    {
+      "source": "ora",
+      "start": 44,
+      "duration": 3.4,
+      "description": "Architecture"
+    },
+    {
+      "source": "mivida",
+      "start": 25.5,
+      "duration": 3,
+      "description": "Evening aerial"
+    },
+    {
+      "source": "mivida",
+      "start": 0,
+      "duration": 3,
+      "description": "Garden camera move: first half"
+    }
+  ]
+}

@@ -1,0 +1,1331 @@
+{
+  "205-towers": {
+    "images": [
+      {
+        "src": "/projects/205-towers-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/205-towers-el-sheikh-zayed/205-towers-el-sheikh-zayed-f5e8d03832cf.webp"
+      },
+      {
+        "src": "/projects/205-towers-2.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/205Towers/property-image-5-203-1787235058388-c6f6d0543ca6.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/205-towers-el-sheikh-zayed",
+    "brochure": "/brochures/205-towers-published.pdf",
+    "logo": {
+      "src": "/logos/205-towers.jpeg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/174/174-20image-20at-20pm-d6fd12d45dd1.jpeg",
+      "alt": "Arkan Palm Development",
+      "kind": "developer"
+    },
+    "guide": "/brochures/205-towers-project-guide.pdf",
+    "brochureKind": "published",
+    "brochureSource": "https://new-projects-media.propertyfinder.com/project/e64459c0-987e-4525-8823-1c40f84fbb94/brochure/application/rbvOrSG_bZOR16TKEhyioqVy27BwZAkdiavkAjcfqVs%3D/original.pdf",
+    "brochurePages": [
+      "/brochures/pages/205-towers/page-001.jpg",
+      "/brochures/pages/205-towers/page-002.jpg",
+      "/brochures/pages/205-towers/page-003.jpg",
+      "/brochures/pages/205-towers/page-004.jpg",
+      "/brochures/pages/205-towers/page-005.jpg",
+      "/brochures/pages/205-towers/page-006.jpg",
+      "/brochures/pages/205-towers/page-007.jpg",
+      "/brochures/pages/205-towers/page-008.jpg",
+      "/brochures/pages/205-towers/page-009.jpg",
+      "/brochures/pages/205-towers/page-010.jpg",
+      "/brochures/pages/205-towers/page-011.jpg",
+      "/brochures/pages/205-towers/page-012.jpg",
+      "/brochures/pages/205-towers/page-013.jpg",
+      "/brochures/pages/205-towers/page-014.jpg",
+      "/brochures/pages/205-towers/page-015.jpg",
+      "/brochures/pages/205-towers/page-016.jpg",
+      "/brochures/pages/205-towers/page-017.jpg",
+      "/brochures/pages/205-towers/page-018.jpg",
+      "/brochures/pages/205-towers/page-019.jpg",
+      "/brochures/pages/205-towers/page-020.jpg",
+      "/brochures/pages/205-towers/page-021.jpg",
+      "/brochures/pages/205-towers/page-022.jpg",
+      "/brochures/pages/205-towers/page-023.jpg",
+      "/brochures/pages/205-towers/page-024.jpg",
+      "/brochures/pages/205-towers/page-025.jpg",
+      "/brochures/pages/205-towers/page-026.jpg",
+      "/brochures/pages/205-towers/page-027.jpg",
+      "/brochures/pages/205-towers/page-028.jpg",
+      "/brochures/pages/205-towers/page-029.jpg",
+      "/brochures/pages/205-towers/page-030.jpg",
+      "/brochures/pages/205-towers/page-031.jpg",
+      "/brochures/pages/205-towers/page-032.jpg",
+      "/brochures/pages/205-towers/page-033.jpg",
+      "/brochures/pages/205-towers/page-034.jpg",
+      "/brochures/pages/205-towers/page-035.jpg",
+      "/brochures/pages/205-towers/page-036.jpg",
+      "/brochures/pages/205-towers/page-037.jpg",
+      "/brochures/pages/205-towers/page-038.jpg",
+      "/brochures/pages/205-towers/page-039.jpg",
+      "/brochures/pages/205-towers/page-040.jpg",
+      "/brochures/pages/205-towers/page-041.jpg",
+      "/brochures/pages/205-towers/page-042.jpg",
+      "/brochures/pages/205-towers/page-043.jpg",
+      "/brochures/pages/205-towers/page-044.jpg",
+      "/brochures/pages/205-towers/page-045.jpg",
+      "/brochures/pages/205-towers/page-046.jpg",
+      "/brochures/pages/205-towers/page-047.jpg",
+      "/brochures/pages/205-towers/page-048.jpg",
+      "/brochures/pages/205-towers/page-049.jpg",
+      "/brochures/pages/205-towers/page-050.jpg",
+      "/brochures/pages/205-towers/page-051.jpg",
+      "/brochures/pages/205-towers/page-052.jpg",
+      "/brochures/pages/205-towers/page-053.jpg",
+      "/brochures/pages/205-towers/page-054.jpg",
+      "/brochures/pages/205-towers/page-055.jpg",
+      "/brochures/pages/205-towers/page-056.jpg",
+      "/brochures/pages/205-towers/page-057.jpg",
+      "/brochures/pages/205-towers/page-058.jpg",
+      "/brochures/pages/205-towers/page-059.jpg",
+      "/brochures/pages/205-towers/page-060.jpg",
+      "/brochures/pages/205-towers/page-061.jpg",
+      "/brochures/pages/205-towers/page-062.jpg",
+      "/brochures/pages/205-towers/page-063.jpg",
+      "/brochures/pages/205-towers/page-064.jpg",
+      "/brochures/pages/205-towers/page-065.jpg",
+      "/brochures/pages/205-towers/page-066.jpg",
+      "/brochures/pages/205-towers/page-067.jpg",
+      "/brochures/pages/205-towers/page-068.jpg",
+      "/brochures/pages/205-towers/page-069.jpg",
+      "/brochures/pages/205-towers/page-070.jpg",
+      "/brochures/pages/205-towers/page-071.jpg",
+      "/brochures/pages/205-towers/page-072.jpg",
+      "/brochures/pages/205-towers/page-073.jpg",
+      "/brochures/pages/205-towers/page-074.jpg",
+      "/brochures/pages/205-towers/page-075.jpg",
+      "/brochures/pages/205-towers/page-076.jpg",
+      "/brochures/pages/205-towers/page-077.jpg",
+      "/brochures/pages/205-towers/page-078.jpg",
+      "/brochures/pages/205-towers/page-079.jpg",
+      "/brochures/pages/205-towers/page-080.jpg",
+      "/brochures/pages/205-towers/page-081.jpg",
+      "/brochures/pages/205-towers/page-082.jpg",
+      "/brochures/pages/205-towers/page-083.jpg",
+      "/brochures/pages/205-towers/page-084.jpg",
+      "/brochures/pages/205-towers/page-085.jpg",
+      "/brochures/pages/205-towers/page-086.jpg",
+      "/brochures/pages/205-towers/page-087.jpg",
+      "/brochures/pages/205-towers/page-088.jpg",
+      "/brochures/pages/205-towers/page-089.jpg",
+      "/brochures/pages/205-towers/page-090.jpg",
+      "/brochures/pages/205-towers/page-091.jpg",
+      "/brochures/pages/205-towers/page-092.jpg",
+      "/brochures/pages/205-towers/page-093.jpg",
+      "/brochures/pages/205-towers/page-094.jpg",
+      "/brochures/pages/205-towers/page-095.jpg",
+      "/brochures/pages/205-towers/page-096.jpg",
+      "/brochures/pages/205-towers/page-097.jpg",
+      "/brochures/pages/205-towers/page-098.jpg",
+      "/brochures/pages/205-towers/page-099.jpg",
+      "/brochures/pages/205-towers/page-100.jpg",
+      "/brochures/pages/205-towers/page-101.jpg",
+      "/brochures/pages/205-towers/page-102.jpg",
+      "/brochures/pages/205-towers/page-103.jpg",
+      "/brochures/pages/205-towers/page-104.jpg",
+      "/brochures/pages/205-towers/page-105.jpg",
+      "/brochures/pages/205-towers/page-106.jpg",
+      "/brochures/pages/205-towers/page-107.jpg"
+    ],
+    "brochureNote": {
+      "en": "Arkan Palm 205 · master development brochure",
+      "ar": "بروشور مشروع أركان بالم ٢٠٥ المتكامل"
+    }
+  },
+  "al-karma-kay": {
+    "images": [
+      {
+        "src": "/projects/al-karma-kay-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/al-karma-kay-el-sheikh-zayed/al-karma-kay-el-sheikh-zayed-bfe12b2c0d74.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/al-karma-kay-el-sheikh-zayed",
+    "brochure": "/brochures/al-karma-kay-project-guide.pdf",
+    "logo": {
+      "src": "/logos/al-karma-kay.jpg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/108/108-al-karma-dev-f302571d7c94.jpg",
+      "alt": "AlKarma Developments",
+      "kind": "developer"
+    },
+    "guide": "/brochures/al-karma-kay-project-guide.pdf",
+    "brochureKind": "site-guide",
+    "brochureSource": "https://www.ahlanhomes.com/projects/al-karma-kay-el-sheikh-zayed",
+    "brochurePages": [
+      "/brochures/pages/al-karma-kay/page-1.jpg",
+      "/brochures/pages/al-karma-kay/page-2.jpg"
+    ]
+  },
+  "beverly-hills": {
+    "images": [
+      {
+        "src": "/projects/beverly-hills-0.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13976/beverly-hills-7b781bbd.webp"
+      },
+      {
+        "src": "/projects/beverly-hills-1.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13978/conversions/beverly-hills-photo-2-8f264676-card.webp"
+      },
+      {
+        "src": "/projects/beverly-hills-2.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13979/conversions/beverly-hills-photo-3-c2db4ea1-card.webp"
+      },
+      {
+        "src": "/projects/beverly-hills-3.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13980/conversions/beverly-hills-photo-4-dc36ca5e-card.webp"
+      }
+    ],
+    "page": "https://www.doestate.co/projects/beverly-hills",
+    "brochure": "/brochures/beverly-hills-project-guide.pdf",
+    "guide": "/brochures/beverly-hills-project-guide.pdf",
+    "brochureKind": "site-guide",
+    "brochureSource": "https://www.doestate.co/projects/beverly-hills",
+    "brochurePages": [
+      "/brochures/pages/beverly-hills/page-1.jpg",
+      "/brochures/pages/beverly-hills/page-2.jpg"
+    ],
+    "logo": {
+      "src": "/logos/beverly-hills-developer.png",
+      "source": "https://cms.sodic.com/uploads/sodic_blue_logo_6fb87fa5b8.png",
+      "alt": "SODIC",
+      "kind": "developer"
+    }
+  },
+  "blanca": {
+    "images": [
+      {
+        "src": "/projects/blanca-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/blanca-somabay/blanca-somabay-413d7ea1f52d.webp"
+      },
+      {
+        "src": "/projects/blanca-2.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/page-9-img-1-1787267000489-5b09f3f046c9.webp"
+      },
+      {
+        "src": "/projects/blanca-3.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/Blanca/screenshot-202026-02-04-20162804-1787229822217-70481c143f8c.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/blanca-somabay",
+    "brochure": "/brochures/blanca-published.pdf",
+    "logo": {
+      "src": "/logos/blanca.jpg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/12/12-vhf2pthyufmlptsmhtf7w8etozhm6lplaceholder-cd1a01a16d19.jpg",
+      "alt": "Somabay",
+      "kind": "developer"
+    },
+    "guide": "/brochures/blanca-project-guide.pdf",
+    "brochureKind": "developer",
+    "brochureSource": "https://somabay.com/wp-content/uploads/Blanca-E-brochure-6-Nov-2023-numbered-MP_compressed.pdf",
+    "brochurePages": [
+      "/brochures/pages/blanca/page-01.jpg",
+      "/brochures/pages/blanca/page-02.jpg",
+      "/brochures/pages/blanca/page-03.jpg",
+      "/brochures/pages/blanca/page-04.jpg",
+      "/brochures/pages/blanca/page-05.jpg",
+      "/brochures/pages/blanca/page-06.jpg",
+      "/brochures/pages/blanca/page-07.jpg",
+      "/brochures/pages/blanca/page-08.jpg",
+      "/brochures/pages/blanca/page-09.jpg",
+      "/brochures/pages/blanca/page-10.jpg",
+      "/brochures/pages/blanca/page-11.jpg",
+      "/brochures/pages/blanca/page-12.jpg",
+      "/brochures/pages/blanca/page-13.jpg",
+      "/brochures/pages/blanca/page-14.jpg",
+      "/brochures/pages/blanca/page-15.jpg",
+      "/brochures/pages/blanca/page-16.jpg",
+      "/brochures/pages/blanca/page-17.jpg",
+      "/brochures/pages/blanca/page-18.jpg",
+      "/brochures/pages/blanca/page-19.jpg",
+      "/brochures/pages/blanca/page-20.jpg",
+      "/brochures/pages/blanca/page-21.jpg",
+      "/brochures/pages/blanca/page-22.jpg",
+      "/brochures/pages/blanca/page-23.jpg",
+      "/brochures/pages/blanca/page-24.jpg",
+      "/brochures/pages/blanca/page-25.jpg",
+      "/brochures/pages/blanca/page-26.jpg",
+      "/brochures/pages/blanca/page-27.jpg",
+      "/brochures/pages/blanca/page-28.jpg",
+      "/brochures/pages/blanca/page-29.jpg",
+      "/brochures/pages/blanca/page-30.jpg",
+      "/brochures/pages/blanca/page-31.jpg",
+      "/brochures/pages/blanca/page-32.jpg",
+      "/brochures/pages/blanca/page-33.jpg",
+      "/brochures/pages/blanca/page-34.jpg",
+      "/brochures/pages/blanca/page-35.jpg",
+      "/brochures/pages/blanca/page-36.jpg",
+      "/brochures/pages/blanca/page-37.jpg",
+      "/brochures/pages/blanca/page-38.jpg",
+      "/brochures/pages/blanca/page-39.jpg",
+      "/brochures/pages/blanca/page-40.jpg",
+      "/brochures/pages/blanca/page-41.jpg",
+      "/brochures/pages/blanca/page-42.jpg",
+      "/brochures/pages/blanca/page-43.jpg",
+      "/brochures/pages/blanca/page-44.jpg",
+      "/brochures/pages/blanca/page-45.jpg",
+      "/brochures/pages/blanca/page-46.jpg",
+      "/brochures/pages/blanca/page-47.jpg",
+      "/brochures/pages/blanca/page-48.jpg",
+      "/brochures/pages/blanca/page-49.jpg",
+      "/brochures/pages/blanca/page-50.jpg",
+      "/brochures/pages/blanca/page-51.jpg",
+      "/brochures/pages/blanca/page-52.jpg",
+      "/brochures/pages/blanca/page-53.jpg",
+      "/brochures/pages/blanca/page-54.jpg",
+      "/brochures/pages/blanca/page-55.jpg",
+      "/brochures/pages/blanca/page-56.jpg",
+      "/brochures/pages/blanca/page-57.jpg",
+      "/brochures/pages/blanca/page-58.jpg",
+      "/brochures/pages/blanca/page-59.jpg",
+      "/brochures/pages/blanca/page-60.jpg",
+      "/brochures/pages/blanca/page-61.jpg",
+      "/brochures/pages/blanca/page-62.jpg",
+      "/brochures/pages/blanca/page-63.jpg",
+      "/brochures/pages/blanca/page-64.jpg",
+      "/brochures/pages/blanca/page-65.jpg",
+      "/brochures/pages/blanca/page-66.jpg",
+      "/brochures/pages/blanca/page-67.jpg"
+    ],
+    "projectLogo": {
+      "src": "/logos/blanca-brochure-mark.png",
+      "source": "https://somabay.com/wp-content/uploads/Blanca-E-brochure-6-Nov-2023-numbered-MP_compressed.pdf",
+      "sourcePage": 1,
+      "crop": [
+        0.01,
+        0.66,
+        0.99,
+        0.965
+      ],
+      "kind": "brochure-extract",
+      "whiteArtwork": false,
+      "darkArtwork": false
+    }
+  },
+  "city-gate": {
+    "images": [
+      {
+        "src": "/projects/city-gate-0.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14550/city-gate-6d3faea1.webp"
+      },
+      {
+        "src": "/projects/city-gate-1.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14552/conversions/city-gate-photo-2-3f470623-card.webp"
+      },
+      {
+        "src": "/projects/city-gate-2.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14553/conversions/city-gate-photo-3-894bed5b-card.webp"
+      },
+      {
+        "src": "/projects/city-gate-3.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14554/conversions/city-gate-photo-4-a18eca04-card.webp"
+      }
+    ],
+    "page": "https://www.doestate.co/projects/city-gate",
+    "brochure": "/brochures/city-gate-published.pdf",
+    "guide": "/brochures/city-gate-project-guide.pdf",
+    "brochureKind": "published",
+    "brochureSource": "https://citygatenewcairo.com/wp-content/uploads/2023/10/CityGate-New-Cairo-Project-Brochure-Digital-V1.pdf",
+    "brochurePages": [
+      "/brochures/pages/city-gate/page-01.jpg",
+      "/brochures/pages/city-gate/page-02.jpg",
+      "/brochures/pages/city-gate/page-03.jpg",
+      "/brochures/pages/city-gate/page-04.jpg",
+      "/brochures/pages/city-gate/page-05.jpg",
+      "/brochures/pages/city-gate/page-06.jpg",
+      "/brochures/pages/city-gate/page-07.jpg",
+      "/brochures/pages/city-gate/page-08.jpg",
+      "/brochures/pages/city-gate/page-09.jpg",
+      "/brochures/pages/city-gate/page-10.jpg",
+      "/brochures/pages/city-gate/page-11.jpg",
+      "/brochures/pages/city-gate/page-12.jpg",
+      "/brochures/pages/city-gate/page-13.jpg",
+      "/brochures/pages/city-gate/page-14.jpg",
+      "/brochures/pages/city-gate/page-15.jpg",
+      "/brochures/pages/city-gate/page-16.jpg",
+      "/brochures/pages/city-gate/page-17.jpg",
+      "/brochures/pages/city-gate/page-18.jpg",
+      "/brochures/pages/city-gate/page-19.jpg",
+      "/brochures/pages/city-gate/page-20.jpg",
+      "/brochures/pages/city-gate/page-21.jpg",
+      "/brochures/pages/city-gate/page-22.jpg",
+      "/brochures/pages/city-gate/page-23.jpg",
+      "/brochures/pages/city-gate/page-24.jpg",
+      "/brochures/pages/city-gate/page-25.jpg",
+      "/brochures/pages/city-gate/page-26.jpg",
+      "/brochures/pages/city-gate/page-27.jpg",
+      "/brochures/pages/city-gate/page-28.jpg",
+      "/brochures/pages/city-gate/page-29.jpg",
+      "/brochures/pages/city-gate/page-30.jpg",
+      "/brochures/pages/city-gate/page-31.jpg",
+      "/brochures/pages/city-gate/page-32.jpg",
+      "/brochures/pages/city-gate/page-33.jpg"
+    ],
+    "logo": {
+      "src": "/logos/city-gate-developer.svg",
+      "source": "https://www.qataridiar.com/themes/custom/qataridiar/logo.svg",
+      "alt": "Qatari Diar",
+      "kind": "developer"
+    },
+    "projectLogo": {
+      "src": "/logos/city-gate-brochure-mark.png",
+      "source": "https://citygatenewcairo.com/wp-content/uploads/2023/10/CityGate-New-Cairo-Project-Brochure-Digital-V1.pdf",
+      "sourcePage": 1,
+      "crop": [
+        0.285,
+        0.43,
+        0.715,
+        0.575
+      ],
+      "kind": "brochure-extract",
+      "whiteArtwork": false,
+      "darkArtwork": false
+    }
+  },
+  "club-park": {
+    "images": [
+      {
+        "src": "/projects/club-park-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/club-park-icity-october-northern-expansion-6th-of-october-city/club-park-icity-october-northern-expansion-6th-of-october-836ed08fe9b9.webp"
+      },
+      {
+        "src": "/projects/club-park-2.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/ClubPark-ICityOctober/club-20park-20october-202-1787228733893-1149d5dd11d3.webp"
+      },
+      {
+        "src": "/projects/club-park-3.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/ClubPark-ICityOctober/club-20park-20october-204-1787228760592-3e6722b647a9.webp"
+      },
+      {
+        "src": "/projects/club-park-4.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/ClubPark-ICityOctober/club-20park-20october-201-1787228745093-07a7771939bf.webp"
+      },
+      {
+        "src": "/projects/club-park-5.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/club-20park-20october-203-1787338395194-5101f62387db.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/club-park-icity-october-northern-expansion-6th-of-october-city",
+    "brochure": "/brochures/club-park-project-guide.pdf",
+    "logo": {
+      "src": "/logos/club-park.jpg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/6/6-mv-834e21b0d958.jpg",
+      "alt": "Mountain View",
+      "kind": "developer"
+    },
+    "guide": "/brochures/club-park-project-guide.pdf",
+    "brochureKind": "site-guide",
+    "brochureSource": "https://www.ahlanhomes.com/projects/club-park-icity-october-northern-expansion-6th-of-october-city",
+    "brochurePages": [
+      "/brochures/pages/club-park/page-1.jpg",
+      "/brochures/pages/club-park/page-2.jpg"
+    ]
+  },
+  "eclat-port-said": {
+    "images": [
+      {
+        "src": "/projects/eclat-official-0.jpg",
+        "source": "https://dashboard.newplandevelopments.com/storage/92/e15.jpg"
+      },
+      {
+        "src": "/projects/eclat-official-1.jpg",
+        "source": "https://dashboard.newplandevelopments.com/storage/93/e5.jpg"
+      },
+      {
+        "src": "/projects/eclat-official-2.jpg",
+        "source": "https://dashboard.newplandevelopments.com/storage/94/e10.jpg"
+      },
+      {
+        "src": "/projects/eclat-port-said-1.jpg",
+        "source": "https://realestate.eg/images/master-plans/5050405-va7b942.jpg"
+      }
+    ],
+    "page": "https://newplandevelopments.com/projects/eclat-residence",
+    "brochure": "/brochures/eclat-port-said-published.pdf",
+    "logo": {
+      "src": "/logos/eclat-port-said.webp",
+      "source": "https://realestate.eg/images/developer/2019/new-plan-thumb.webp",
+      "alt": "New Plan",
+      "kind": "developer"
+    },
+    "guide": "/brochures/eclat-port-said-project-guide.pdf",
+    "brochureKind": "developer",
+    "brochureSource": "https://dashboard.newplandevelopments.com/storage/88/%C3%89clat-Brochure.pdf",
+    "brochurePages": [
+      "/brochures/pages/eclat-published/page-01.jpg",
+      "/brochures/pages/eclat-published/page-02.jpg",
+      "/brochures/pages/eclat-published/page-03.jpg",
+      "/brochures/pages/eclat-published/page-04.jpg",
+      "/brochures/pages/eclat-published/page-05.jpg",
+      "/brochures/pages/eclat-published/page-06.jpg",
+      "/brochures/pages/eclat-published/page-07.jpg",
+      "/brochures/pages/eclat-published/page-08.jpg",
+      "/brochures/pages/eclat-published/page-09.jpg",
+      "/brochures/pages/eclat-published/page-10.jpg",
+      "/brochures/pages/eclat-published/page-11.jpg",
+      "/brochures/pages/eclat-published/page-12.jpg",
+      "/brochures/pages/eclat-published/page-13.jpg",
+      "/brochures/pages/eclat-published/page-14.jpg",
+      "/brochures/pages/eclat-published/page-15.jpg",
+      "/brochures/pages/eclat-published/page-16.jpg",
+      "/brochures/pages/eclat-published/page-17.jpg",
+      "/brochures/pages/eclat-published/page-18.jpg",
+      "/brochures/pages/eclat-published/page-19.jpg",
+      "/brochures/pages/eclat-published/page-20.jpg",
+      "/brochures/pages/eclat-published/page-21.jpg",
+      "/brochures/pages/eclat-published/page-22.jpg",
+      "/brochures/pages/eclat-published/page-23.jpg",
+      "/brochures/pages/eclat-published/page-24.jpg",
+      "/brochures/pages/eclat-published/page-25.jpg",
+      "/brochures/pages/eclat-published/page-26.jpg",
+      "/brochures/pages/eclat-published/page-27.jpg",
+      "/brochures/pages/eclat-published/page-28.jpg",
+      "/brochures/pages/eclat-published/page-29.jpg",
+      "/brochures/pages/eclat-published/page-30.jpg",
+      "/brochures/pages/eclat-published/page-31.jpg",
+      "/brochures/pages/eclat-published/page-32.jpg",
+      "/brochures/pages/eclat-published/page-33.jpg",
+      "/brochures/pages/eclat-published/page-34.jpg",
+      "/brochures/pages/eclat-published/page-35.jpg",
+      "/brochures/pages/eclat-published/page-36.jpg",
+      "/brochures/pages/eclat-published/page-37.jpg",
+      "/brochures/pages/eclat-published/page-38.jpg",
+      "/brochures/pages/eclat-published/page-39.jpg",
+      "/brochures/pages/eclat-published/page-40.jpg",
+      "/brochures/pages/eclat-published/page-41.jpg",
+      "/brochures/pages/eclat-published/page-42.jpg",
+      "/brochures/pages/eclat-published/page-43.jpg",
+      "/brochures/pages/eclat-published/page-44.jpg",
+      "/brochures/pages/eclat-published/page-45.jpg",
+      "/brochures/pages/eclat-published/page-46.jpg",
+      "/brochures/pages/eclat-published/page-47.jpg",
+      "/brochures/pages/eclat-published/page-48.jpg",
+      "/brochures/pages/eclat-published/page-49.jpg",
+      "/brochures/pages/eclat-published/page-50.jpg"
+    ],
+    "projectLogo": {
+      "src": "/logos/eclat-port-said-brochure-mark.png",
+      "source": "https://dashboard.newplandevelopments.com/storage/88/%C3%89clat-Brochure.pdf",
+      "sourcePage": 6,
+      "crop": [
+        0.035,
+        0.32,
+        0.335,
+        0.65
+      ],
+      "kind": "brochure-extract",
+      "whiteArtwork": false,
+      "darkArtwork": false
+    }
+  },
+  "fouka-bay": {
+    "images": [
+      {
+        "src": "/projects/fouka-bay-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/fouka-bay-ras-el-hekma-north-coast-sahel/fouka-bay-ras-el-hekma-north-coast-sahel-bd094c3298db.webp"
+      },
+      {
+        "src": "/projects/fouka-bay-2.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/serviced-20apartment-20fouka-1787302724720-0228e05e6b19.webp"
+      },
+      {
+        "src": "/projects/fouka-bay-3.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/fouka-20chalets2-1787304820884-19897631035f.webp"
+      },
+      {
+        "src": "/projects/fouka-bay-4.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/fouka-20chalets-205-1787304826713-4afd839dfa11.webp"
+      },
+      {
+        "src": "/projects/fouka-bay-5.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/fouka-208-1787305426967-e767137eb803.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/fouka-bay-ras-el-hekma-north-coast-sahel",
+    "brochure": "/brochures/fouka-bay-published.pdf",
+    "logo": {
+      "src": "/logos/fouka-bay.jpg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/33/33-tatweer-misr-957f2a1198bf.jpg",
+      "alt": "Tatweer Misr",
+      "kind": "developer"
+    },
+    "guide": "/brochures/fouka-bay-project-guide.pdf",
+    "brochureKind": "developer",
+    "brochureSource": "https://www.tatwermisr.com/_files/ugd/68be71_5f2ba31e8c82447d8b99a28f2a70df61.pdf?index=true",
+    "brochurePages": [
+      "/brochures/pages/fouka-bay/page-1.jpg",
+      "/brochures/pages/fouka-bay/page-2.jpg",
+      "/brochures/pages/fouka-bay/page-3.jpg",
+      "/brochures/pages/fouka-bay/page-4.jpg",
+      "/brochures/pages/fouka-bay/page-5.jpg",
+      "/brochures/pages/fouka-bay/page-6.jpg",
+      "/brochures/pages/fouka-bay/page-7.jpg",
+      "/brochures/pages/fouka-bay/page-8.jpg"
+    ],
+    "brochureNote": {
+      "en": "The House Hotel & Residence Royale · Fouka Bay phase brochure",
+      "ar": "بروشور مرحلة The House Hotel & Residence Royale في فوكا باي"
+    },
+    "projectLogo": {
+      "src": "/logos/fouka-bay-identity.png",
+      "source": "https://assets.live.beyond-creation.net/tatweer-misr/media/library/FOUKA19042026111258.webp?w=1680&q=75&ext=webp",
+      "page": "https://www.tatweermisr.com/destinations/fouka-bay",
+      "whiteArtwork": true,
+      "darkArtwork": false
+    }
+  },
+  "garden-lakes": {
+    "images": [
+      {
+        "src": "/projects/garden-lakes-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/garden-lakes-6th-of-october-city/garden-lakes-6th-of-october-city-502fec21c420.webp"
+      },
+      {
+        "src": "/projects/garden-lakes-2.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/garden-20lakes-201-1786203695031-ce5704cb0317.webp"
+      },
+      {
+        "src": "/projects/garden-lakes-3.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/garden-20lakes-202-1786203675366-0a564066fcd8.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/garden-lakes-6th-of-october-city",
+    "brochure": "/brochures/garden-lakes-published.pdf",
+    "logo": {
+      "src": "/logos/garden-lakes.jpeg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/15/15-hydepark-dev-logo-fe198db9fa9c.jpeg",
+      "alt": "Hyde Park",
+      "kind": "developer"
+    },
+    "guide": "/brochures/garden-lakes-project-guide.pdf",
+    "brochureKind": "published",
+    "brochureSource": "https://platinum-egypt.com/wp-content/uploads/2023/12/Garden-Lakes-brochure.pdf",
+    "brochurePages": [
+      "/brochures/pages/garden-lakes/page-01.jpg",
+      "/brochures/pages/garden-lakes/page-02.jpg",
+      "/brochures/pages/garden-lakes/page-03.jpg",
+      "/brochures/pages/garden-lakes/page-04.jpg",
+      "/brochures/pages/garden-lakes/page-05.jpg",
+      "/brochures/pages/garden-lakes/page-06.jpg",
+      "/brochures/pages/garden-lakes/page-07.jpg",
+      "/brochures/pages/garden-lakes/page-08.jpg",
+      "/brochures/pages/garden-lakes/page-09.jpg",
+      "/brochures/pages/garden-lakes/page-10.jpg",
+      "/brochures/pages/garden-lakes/page-11.jpg",
+      "/brochures/pages/garden-lakes/page-12.jpg",
+      "/brochures/pages/garden-lakes/page-13.jpg",
+      "/brochures/pages/garden-lakes/page-14.jpg",
+      "/brochures/pages/garden-lakes/page-15.jpg",
+      "/brochures/pages/garden-lakes/page-16.jpg",
+      "/brochures/pages/garden-lakes/page-17.jpg",
+      "/brochures/pages/garden-lakes/page-18.jpg",
+      "/brochures/pages/garden-lakes/page-19.jpg",
+      "/brochures/pages/garden-lakes/page-20.jpg",
+      "/brochures/pages/garden-lakes/page-21.jpg",
+      "/brochures/pages/garden-lakes/page-22.jpg",
+      "/brochures/pages/garden-lakes/page-23.jpg",
+      "/brochures/pages/garden-lakes/page-24.jpg",
+      "/brochures/pages/garden-lakes/page-25.jpg",
+      "/brochures/pages/garden-lakes/page-26.jpg",
+      "/brochures/pages/garden-lakes/page-27.jpg",
+      "/brochures/pages/garden-lakes/page-28.jpg",
+      "/brochures/pages/garden-lakes/page-29.jpg",
+      "/brochures/pages/garden-lakes/page-30.jpg",
+      "/brochures/pages/garden-lakes/page-31.jpg",
+      "/brochures/pages/garden-lakes/page-32.jpg",
+      "/brochures/pages/garden-lakes/page-33.jpg",
+      "/brochures/pages/garden-lakes/page-34.jpg",
+      "/brochures/pages/garden-lakes/page-35.jpg",
+      "/brochures/pages/garden-lakes/page-36.jpg",
+      "/brochures/pages/garden-lakes/page-37.jpg",
+      "/brochures/pages/garden-lakes/page-38.jpg",
+      "/brochures/pages/garden-lakes/page-39.jpg",
+      "/brochures/pages/garden-lakes/page-40.jpg",
+      "/brochures/pages/garden-lakes/page-41.jpg",
+      "/brochures/pages/garden-lakes/page-42.jpg",
+      "/brochures/pages/garden-lakes/page-43.jpg",
+      "/brochures/pages/garden-lakes/page-44.jpg",
+      "/brochures/pages/garden-lakes/page-45.jpg",
+      "/brochures/pages/garden-lakes/page-46.jpg",
+      "/brochures/pages/garden-lakes/page-47.jpg",
+      "/brochures/pages/garden-lakes/page-48.jpg",
+      "/brochures/pages/garden-lakes/page-49.jpg",
+      "/brochures/pages/garden-lakes/page-50.jpg",
+      "/brochures/pages/garden-lakes/page-51.jpg",
+      "/brochures/pages/garden-lakes/page-52.jpg",
+      "/brochures/pages/garden-lakes/page-53.jpg",
+      "/brochures/pages/garden-lakes/page-54.jpg",
+      "/brochures/pages/garden-lakes/page-55.jpg",
+      "/brochures/pages/garden-lakes/page-56.jpg",
+      "/brochures/pages/garden-lakes/page-57.jpg",
+      "/brochures/pages/garden-lakes/page-58.jpg",
+      "/brochures/pages/garden-lakes/page-59.jpg",
+      "/brochures/pages/garden-lakes/page-60.jpg",
+      "/brochures/pages/garden-lakes/page-61.jpg",
+      "/brochures/pages/garden-lakes/page-62.jpg",
+      "/brochures/pages/garden-lakes/page-63.jpg",
+      "/brochures/pages/garden-lakes/page-64.jpg",
+      "/brochures/pages/garden-lakes/page-65.jpg",
+      "/brochures/pages/garden-lakes/page-66.jpg",
+      "/brochures/pages/garden-lakes/page-67.jpg",
+      "/brochures/pages/garden-lakes/page-68.jpg",
+      "/brochures/pages/garden-lakes/page-69.jpg",
+      "/brochures/pages/garden-lakes/page-70.jpg",
+      "/brochures/pages/garden-lakes/page-71.jpg",
+      "/brochures/pages/garden-lakes/page-72.jpg",
+      "/brochures/pages/garden-lakes/page-73.jpg",
+      "/brochures/pages/garden-lakes/page-74.jpg",
+      "/brochures/pages/garden-lakes/page-75.jpg",
+      "/brochures/pages/garden-lakes/page-76.jpg",
+      "/brochures/pages/garden-lakes/page-77.jpg",
+      "/brochures/pages/garden-lakes/page-78.jpg",
+      "/brochures/pages/garden-lakes/page-79.jpg",
+      "/brochures/pages/garden-lakes/page-80.jpg",
+      "/brochures/pages/garden-lakes/page-81.jpg",
+      "/brochures/pages/garden-lakes/page-82.jpg",
+      "/brochures/pages/garden-lakes/page-83.jpg",
+      "/brochures/pages/garden-lakes/page-84.jpg",
+      "/brochures/pages/garden-lakes/page-85.jpg",
+      "/brochures/pages/garden-lakes/page-86.jpg"
+    ]
+  },
+  "hacienda-bay": {
+    "images": [
+      {
+        "src": "/projects/hacienda-bay-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/hacienda-bay-sidi-abdel-rahman-north-coast-sahel/hacienda-bay-sidi-abdel-rahman-north-coast-sahel-27d20b09f43d.webp"
+      },
+      {
+        "src": "/projects/hacienda-bay-2.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/hacienda-20bay-20vvv-1787299710029-a19bbf7dcdde.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/hacienda-bay-sidi-abdel-rahman-north-coast-sahel",
+    "brochure": "/brochures/hacienda-bay-project-guide.pdf",
+    "logo": {
+      "src": "/logos/hacienda-bay.jpg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/16/16-palm-hills-640de30609f2.jpg",
+      "alt": "Palm Hills Developments",
+      "kind": "developer"
+    },
+    "guide": "/brochures/hacienda-bay-project-guide.pdf",
+    "brochureKind": "site-guide",
+    "brochureSource": "https://www.ahlanhomes.com/projects/hacienda-bay-sidi-abdel-rahman-north-coast-sahel",
+    "brochurePages": [
+      "/brochures/pages/hacienda-bay/page-1.jpg",
+      "/brochures/pages/hacienda-bay/page-2.jpg"
+    ]
+  },
+  "hacienda-ras-el-hekma": {
+    "images": [
+      {
+        "src": "/projects/hacienda-ras-el-hekma-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/hacienda-ras-el-hekma-north-coast-sahel/hacienda-ras-el-hekma-north-coast-sahel-6f76dbc65b48.webp"
+      },
+      {
+        "src": "/projects/hacienda-ras-el-hekma-2.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/screenshot-202026-05-25-20140605-1786239133642-a59108a44221.webp"
+      },
+      {
+        "src": "/projects/hacienda-ras-el-hekma-3.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/screenshot-202026-05-25-20124755-1786239139783-c99915f9f941.webp"
+      },
+      {
+        "src": "/projects/hacienda-ras-el-hekma-4.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/screenshot-202026-05-25-20153034-1786239131082-97b40c55b3ef.webp"
+      },
+      {
+        "src": "/projects/hacienda-ras-el-hekma-5.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/screenshot-202026-05-25-20152546-1786239132374-6a0d1c211326.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/hacienda-ras-el-hekma-north-coast-sahel",
+    "brochure": "/brochures/hacienda-ras-el-hekma-project-guide.pdf",
+    "logo": {
+      "src": "/logos/hacienda-ras-el-hekma.jpg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/16/16-palm-hills-640de30609f2.jpg",
+      "alt": "Palm Hills Developments",
+      "kind": "developer"
+    },
+    "guide": "/brochures/hacienda-ras-el-hekma-project-guide.pdf",
+    "brochureKind": "site-guide",
+    "brochureSource": "https://www.ahlanhomes.com/projects/hacienda-ras-el-hekma-north-coast-sahel",
+    "brochurePages": [
+      "/brochures/pages/hacienda-ras-el-hekma/page-1.jpg",
+      "/brochures/pages/hacienda-ras-el-hekma/page-2.jpg"
+    ]
+  },
+  "icity-new-cairo": {
+    "images": [
+      {
+        "src": "/projects/icity-new-cairo-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/mountain-view-icity-new-cairo/mountain-view-icity-new-cairo-cce9cf192f9c.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/mountain-view-icity-new-cairo",
+    "brochure": "/brochures/icity-new-cairo-project-guide.pdf",
+    "logo": {
+      "src": "/logos/icity-new-cairo.jpg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/6/6-mv-834e21b0d958.jpg",
+      "alt": "Mountain View",
+      "kind": "developer"
+    },
+    "guide": "/brochures/icity-new-cairo-project-guide.pdf",
+    "brochureKind": "site-guide",
+    "brochureSource": "https://www.ahlanhomes.com/projects/mountain-view-icity-new-cairo",
+    "brochurePages": [
+      "/brochures/pages/icity-new-cairo/page-1.jpg",
+      "/brochures/pages/icity-new-cairo/page-2.jpg"
+    ]
+  },
+  "il-bosco": {
+    "images": [
+      {
+        "src": "/projects/il-bosco-0.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13995/il-bosco-new-capital-f9b4ebfe.webp"
+      },
+      {
+        "src": "/projects/il-bosco-2.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13998/conversions/il-bosco-new-capital-photo-3-5de88c49-card.webp"
+      },
+      {
+        "src": "/projects/il-bosco-3.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13999/conversions/il-bosco-new-capital-photo-4-20e56fd7-card.webp"
+      }
+    ],
+    "page": "https://www.doestate.co/projects/il-bosco-new-capital",
+    "brochure": "/brochures/il-bosco-project-guide.pdf",
+    "logo": {
+      "src": "/logos/il-bosco.jpeg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/55/55-misr-italia-dev-logo-f9d09909c812.jpeg",
+      "alt": "Misr Italia Properties",
+      "kind": "developer"
+    },
+    "guide": "/brochures/il-bosco-project-guide.pdf",
+    "brochureKind": "site-guide",
+    "brochureSource": "https://www.doestate.co/projects/il-bosco-new-capital",
+    "brochurePages": [
+      "/brochures/pages/il-bosco/page-1.jpg",
+      "/brochures/pages/il-bosco/page-2.jpg"
+    ],
+    "projectLogo": {
+      "src": "/logos/il-bosco-official.webp",
+      "source": "https://assets.live.beyond-creation.net/misr-italia/media/library/il-bosco-logoo17082025134251.webp",
+      "page": "https://misritaliaproperties.com/",
+      "whiteArtwork": false,
+      "darkArtwork": true
+    }
+  },
+  "ivoire-west": {
+    "images": [
+      {
+        "src": "/projects/ivoire-west-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/ivoire-west-el-sheikh-zayed/ivoire-west-el-sheikh-zayed-792e781afb2c.webp"
+      },
+      {
+        "src": "/projects/ivoire-west-2.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/IvoireWest/apartmentivoire-west-4-1787235384168-4473601b1669.webp"
+      },
+      {
+        "src": "/projects/ivoire-west-3.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/IvoireWest/apartmentivoire-west-5-1787235392493-48676d938dde.webp"
+      },
+      {
+        "src": "/projects/ivoire-west-4.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/apartmentivoire-west-1-1787297018572-51e815cbbdc1.webp"
+      },
+      {
+        "src": "/projects/ivoire-west-5.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/IvoireWest/high-1787235389536-60cb68cdccfa.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/ivoire-west-el-sheikh-zayed",
+    "brochure": "/brochures/ivoire-west-project-guide.pdf",
+    "logo": {
+      "src": "/logos/ivoire-west.jpeg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/111/111-751a-9dc8-e5a0bb12d6a8.jpeg",
+      "alt": "PRE Group",
+      "kind": "developer"
+    },
+    "guide": "/brochures/ivoire-west-project-guide.pdf",
+    "brochureKind": "site-guide",
+    "brochureSource": "https://www.ahlanhomes.com/projects/ivoire-west-el-sheikh-zayed",
+    "brochurePages": [
+      "/brochures/pages/ivoire-west/page-1.jpg",
+      "/brochures/pages/ivoire-west/page-2.jpg"
+    ],
+    "projectLogo": {
+      "src": "/logos/ivoire-west-official.png",
+      "source": "https://predevelopments.com/wp-content/uploads/2023/10/IVOIRE-1.png",
+      "page": "https://predevelopments.com/",
+      "whiteArtwork": false,
+      "darkArtwork": true
+    }
+  },
+  "jade-park": {
+    "images": [
+      {
+        "src": "/projects/jade-park-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/jade-park-new-capital-city/jade-park-new-capital-city-03fd4cf1d90b.webp"
+      },
+      {
+        "src": "/projects/jade-park-2.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/jade5-1787292492008-e4b0fba8ba35.webp"
+      },
+      {
+        "src": "/projects/jade-park-3.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/jade1-1787295228687-8634f07c18c4.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/jade-park-new-capital-city",
+    "brochure": "/brochures/jade-park-published.pdf",
+    "logo": {
+      "src": "/logos/jade-park.jpg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/74/74-px7g6xljf1wkkfgctfjsrqbigsrcorcityedge-800x799-dacb2fd6a3ab.jpg",
+      "alt": "City Edge Developments",
+      "kind": "developer"
+    },
+    "guide": "/brochures/jade-park-project-guide.pdf",
+    "brochureKind": "developer",
+    "brochureSource": "https://cityedgedevelopments.com/cityedgedevelopmentswordpress/wp-content/uploads/2025/09/JP-Brochure.pdf",
+    "brochurePages": [
+      "/brochures/pages/jade-park/page-001.jpg",
+      "/brochures/pages/jade-park/page-002.jpg",
+      "/brochures/pages/jade-park/page-003.jpg",
+      "/brochures/pages/jade-park/page-004.jpg",
+      "/brochures/pages/jade-park/page-005.jpg",
+      "/brochures/pages/jade-park/page-006.jpg",
+      "/brochures/pages/jade-park/page-007.jpg",
+      "/brochures/pages/jade-park/page-008.jpg",
+      "/brochures/pages/jade-park/page-009.jpg",
+      "/brochures/pages/jade-park/page-010.jpg",
+      "/brochures/pages/jade-park/page-011.jpg",
+      "/brochures/pages/jade-park/page-012.jpg",
+      "/brochures/pages/jade-park/page-013.jpg",
+      "/brochures/pages/jade-park/page-014.jpg",
+      "/brochures/pages/jade-park/page-015.jpg",
+      "/brochures/pages/jade-park/page-016.jpg",
+      "/brochures/pages/jade-park/page-017.jpg",
+      "/brochures/pages/jade-park/page-018.jpg",
+      "/brochures/pages/jade-park/page-019.jpg",
+      "/brochures/pages/jade-park/page-020.jpg",
+      "/brochures/pages/jade-park/page-021.jpg",
+      "/brochures/pages/jade-park/page-022.jpg",
+      "/brochures/pages/jade-park/page-023.jpg",
+      "/brochures/pages/jade-park/page-024.jpg",
+      "/brochures/pages/jade-park/page-025.jpg",
+      "/brochures/pages/jade-park/page-026.jpg",
+      "/brochures/pages/jade-park/page-027.jpg",
+      "/brochures/pages/jade-park/page-028.jpg",
+      "/brochures/pages/jade-park/page-029.jpg",
+      "/brochures/pages/jade-park/page-030.jpg",
+      "/brochures/pages/jade-park/page-031.jpg",
+      "/brochures/pages/jade-park/page-032.jpg",
+      "/brochures/pages/jade-park/page-033.jpg",
+      "/brochures/pages/jade-park/page-034.jpg",
+      "/brochures/pages/jade-park/page-035.jpg",
+      "/brochures/pages/jade-park/page-036.jpg",
+      "/brochures/pages/jade-park/page-037.jpg",
+      "/brochures/pages/jade-park/page-038.jpg",
+      "/brochures/pages/jade-park/page-039.jpg",
+      "/brochures/pages/jade-park/page-040.jpg",
+      "/brochures/pages/jade-park/page-041.jpg",
+      "/brochures/pages/jade-park/page-042.jpg",
+      "/brochures/pages/jade-park/page-043.jpg",
+      "/brochures/pages/jade-park/page-044.jpg",
+      "/brochures/pages/jade-park/page-045.jpg",
+      "/brochures/pages/jade-park/page-046.jpg",
+      "/brochures/pages/jade-park/page-047.jpg",
+      "/brochures/pages/jade-park/page-048.jpg",
+      "/brochures/pages/jade-park/page-049.jpg",
+      "/brochures/pages/jade-park/page-050.jpg",
+      "/brochures/pages/jade-park/page-051.jpg",
+      "/brochures/pages/jade-park/page-052.jpg",
+      "/brochures/pages/jade-park/page-053.jpg",
+      "/brochures/pages/jade-park/page-054.jpg",
+      "/brochures/pages/jade-park/page-055.jpg",
+      "/brochures/pages/jade-park/page-056.jpg",
+      "/brochures/pages/jade-park/page-057.jpg",
+      "/brochures/pages/jade-park/page-058.jpg",
+      "/brochures/pages/jade-park/page-059.jpg",
+      "/brochures/pages/jade-park/page-060.jpg",
+      "/brochures/pages/jade-park/page-061.jpg",
+      "/brochures/pages/jade-park/page-062.jpg",
+      "/brochures/pages/jade-park/page-063.jpg",
+      "/brochures/pages/jade-park/page-064.jpg",
+      "/brochures/pages/jade-park/page-065.jpg",
+      "/brochures/pages/jade-park/page-066.jpg",
+      "/brochures/pages/jade-park/page-067.jpg",
+      "/brochures/pages/jade-park/page-068.jpg",
+      "/brochures/pages/jade-park/page-069.jpg",
+      "/brochures/pages/jade-park/page-070.jpg",
+      "/brochures/pages/jade-park/page-071.jpg",
+      "/brochures/pages/jade-park/page-072.jpg",
+      "/brochures/pages/jade-park/page-073.jpg",
+      "/brochures/pages/jade-park/page-074.jpg",
+      "/brochures/pages/jade-park/page-075.jpg",
+      "/brochures/pages/jade-park/page-076.jpg",
+      "/brochures/pages/jade-park/page-077.jpg",
+      "/brochures/pages/jade-park/page-078.jpg",
+      "/brochures/pages/jade-park/page-079.jpg",
+      "/brochures/pages/jade-park/page-080.jpg",
+      "/brochures/pages/jade-park/page-081.jpg",
+      "/brochures/pages/jade-park/page-082.jpg",
+      "/brochures/pages/jade-park/page-083.jpg",
+      "/brochures/pages/jade-park/page-084.jpg",
+      "/brochures/pages/jade-park/page-085.jpg",
+      "/brochures/pages/jade-park/page-086.jpg",
+      "/brochures/pages/jade-park/page-087.jpg",
+      "/brochures/pages/jade-park/page-088.jpg",
+      "/brochures/pages/jade-park/page-089.jpg",
+      "/brochures/pages/jade-park/page-090.jpg",
+      "/brochures/pages/jade-park/page-091.jpg",
+      "/brochures/pages/jade-park/page-092.jpg",
+      "/brochures/pages/jade-park/page-093.jpg",
+      "/brochures/pages/jade-park/page-094.jpg",
+      "/brochures/pages/jade-park/page-095.jpg",
+      "/brochures/pages/jade-park/page-096.jpg",
+      "/brochures/pages/jade-park/page-097.jpg",
+      "/brochures/pages/jade-park/page-098.jpg",
+      "/brochures/pages/jade-park/page-099.jpg",
+      "/brochures/pages/jade-park/page-100.jpg",
+      "/brochures/pages/jade-park/page-101.jpg",
+      "/brochures/pages/jade-park/page-102.jpg",
+      "/brochures/pages/jade-park/page-103.jpg",
+      "/brochures/pages/jade-park/page-104.jpg",
+      "/brochures/pages/jade-park/page-105.jpg",
+      "/brochures/pages/jade-park/page-106.jpg",
+      "/brochures/pages/jade-park/page-107.jpg",
+      "/brochures/pages/jade-park/page-108.jpg",
+      "/brochures/pages/jade-park/page-109.jpg",
+      "/brochures/pages/jade-park/page-110.jpg",
+      "/brochures/pages/jade-park/page-111.jpg",
+      "/brochures/pages/jade-park/page-112.jpg",
+      "/brochures/pages/jade-park/page-113.jpg"
+    ],
+    "projectLogo": {
+      "src": "/logos/jade-park-official.png",
+      "source": "https://cityedgedevelopments.com/cityedgedevelopmentswordpress/wp-content/uploads/2025/09/logowebp.webp",
+      "page": "https://cityedgedevelopments.com/project/jade-park/",
+      "whiteArtwork": true,
+      "darkArtwork": false
+    }
+  },
+  "mivida": {
+    "images": [
+      {
+        "src": "/projects/mivida-0.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/21783/mivida-13c48473.webp"
+      },
+      {
+        "src": "/projects/mivida-1.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/21785/conversions/mivida-photo-2-ef4175a9-card.webp"
+      },
+      {
+        "src": "/projects/mivida-2.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/21786/conversions/mivida-photo-3-525f41cf-card.webp"
+      },
+      {
+        "src": "/projects/mivida-3.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/21787/conversions/mivida-photo-4-0cce10ca-card.webp"
+      }
+    ],
+    "page": "https://www.doestate.co/projects/mivida",
+    "brochure": "/brochures/mivida-project-guide.pdf",
+    "guide": "/brochures/mivida-project-guide.pdf",
+    "brochureKind": "site-guide",
+    "brochureSource": "https://www.doestate.co/projects/mivida",
+    "brochurePages": [
+      "/brochures/pages/mivida/page-1.jpg",
+      "/brochures/pages/mivida/page-2.jpg"
+    ],
+    "logo": {
+      "src": "/logos/mivida-identity.png",
+      "source": "https://prod-images.nawy.com/processed/developer/logo_image/4/high.webp",
+      "page": "https://www.nawy.com/developer/4-emaar-misr",
+      "alt": "Emaar Misr",
+      "kind": "developer"
+    }
+  },
+  "oia": {
+    "images": [
+      {
+        "src": "/projects/oia-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/oia-compound-new-capital-city/oia-compound-new-capital-city-0357ac5b5369.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/oia-compound-new-capital-city",
+    "brochure": "/brochures/oia-published.pdf",
+    "logo": {
+      "src": "/logos/oia.png",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/99/99-cckhvxdzfyjaxifchizw3hc2topzotlogo-e602705cbcea.png",
+      "alt": "EDGE HOLDING",
+      "kind": "developer"
+    },
+    "guide": "/brochures/oia-project-guide.pdf",
+    "brochureKind": "published",
+    "brochureSource": "https://renzo.app/uploads/projects/brochure%20-%20oia%20new%20capital%20r7%20edge%20holding%20%281%29.pdf",
+    "brochurePages": [
+      "/brochures/pages/oia/page-01.jpg",
+      "/brochures/pages/oia/page-02.jpg",
+      "/brochures/pages/oia/page-03.jpg",
+      "/brochures/pages/oia/page-04.jpg",
+      "/brochures/pages/oia/page-05.jpg",
+      "/brochures/pages/oia/page-06.jpg",
+      "/brochures/pages/oia/page-07.jpg",
+      "/brochures/pages/oia/page-08.jpg",
+      "/brochures/pages/oia/page-09.jpg",
+      "/brochures/pages/oia/page-10.jpg",
+      "/brochures/pages/oia/page-11.jpg",
+      "/brochures/pages/oia/page-12.jpg",
+      "/brochures/pages/oia/page-13.jpg",
+      "/brochures/pages/oia/page-14.jpg",
+      "/brochures/pages/oia/page-15.jpg",
+      "/brochures/pages/oia/page-16.jpg",
+      "/brochures/pages/oia/page-17.jpg",
+      "/brochures/pages/oia/page-18.jpg",
+      "/brochures/pages/oia/page-19.jpg",
+      "/brochures/pages/oia/page-20.jpg",
+      "/brochures/pages/oia/page-21.jpg",
+      "/brochures/pages/oia/page-22.jpg",
+      "/brochures/pages/oia/page-23.jpg",
+      "/brochures/pages/oia/page-24.jpg",
+      "/brochures/pages/oia/page-25.jpg",
+      "/brochures/pages/oia/page-26.jpg",
+      "/brochures/pages/oia/page-27.jpg",
+      "/brochures/pages/oia/page-28.jpg",
+      "/brochures/pages/oia/page-29.jpg",
+      "/brochures/pages/oia/page-30.jpg",
+      "/brochures/pages/oia/page-31.jpg",
+      "/brochures/pages/oia/page-32.jpg",
+      "/brochures/pages/oia/page-33.jpg",
+      "/brochures/pages/oia/page-34.jpg",
+      "/brochures/pages/oia/page-35.jpg",
+      "/brochures/pages/oia/page-36.jpg",
+      "/brochures/pages/oia/page-37.jpg",
+      "/brochures/pages/oia/page-38.jpg",
+      "/brochures/pages/oia/page-39.jpg",
+      "/brochures/pages/oia/page-40.jpg"
+    ],
+    "projectLogo": {
+      "src": "/logos/oia-brochure-mark.png",
+      "source": "https://renzo.app/uploads/projects/brochure%20-%20oia%20new%20capital%20r7%20edge%20holding%20%281%29.pdf",
+      "sourcePage": 1,
+      "crop": [
+        0.48,
+        0.235,
+        0.975,
+        0.46
+      ],
+      "kind": "brochure-extract",
+      "whiteArtwork": false,
+      "darkArtwork": false
+    }
+  },
+  "scenario": {
+    "images": [
+      {
+        "src": "/projects/scenario-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/scenario-new-capital-city/scenario-new-capital-city-a86f9c902e2a.webp"
+      },
+      {
+        "src": "/projects/scenario-2.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/scenarioscenariowhatsapp-image-2023-11-06-at-17--26edb4cffef2.webp"
+      },
+      {
+        "src": "/projects/scenario-3.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/scenario-20pic5-1787311120684-70dbff6a8e09.webp"
+      },
+      {
+        "src": "/projects/scenario-4.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/scenario-20pic6-1787310830002-dbfd442d6586.webp"
+      },
+      {
+        "src": "/projects/scenario-5.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/scenario-20pic-2099-1787311117200-4105f97ad0d9.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/scenario-new-capital-city",
+    "brochure": "/brochures/scenario-project-guide.pdf",
+    "logo": {
+      "src": "/logos/scenario.jpg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/90/90-h6ht0w0rlba6minxqcxjv9yldqoarodev-3283b9b29107.jpg",
+      "alt": "Akam Developments",
+      "kind": "developer"
+    },
+    "guide": "/brochures/scenario-project-guide.pdf",
+    "brochureKind": "site-guide",
+    "brochureSource": "https://www.ahlanhomes.com/projects/scenario-new-capital-city",
+    "brochurePages": [
+      "/brochures/pages/scenario/page-1.jpg",
+      "/brochures/pages/scenario/page-2.jpg"
+    ]
+  },
+  "scene-7": {
+    "images": [
+      {
+        "src": "/projects/scene-7-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/scene-7-new-capital-city/scene-7-new-capital-city-8f3d645771f1.webp"
+      },
+      {
+        "src": "/projects/scene-7-2.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/Scene7/scene-207-20pic-209-1787228536284-80f05aca8696.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/scene-7-new-capital-city",
+    "brochure": "/brochures/scene-7-project-guide.pdf",
+    "logo": {
+      "src": "/logos/scene-7.jpg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/90/90-h6ht0w0rlba6minxqcxjv9yldqoarodev-3283b9b29107.jpg",
+      "alt": "Akam Developments",
+      "kind": "developer"
+    },
+    "projectLogo": {
+      "src": "/logos/scene-7-project.png",
+      "source": "https://akam.com.eg/wp-content/uploads/2025/10/SCENE7-Logo-New-Capital.png",
+      "whiteArtwork": true,
+      "darkArtwork": false
+    },
+    "guide": "/brochures/scene-7-project-guide.pdf",
+    "brochureKind": "site-guide",
+    "brochureSource": "https://www.ahlanhomes.com/projects/scene-7-new-capital-city",
+    "brochurePages": [
+      "/brochures/pages/scene-7/page-1.jpg",
+      "/brochures/pages/scene-7/page-2.jpg"
+    ]
+  },
+  "the-greens": {
+    "images": [
+      {
+        "src": "/projects/the-greens-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/the-greens-new-capital-city/the-greens-new-capital-city-48ee109e0232.webp"
+      },
+      {
+        "src": "/projects/the-greens-2.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/screenshot-202026-02-18-20121932-1786203506950-0fadd1202091.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/the-greens-new-capital-city",
+    "brochure": "/brochures/the-greens-project-guide.pdf",
+    "logo": {
+      "src": "/logos/the-greens.jpg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/6/6-mv-834e21b0d958.jpg",
+      "alt": "Mountain View",
+      "kind": "developer"
+    },
+    "guide": "/brochures/the-greens-project-guide.pdf",
+    "brochureKind": "site-guide",
+    "brochureSource": "https://www.ahlanhomes.com/projects/the-greens-new-capital-city",
+    "brochurePages": [
+      "/brochures/pages/the-greens/page-1.jpg",
+      "/brochures/pages/the-greens/page-2.jpg"
+    ]
+  },
+  "the-nines": {
+    "images": [
+      {
+        "src": "/projects/the-nines-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/the-nines-el-gouna/the-nines-el-gouna-221f5bc395c3.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/the-nines-el-gouna",
+    "brochure": "/brochures/the-nines-project-guide.pdf",
+    "logo": {
+      "src": "/logos/the-nines.jpg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/35/35-orascom-ec010037e743.jpg",
+      "alt": "Orascom Development Egypt",
+      "kind": "developer"
+    },
+    "guide": "/brochures/the-nines-project-guide.pdf",
+    "brochureKind": "site-guide",
+    "brochureSource": "https://www.ahlanhomes.com/projects/the-nines-el-gouna",
+    "brochurePages": [
+      "/brochures/pages/the-nines/page-1.jpg",
+      "/brochures/pages/the-nines/page-2.jpg"
+    ]
+  },
+  "vinci": {
+    "images": [
+      {
+        "src": "/projects/vinci-0.webp",
+        "source": "https://www.ahlanhomes.com/media/projects/vinci-new-capital-city/vinci-new-capital-city-86170598fa77.webp"
+      },
+      {
+        "src": "/projects/vinci-2.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/screenshot-2025-06-11-171055-1787300008724-aaa7aab7ca35.webp"
+      },
+      {
+        "src": "/projects/vinci-3.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/vinici-14-1787300038661-230ce2bdab1d.webp"
+      },
+      {
+        "src": "/projects/vinci-4.webp",
+        "source": "https://www.ahlanhomes.com/media/catalogue/agent/vinci-1-1787289492937-1b57b6600049.webp"
+      }
+    ],
+    "page": "https://www.ahlanhomes.com/projects/vinci-new-capital-city",
+    "brochure": "/brochures/vinci-project-guide.pdf",
+    "logo": {
+      "src": "/logos/vinci.jpeg",
+      "source": "https://www.ahlanhomes.com/media/legacy/developer/logo_image/55/55-misr-italia-dev-logo-f9d09909c812.jpeg",
+      "alt": "Misr Italia Properties",
+      "kind": "developer"
+    },
+    "guide": "/brochures/vinci-project-guide.pdf",
+    "brochureKind": "site-guide",
+    "brochureSource": "https://www.ahlanhomes.com/projects/vinci-new-capital-city",
+    "brochurePages": [
+      "/brochures/pages/vinci/page-1.jpg",
+      "/brochures/pages/vinci/page-2.jpg"
+    ],
+    "projectLogo": {
+      "src": "/logos/vinci-official.png",
+      "source": "https://assets.live.beyond-creation.net/misr-italia/media/library/vinci-svg20022024192317.png",
+      "page": "https://misritaliaproperties.com/",
+      "whiteArtwork": false,
+      "darkArtwork": true
+    }
+  },
+  "zed": {
+    "images": [
+      {
+        "src": "/projects/zed-0.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14789/zed-58d32f92.webp"
+      },
+      {
+        "src": "/projects/zed-1.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14791/conversions/zed-photo-2-48e8b291-card.webp"
+      },
+      {
+        "src": "/projects/zed-2.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14792/conversions/zed-photo-3-e9b92260-card.webp"
+      },
+      {
+        "src": "/projects/zed-3.webp",
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14793/conversions/zed-photo-4-1dd04042-card.webp"
+      }
+    ],
+    "page": "https://www.doestate.co/projects/zed",
+    "brochure": "/brochures/zed-project-guide.pdf",
+    "projectLogo": {
+      "src": "/logos/zed-project.png",
+      "source": "https://d3lfybzdo3x59a.cloudfront.net/website-assets/zed-sheikh-zayed.png",
+      "whiteArtwork": false,
+      "darkArtwork": false
+    },
+    "logo": {
+      "src": "/logos/zed-developer.png",
+      "source": "https://www.oradevelopers.com/_nuxt/img/ora-logo-greyer.52c8cfb.png",
+      "alt": "Ora Developers",
+      "kind": "developer"
+    },
+    "guide": "/brochures/zed-project-guide.pdf",
+    "brochureKind": "site-guide",
+    "brochureSource": "https://www.doestate.co/projects/zed",
+    "brochurePages": [
+      "/brochures/pages/zed/page-1.jpg",
+      "/brochures/pages/zed/page-2.jpg"
+    ]
+  }
+}

@@ -1,0 +1,544 @@
+{
+  "dar-al-fouad-october": {
+    "src": "/places/dar-al-fouad-october-photo.webp",
+    "source": "https://daralfouadoctober.alameda-hc.com/wp-content/uploads/sites/2/2026/03/M7A2607-1.jpg",
+    "page": "https://daralfouadoctober.alameda-hc.com/",
+    "author": "Dar Al Fouad Hospital / Alameda Healthcare",
+    "license": "Official hospital photograph",
+    "kind": "photo"
+  },
+  "dar-al-fouad-nasr": {
+    "src": "/places/dar-al-fouad-nasr-photo.webp",
+    "source": "https://daralfouadnasrcity.alameda-hc.com/wp-content/uploads/sites/3/2024/06/1.jpg",
+    "page": "https://daralfouadnasrcity.alameda-hc.com/",
+    "author": "Dar Al Fouad Hospital / Alameda Healthcare",
+    "license": "Official hospital photograph",
+    "kind": "photo"
+  },
+  "american-university-cairo": {
+    "src": "/places/american-university-cairo-photo.webp",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Tahrir_Square_Campus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Tahrir_Square_Campus.jpg",
+    "author": "Stephenieloren",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "kind": "photo",
+    "fileTitle": "File:Tahrir Square Campus.jpg"
+  },
+  "cairo-university": {
+    "src": "/places/cairo-university-photo.webp",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Principal_building_%28El_Qupa%29_of_cairo_university.jpg/1280px-Principal_building_%28El_Qupa%29_of_cairo_university.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Principal_building_(El_Qupa)_of_cairo_university.jpg",
+    "author": "لا روسا",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "kind": "photo",
+    "fileTitle": "File:Principal building (El Qupa) of cairo university.jpg"
+  },
+  "ain-shams-university": {
+    "src": "/places/ain-shams-university-photo.webp",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Ain_Shams_University-Main_Gate.JPG/1280px-Ain_Shams_University-Main_Gate.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Ain_Shams_University-Main_Gate.JPG",
+    "author": "Faris knight",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "kind": "photo",
+    "fileTitle": "File:Ain Shams University-Main Gate.JPG"
+  },
+  "british-university-egypt": {
+    "src": "/places/british-university-egypt-photo.webp",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/6/62/British_University_in_Egypt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:British_University_in_Egypt.jpg",
+    "author": "Mark Everitt (Meveritt)",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "kind": "photo",
+    "fileTitle": "File:British University in Egypt.jpg",
+    "sourceArtist": "No machine-readable author provided. Meveritt assumed (based on copyright claims)."
+  },
+  "egyptian-russian-university": {
+    "src": "/places/egyptian-russian-university-photo.webp",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/4/49/Egyptian_Russian_University_ERU.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Egyptian_Russian_University_ERU.jpg",
+    "author": "Emad farouk",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "kind": "photo",
+    "fileTitle": "File:Egyptian Russian University ERU.jpg"
+  },
+  "canadian-university-egypt": {
+    "src": "/places/canadian-university-egypt-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.707852458081874%2C30.027248%2C31.718119541918128%2C30.032248000000003&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.712986,
+      30.029748
+    ]
+  },
+  "egyptian-chinese-university": {
+    "src": "/places/egyptian-chinese-university-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.353966232662664%2C30.031599999999997%2C31.36423376733734%2C30.0366&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.3591,
+      30.0341
+    ]
+  },
+  "misr-international-university": {
+    "src": "/places/misr-international-university-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.487859199873455%2C30.1669%2C31.498140800126542%2C30.1719&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.493,
+      30.1694
+    ]
+  },
+  "badr-university": {
+    "src": "/places/badr-university-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.69818534206781%2C30.125785%2C31.708462657932188%2C30.130785000000003&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.703324,
+      30.128285
+    ]
+  },
+  "future-university-egypt": {
+    "src": "/places/future-university-egypt-photo.webp",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Administration_building%2C_Future_University_in_Egypt_%28New_Cairo%2C_Egypt%2C_28_September_2008%29.jpg/1280px-Administration_building%2C_Future_University_in_Egypt_%28New_Cairo%2C_Egypt%2C_28_September_2008%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Administration_building,_Future_University_in_Egypt_(New_Cairo,_Egypt,_28_September_2008).jpg",
+    "author": "Wikimedia Commons contributor",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "kind": "photo",
+    "fileTitle": "File:Administration building, Future University in Egypt (New Cairo, Egypt, 28 September 2008).jpg",
+    "sourceArtist": "Me, It shows my university campus."
+  },
+  "german-university-cairo": {
+    "src": "/places/german-university-cairo-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+  },
+  "misr-university-scitech": {
+    "src": "/places/misr-university-scitech-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=30.960268233858805%2C29.992931%2C30.970531766141193%2C29.997931&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      30.9654,
+      29.995431
+    ]
+  },
+  "october-university": {
+    "src": "/places/october-university-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=30.942169284464907%2C29.9726%2C30.95243071553509%2C29.977600000000002&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      30.9473,
+      29.9751
+    ]
+  },
+  "nile-university": {
+    "src": "/places/nile-university-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=30.980562362162456%2C30.009784%2C30.990827637837544%2C30.014784000000002&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      30.985695,
+      30.012284
+    ]
+  },
+  "new-giza-university": {
+    "src": "/places/new-giza-university-photo.webp",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Newgiza_University_Campus.jpg/1280px-Newgiza_University_Campus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Newgiza_University_Campus.jpg",
+    "author": "Amk06",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "kind": "photo",
+    "fileTitle": "File:Newgiza University Campus.jpg"
+  },
+  "heliopolis-university": {
+    "src": "/places/heliopolis-university-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.424560065308523%2C30.150299999999998%2C31.434839934691478%2C30.1553&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.4297,
+      30.1528
+    ]
+  },
+  "canadian-international-school": {
+    "src": "/places/canadian-international-school-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.420915940151943%2C29.998611%2C31.43118005984806%2C30.003611000000003&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.426048,
+      30.001111
+    ]
+  },
+  "british-international-school-cairo": {
+    "src": "/places/british-international-school-cairo-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=30.94319624775512%2C30.069879999999998%2C30.95346775224488%2C30.07488&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      30.948332,
+      30.07238
+    ]
+  },
+  "repton-cairo": {
+    "src": "/places/repton-cairo-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.52526748034232%2C30.0075%2C31.535532519657682%2C30.012500000000003&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.5304,
+      30.01
+    ]
+  },
+  "the-nile-school": {
+    "src": "/places/the-nile-school-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.521942326193628%2C29.991145%2C31.53220567380637%2C29.996145000000002&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.527074,
+      29.993645
+    ]
+  },
+  "city-stars-mall": {
+    "src": "/places/city-stars-mall-photo.webp",
+    "source": "https://www.citystars-heliopolis.com.eg/public/images/mall/citystars-heliopolis-about-us.jpg",
+    "page": "https://www.citystars-heliopolis.com.eg/en/about-us",
+    "author": "Citystars Heliopolis",
+    "license": "Official mall photograph",
+    "kind": "photo"
+  },
+  "cairo-festival-city-mall": {
+    "src": "/places/cairo-festival-city-mall-photo.webp",
+    "source": "https://www.cairofestivalcity.com/wp-content/uploads/sites/31/2021/02/EnjoyCover.jpg",
+    "page": "https://www.cairofestivalcity.com/retail/",
+    "author": "Cairo Festival City / Al-Futtaim",
+    "license": "Official mall photograph",
+    "kind": "photo"
+  },
+  "downtown-mall-new-cairo": {
+    "src": "/places/downtown-mall-new-cairo-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.406567164682745%2C30.0136%2C31.416832835317255%2C30.018600000000003&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.4117,
+      30.0161
+    ]
+  },
+  "point-90-mall": {
+    "src": "/places/point-90-mall-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.489585949461162%2C30.017757999999997%2C31.499852050538838%2C30.022758&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.494719,
+      30.020258
+    ]
+  },
+  "hyde-park-mall": {
+    "src": "/places/hyde-park-mall-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.541815137720683%2C29.975441%2C31.552076862279314%2C29.980441000000003&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.546946,
+      29.977941
+    ]
+  },
+  "oasis-mall": {
+    "src": "/places/oasis-mall-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.366662334938667%2C30.1067%2C31.376937665061334%2C30.111700000000003&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.3718,
+      30.1092
+    ]
+  },
+  "marbella-mall": {
+    "src": "/places/marbella-mall-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.62803577874842%2C30.136605%2C31.638314221251584%2C30.141605000000002&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.633175,
+      30.139105
+    ]
+  },
+  "future-mall-new-capital": {
+    "src": "/places/future-mall-new-capital-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.655421845040276%2C30.135332%2C31.665700154959726%2C30.140332&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.660561,
+      30.137832
+    ]
+  },
+  "shorouk-city-mall": {
+    "src": "/places/shorouk-city-mall-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.65512051796619%2C30.141612%2C31.665399482033813%2C30.146612&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.66026,
+      30.144112
+    ]
+  },
+  "badr-plaza-mall": {
+    "src": "/places/badr-plaza-mall-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.698349223655587%2C30.108839999999997%2C31.70862477634441%2C30.11384&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.703487,
+      30.11134
+    ]
+  },
+  "city-center-mall-zayed": {
+    "src": "/places/city-center-mall-zayed-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.003096896617595%2C30.038086%2C31.0133651033824%2C30.043086000000002&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.008231,
+      30.040586
+    ]
+  },
+  "gate-mall-zayed": {
+    "src": "/places/gate-mall-zayed-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=30.972854984292113%2C30.036393999999998%2C30.98312301570789%2C30.041394&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      30.977989,
+      30.038894
+    ]
+  },
+  "mall-of-egypt": {
+    "src": "/places/mall-of-egypt-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.01259441708997%2C29.970032%2C31.022855582910026%2C29.975032000000002&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.017725,
+      29.972532
+    ]
+  },
+  "talaat-harb-mall": {
+    "src": "/places/talaat-harb-mall-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.234774399032062%2C30.047686%2C31.24504360096794%2C30.052686&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.239909,
+      30.050186
+    ]
+  },
+  "metro-cairo-university": {
+    "src": "/places/metro-cairo-university-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.19606965248697%2C30.023494%2C31.20633634751303%2C30.028494000000002&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.201203,
+      30.025994
+    ]
+  },
+  "metro-el-dokki": {
+    "src": "/places/metro-el-dokki-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.20691101911112%2C30.035722%2C31.217178980888878%2C30.040722000000002&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.212045,
+      30.038222
+    ]
+  },
+  "metro-el-ataba": {
+    "src": "/places/metro-el-ataba-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.24176428268675%2C30.04993%2C31.25203371731325%2C30.054930000000002&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.246899,
+      30.05243
+    ]
+  },
+  "metro-sayeda-zeinab": {
+    "src": "/places/metro-sayeda-zeinab-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.230252483925263%2C30.026749%2C31.240519516074734%2C30.031749&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.235386,
+      30.029249
+    ]
+  },
+  "metro-el-moshir-ismail": {
+    "src": "/places/metro-el-moshir-ismail-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.378188003866065%2C30.016707%2C31.388453996133933%2C30.021707000000003&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.383321,
+      30.019207
+    ]
+  },
+  "lrt-american-university": {
+    "src": "/places/lrt-american-university-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.48553968572998%2C30.022852%2C31.495806314270023%2C30.027852000000003&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.490673,
+      30.025352
+    ]
+  },
+  "lrt-academic-capital": {
+    "src": "/places/lrt-academic-capital-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.59369171871302%2C30.022215%2C31.60395828128698%2C30.027215&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.598825,
+      30.024715
+    ]
+  },
+  "lrt-badr": {
+    "src": "/places/lrt-badr-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.710858902539236%2C30.1726%2C31.721141097460766%2C30.1776&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.716,
+      30.1751
+    ]
+  },
+  "lrt-governmental-district": {
+    "src": "/places/lrt-governmental-district-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.7396845851095%2C30.005474999999997%2C31.7499494148905%2C30.010475&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.744817,
+      30.007975
+    ]
+  },
+  "cairo-international-airport": {
+    "src": "/places/cairo-international-airport-photo.webp",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Cairo_Airport_Terminal_3.jpg/1280px-Cairo_Airport_Terminal_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Cairo_Airport_Terminal_3.jpg",
+    "author": "Alensha",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "kind": "photo",
+    "fileTitle": "File:Cairo Airport Terminal 3.jpg"
+  },
+  "capital-international-airport": {
+    "src": "/places/capital-international-airport-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=31.82174869828194%2C30.045141%2C31.858719301718057%2C30.063141&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      31.840234,
+      30.054141
+    ]
+  },
+  "october-airport": {
+    "src": "/places/october-airport-aerial.webp",
+    "page": "https://www.esri.com/en-us/arcgis/products/arcgis-living-atlas/maps",
+    "author": "Esri, Maxar, Earthstar Geographics",
+    "license": "World Imagery",
+    "kind": "aerial",
+    "source": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=30.801421707796205%2C29.802554999999998%2C30.838302292203796%2C29.820555&bboxSR=4326&imageSR=3857&size=800%2C450&format=jpg&f=image",
+    "coordinates": [
+      30.819862,
+      29.811555
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "pyramids": {
+    "src": "/landmarks/pyramids.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Pyramids_of_the_Giza_Necropolis.jpg/1280px-Pyramids_of_the_Giza_Necropolis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Pyramids_of_the_Giza_Necropolis.jpg",
+    "author": "<a href=\"//commons.wikimedia.org/wiki/User:KennyOMG\" class=\"mw-redirect\" title=\"User:KennyOMG\">KennyOMG</a>",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "gem": {
+    "src": "/landmarks/gem.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Grand_Egyptian_Museum.jpg/1280px-Grand_Egyptian_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Grand_Egyptian_Museum.jpg",
+    "author": "<a href=\"//commons.wikimedia.org/wiki/User:Mohamed_abdelzaher\" title=\"User:Mohamed abdelzaher\">Mohamed abdelzaher</a>",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "cairo-tower": {
+    "src": "/landmarks/cairo-tower.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Cairo_Tower_%2814795997855%29.jpg/1280px-Cairo_Tower_%2814795997855%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Cairo_Tower_(14795997855).jpg",
+    "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/8721758@N06\">Jorge L\u00e1scar</a> from Melbourne, Australia",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "citadel": {
+    "src": "/landmarks/citadel.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Flickr_-_HuTect_ShOts_-_Citadel_of_Salah_El.Din_and_Masjid_Muhammad_Ali_%D9%82%D9%84%D8%B9%D8%A9_%D8%B5%D9%84%D8%A7%D8%AD_%D8%A7%D9%84%D8%AF%D9%8A%D9%86_%D8%A7%D9%84%D8%A3%D9%8A%D9%88%D8%A8%D9%8A_%D9%88%D9%85%D8%B3%D8%AC%D8%AF_%D9%85%D8%AD%D9%85%D8%AF_%D8%B9%D9%84%D9%8A_-_Cairo_-_Egypt_-_17_04_2010_%284%29.jpg/1280px-thumbnail.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Flickr_-_HuTect_ShOts_-_Citadel_of_Salah_El.Din_and_Masjid_Muhammad_Ali_%D9%82%D9%84%D8%B9%D8%A9_%D8%B5%D9%84%D8%A7%D8%AD_%D8%A7%D9%84%D8%AF%D9%8A%D9%86_%D8%A7%D9%84%D8%A3%D9%8A%D9%88%D8%A8%D9%8A_%D9%88%D9%85%D8%B3%D8%AC%D8%AF_%D9%85%D8%AD%D9%85%D8%AF_%D8%B9%D9%84%D9%8A_-_Cairo_-_Egypt_-_17_04_2010_(4).jpg",
+    "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/49202046@N06\">Ahmed Al.Badawy</a> from Cairo, Egypt",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "airport": {
+    "src": "/landmarks/airport.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Cairo_Airport_Terminal_3.jpg/1280px-Cairo_Airport_Terminal_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Cairo_Airport_Terminal_3.jpg",
+    "author": "<a href=\"//commons.wikimedia.org/wiki/User:Alensha\" title=\"User:Alensha\">Alensha</a>",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "festival-city": {
+    "src": "/landmarks/festival-city.jpg",
+    "source": "https://www.festivalcitymallcairo.com/wps/wcm/connect/cairomall/5237e061-2b63-4a1f-a614-eb13716dd594/Festival%2BAvenue%2BE-Brochure%2BFinal_compressed%2B%281%29.pdf?MOD=AJPERES",
+    "page": "https://www.festivalcitymallcairo.com/",
+    "author": "Al-Futtaim Malls",
+    "license": "\u00a9 Al-Futtaim Malls",
+    "licenseUrl": ""
+  }
+}
