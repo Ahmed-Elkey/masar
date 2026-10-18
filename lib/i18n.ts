@@ -2,8 +2,8 @@ import type { Lang, StatusId } from "./types";
 
 /** Single brand source — replace these four fields to rebrand the whole site. */
 export const BRAND = {
-  en: { name: "NILE ESTATES", credit: "Nile Estates", tag: "DEVELOPMENTS", map: "Egypt Investment Map" },
-  ar: { name: "نايل إستيتس", credit: "نايل إستيتس", tag: "للتطويرات", map: "خريطة الاستثمار العقاري في مصر" },
+  en: { name: "NILE ESTATES", credit: "Nile Estates", tag: "PROJECT DIRECTORY", map: "Egypt Property Map" },
+  ar: { name: "نايل إستيتس", credit: "نايل إستيتس", tag: "دليل المشاريع", map: "خريطة المشاريع العقارية" },
 } as const;
 
 export const siteTitle = (lang: Lang) => `${BRAND[lang].map} | ${BRAND[lang].credit}`;

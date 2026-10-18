@@ -1,4 +1,4 @@
-# Egypt Investment Map
+# Egypt Property Map
 
 A full-screen satellite map adapted from the supplied Resimo / Prestige One Dubai reference, using Egyptian developments and Cairo services.
 
