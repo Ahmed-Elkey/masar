@@ -6,7 +6,7 @@
   "resolution": "1920x1080",
   "frameRate": 24,
   "audio": "none",
-  "audioNote": "The Mivida source clip carries no audio stream, so the cut is silent by construction.",
+  "audioNote": "Silent by design. The Mivida source clip has no audio stream, and no music bed is wanted.",
   "editing": "Native-speed cuts; no artificial slow motion or overlapping dissolves.",
   "loopSeam": "One continuous night drone push, split between the last and first shot.",
   "shots": [

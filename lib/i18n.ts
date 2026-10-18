@@ -1,6 +1,6 @@
 import type { Lang, StatusId } from "./types";
 
-/** Temporary brand — replace these four fields to rebrand the whole site. */
+/** Single brand source — replace these four fields to rebrand the whole site. */
 export const BRAND = {
   en: { name: "NILE ESTATES", credit: "Nile Estates", tag: "DEVELOPMENTS", map: "Egypt Investment Map" },
   ar: { name: "نايل إستيتس", credit: "نايل إستيتس", tag: "للتطويرات", map: "خريطة الاستثمار العقاري في مصر" },

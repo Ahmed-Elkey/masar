@@ -31,7 +31,7 @@ subprocess.run([FFMPEG,'-hide_banner','-loglevel','error','-f','concat','-safe',
 out.replace(ROOT/'public/videos/egypt-property-film.mp4')
 manifest={'output':'egypt-property-film.mp4','source':'mivida-official.mp4','duration':sum(s[1] for s in shots),
           'speed':1,'resolution':'1920x1080','frameRate':24,'audio':'none',
-          'audioNote':'The Mivida source clip carries no audio stream, so the cut is silent by construction.',
+          'audioNote':'Silent by design. The Mivida source clip has no audio stream, and no music bed is wanted.',
           'editing':'Native-speed cuts; no artificial slow motion or overlapping dissolves.',
           'loopSeam':'One continuous night drone push, split between the last and first shot.',
           'shots':[dict(source='mivida-official.mp4',start=s,duration=d,description=desc) for s,d,desc in shots]}
