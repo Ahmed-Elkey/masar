@@ -133,5 +133,5 @@ See IMAGE-QUALITY-REVIEW.md. Fixed responsive candidate selection and portrait w
 
 ## Mivida full-width clarity and project contact address
 - Two homepage photographs now use official Emaar Mivida assets at native 1800/2000px, with reduced panorama enlargement.
-- Personal email removed from both contact components. Central proposed project address: info@nileestates.com. No mailbox ownership or activation is claimed; sending stays disabled, enquiry preparation/download remains available.
+- Personal email removed from both contact components. Central proposed project address: info@nileestates.com. No mailbox ownership or activation is claimed. While `PROJECT_EMAIL_ENABLED` is false the address is not shown anywhere on the site: the contact page, the contact layout and the guide FAQ say plainly that nothing typed is uploaded and the brief is a file you keep. Sending stays disabled, enquiry preparation/download remains available.
 - Verified 75 originals and 148 responsive candidates; production build and TypeScript passed. Browser checked both updated homepage images and the contact page. Screenshot: tmp/mivida-clarity-final.png.

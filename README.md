@@ -68,6 +68,7 @@ Escape closes one visible level at a time. Gallery arrow keys navigate photos or
 - `public/brochures/`: eight published Egyptian brochures, plus clearly labeled independent bilingual guides for all 23 developments; projects without a published brochure show their guide instead.
 - `scripts/brochure-candidates.json`: original PDF sources. `scripts/create-project-guides.py` and `scripts/render-brochures.py` build guides and document previews. The guide script needs ReportLab, Pillow, arabic-reshaper and python-bidi; the page renderer needs `pdftoppm` from poppler. Neither binary is installed on this machine, so both scripts are documented refresh paths rather than part of `npm run build`.
 - `/logos/`: sourced developer identities for 22 projects and original project marks for Scene 7 and ZED. Other project names retain text wordmarks.
+- `scripts/og-card.html`: the 1200×630 social card. Copy it into `public/`, open it from the dev server in a browser at device pixel ratio 2, capture the top 1200×630 pixels and save them as `public/og.jpg`, which `app/layout.tsx` references. It is kept outside `public/` so it is never served as a route.
 
 Project photos were obtained from DoEstate, Ahlan Homes, RealEstate.eg and the developer’s official site for Éclat. A listing placeholder and a photograph explicitly labeled IL BOSCO City / New Cairo were removed during review. Confirm image reuse rights before public release. Map imagery remains network-dependent and includes provider attribution. Project photos themselves are served locally.
 

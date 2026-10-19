@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OG card</title>
+<style>
+  @font-face{font-family:Inter;src:url('/fonts/map-variable-6.woff2') format('woff2');font-weight:400 700;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+2000-206F,U+20AC,U+2122,U+2212}
+  @font-face{font-family:Estate Display;src:url('/fonts/estate-display.ttf') format('truetype');font-weight:400}
+  @font-face{font-family:Estate Script;src:url('/fonts/estate-script.ttf') format('truetype');font-weight:400}
+  @font-face{font-family:Estate Arabic;src:url('/fonts/estate-arabic-display-ar.woff2') format('woff2');font-weight:400;unicode-range:U+0600-06FF,U+0750-077F,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+  @font-face{font-family:Estate Arabic;src:url('/fonts/estate-arabic-display-la.woff2') format('woff2');font-weight:400;unicode-range:U+0000-00FF,U+2000-206F}
+  *{box-sizing:border-box;margin:0}
+  html,body{width:600px;height:315px;overflow:hidden}
+  body{background:#f3f0e7;color:#17233b;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  .card{position:relative;width:600px;height:315px;padding:16px}
+  .frame{position:absolute;inset:16px;border:1px solid #17233b2e}
+  .inner{position:relative;height:100%;padding:26px 30px;display:flex;flex-direction:column;justify-content:space-between}
+  .eyebrow{font-size:10px;letter-spacing:.28em;color:#17233b99}
+  .wordmark{font-family:'Estate Display',serif;font-size:62px;line-height:.94;letter-spacing:-.025em}
+  .script{font-family:'Estate Script',cursive;font-size:31px;line-height:1;color:#331326;margin:10px 0 0 6px}
+  .foot{display:flex;align-items:flex-end;justify-content:space-between;gap:20px}
+  .lede{font-size:11.5px;line-height:1.65;color:#17233bcc;max-width:330px}
+  .ar{font-family:'Estate Arabic',serif;font-size:23px;color:#331326;direction:rtl;text-align:end;line-height:1.6}
+  .blossom{position:absolute;right:44px;top:34px;width:34px;height:34px;color:#33132659}
+  .rule{width:52px;height:1px;background:#17233b40;margin:0 0 13px}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="frame"></div>
+  <svg class="blossom" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+    <g id="p"></g>
+    <circle cx="50" cy="50" r="5" fill="currentColor"></circle>
+  </svg>
+  <div class="inner">
+    <div class="eyebrow">EGYPT · PROJECT DIRECTORY</div>
+    <div>
+      <div class="wordmark">Nile Estates</div>
+      <div class="script">a place to call home</div>
+    </div>
+    <div class="foot">
+      <div>
+        <div class="rule"></div>
+        <p class="lede">Explore residential projects across Egypt in context — the address, its surroundings and the developer behind it.</p>
+      </div>
+      <div class="ar">دليل المشاريع</div>
+    </div>
+  </div>
+</div>
+<script>
+  const petals = Array.from({length:8},(_,i)=>{
+    const p=document.createElementNS('http://www.w3.org/2000/svg','path');
+    p.setAttribute('d','M50 46C36 35 40 23 50 12C60 23 64 35 50 46Z');
+    p.setAttribute('fill','currentColor');
+    p.setAttribute('transform',`rotate(${i*45} 50 50)`);
+    return p;
+  });
+  const g=document.getElementById('p');
+  petals.forEach(p=>g.appendChild(p));
+  document.querySelector('.blossom').insertBefore(g,document.querySelector('.blossom circle'));
+</script>
+</body>
+</html>
