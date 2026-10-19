@@ -362,3 +362,9 @@ html.estate-document::-webkit-scrollbar-thumb{background:#17233b66;border-radius
 
 /* Amiri needs its own tracking: Latin spacing splits Arabic letter joins. */
 .estate-arabic .reasons-arc text{font-family:'Estate Arabic',serif;letter-spacing:0;font-size:26px}
+
+/* 404 answers in both languages on one page. */
+.not-found-links{display:flex;flex-wrap:wrap;justify-content:center;gap:20px 40px;margin-top:55px}
+.not-found-arabic{margin-top:70px;padding-top:40px;border-top:1px solid #17233b30}
+.not-found-arabic>p{max-width:370px;font-size:12px;margin:18px auto 0!important}
+.not-found-arabic .editorial-link{font-size:20px;min-width:0}
