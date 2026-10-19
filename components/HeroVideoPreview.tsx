@@ -100,7 +100,7 @@ export default function HeroVideoPreview({ initialLang = "en" }: { initialLang?:
       <section className={styles.caption}>
         <span>{copy.kicker}</span>
         <h1>{copy.title}</h1>
-        <a className={styles.explore} href={`/?lang=${lang}`}>{copy.explore} <span aria-hidden="true">{copy.arrow}</span></a>
+        <a className={styles.explore} href={`/map?lang=${lang}`}>{copy.explore} <span aria-hidden="true">{copy.arrow}</span></a>
       </section>
       <footer className={styles.footer}>
         <span>{copy.footer}</span>

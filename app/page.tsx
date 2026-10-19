@@ -1,74 +1,10 @@
-import type { Metadata } from "next";
-import MapLoader from "@/components/MapLoader";
-import { PROJECTS } from "@/lib/data";
-import { BRAND, SITE_DESCRIPTION, siteTitle } from "@/lib/i18n";
-import media from "@/lib/media.json";
-
-const SITE = (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, "");
-const MEDIA = media as Record<string, { images: { src: string }[] }>;
-
-const PUBLISHER = { "@type": "Organization", name: BRAND.en.credit, url: SITE };
-
-const COPY = {
-  en: { title: siteTitle("en"), description: SITE_DESCRIPTION.en },
-  ar: { title: siteTitle("ar"), description: SITE_DESCRIPTION.ar },
-};
-
-export function generateMetadata({
-  searchParams,
-}: {
-  searchParams: Record<string, string | string[] | undefined>;
-}): Metadata {
-  const copy = searchParams.lang === "ar" ? COPY.ar : COPY.en;
-  return { title: copy.title, description: copy.description };
-}
-
-export default function Page({
-  searchParams,
-}: {
-  searchParams: Record<string, string | string[] | undefined>;
-}) {
-  const project = PROJECTS.find(p => p.id === searchParams.project);
-  const jsonLd = project
-    ? {
-        "@context": "https://schema.org",
-        "@type": "RealEstateListing",
-        name: project.name.en,
-        description: project.description.en,
-        url: `${SITE}/?project=${project.id}`,
-        image: (MEDIA[project.id]?.images ?? []).slice(0, 3).map(image => new URL(image.src, SITE).toString()),
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: project.area.en,
-          addressCountry: "EG",
-        },
-        geo: {
-          "@type": "GeoCoordinates",
-          latitude: project.lat,
-          longitude: project.lng,
-        },
-        provider: PUBLISHER,
-      }
-    : {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        name: "Residential developments in Egypt",
-        publisher: PUBLISHER,
-        numberOfItems: PROJECTS.length,
-        itemListElement: PROJECTS.map((p, index) => ({
-          "@type": "ListItem",
-          position: index + 1,
-          name: p.name.en,
-          url: `${SITE}/?project=${p.id}`,
-        })),
-      };
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
-      />
-      <MapLoader />
-    </>
-  );
+import type { Metadata } from 'next';
+import { redirect } from 'next/navigation';
+import SiteShell from '@/components/estate/SiteShell';
+import Home from '@/components/estate/Home';
+import { language } from '@/lib/estate';
+export function generateMetadata({searchParams}:{searchParams:Record<string,string|string[]|undefined>}): Metadata { return language(searchParams)==='ar' ? { title:'نايل إستيتس — مكان يشبهك',description:'اكتشف مشاريع سكنية في أنحاء مصر، واستكشف المناطق والخدمات على خريطة تفاعلية.' } : { title: 'Nile Estates — A Place to Call Home', description: 'Discover residential destinations across Egypt. Explore the collection, find your next address, and see every place in perspective.' }; }
+export default function Page({searchParams}:{searchParams:Record<string,string|string[]|undefined>}) {
+ if(searchParams.project||searchParams.poi||searchParams.landmark||searchParams.theme){const q=new URLSearchParams();Object.entries(searchParams).forEach(([k,v])=>{if(typeof v==='string')q.set(k,v)});redirect(`/map?${q}`);}
+ const lang=language(searchParams); return <SiteShell lang={lang}><Home lang={lang}/></SiteShell>;
 }

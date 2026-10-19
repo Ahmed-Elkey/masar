@@ -1,44 +1,32 @@
 #!/usr/bin/env python3
-"""Generate AVIF width variants for project photos and record them in lib/imageVariants.json."""
+"""Build high quality width-exact photo variants; always retain native originals in srcsets."""
 import json
-import os
-import subprocess
+from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor
+from PIL import Image, ImageOps
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-WIDTHS = (480, 960, 1440)
-QUALITY = "55"
+ROOT = Path(__file__).resolve().parents[1]
+WIDTHS = (480, 960, 1440, 1920, 2560)
+QUALITY = 85
+media = json.loads((ROOT / 'lib/media.json').read_text())
+sources = sorted({im['src'] for project in media.values() for im in project['images']})
 
-media = json.load(open(os.path.join(ROOT, "lib/media.json")))
-sources = sorted({image["src"] for project in media.values() for image in project["images"]})
-
-variants: dict[str, list[int]] = {}
-for src in sources:
-    path = os.path.join(ROOT, "public", src.lstrip("/"))
-    if not os.path.exists(path):
-        print("missing", src)
-        continue
-    width = int(
-        subprocess.run(["sips", "-g", "pixelWidth", path], capture_output=True, text=True)
-        .stdout.strip()
-        .split()[-1]
-    )
-    base, _ = os.path.splitext(path)
-    widths = []
-    for target in WIDTHS:
-        if width < target:
-            continue
-        dest = f"{base}-{target}.avif"
-        if not os.path.exists(dest):
-            result = subprocess.run(
-                ["sips", "-Z", str(target), "-s", "format", "avif", "-s", "formatOptions", QUALITY, path, "--out", dest],
-                capture_output=True,
-                text=True,
-            )
-            if result.returncode:
-                print("failed", src, target, result.stderr.strip())
+def build(src):
+    path = ROOT / 'public' / src.lstrip('/')
+    with Image.open(path) as original:
+        picture = ImageOps.exif_transpose(original).convert('RGB')
+        width, height = picture.size
+        available = []
+        for target in WIDTHS:
+            if target >= width:
                 continue
-        widths.append(target)
-    variants[src] = widths
+            resized = picture.resize((target, round(height * target / width)), Image.Resampling.LANCZOS)
+            resized.save(path.with_name(f'{path.stem}-{target}.avif'), quality=QUALITY, speed=7)
+            available.append(target)
+        return src, available, {'width': width, 'height': height}
 
-json.dump(variants, open(os.path.join(ROOT, "lib/imageVariants.json"), "w"), indent=0, sort_keys=True)
-print(f"{len(variants)} images, {sum(len(w) for w in variants.values())} variants")
+with ThreadPoolExecutor(max_workers=3) as pool:
+    rows = list(pool.map(build, sources))
+(ROOT / 'lib/imageVariants.json').write_text(json.dumps({src:w for src,w,_ in rows}, indent=2, sort_keys=True)+'\n')
+(ROOT / 'lib/imageDimensions.json').write_text(json.dumps({src:d for src,_,d in rows}, indent=2, sort_keys=True)+'\n')
+print(f'{len(rows)} originals; {sum(len(w) for _,w,_ in rows)} high-quality, width-exact variants')

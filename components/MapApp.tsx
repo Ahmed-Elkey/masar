@@ -17,6 +17,8 @@ import { Icon } from "./Icon";
 import MapCanvas from "./MapCanvas";
 import ProjectCard from "./ProjectCard";
 import ProjectImage from "./ProjectImage";
+import Link from "next/link";
+import { Seal } from "./estate/Brand";
 const TOOLS: {id: LayerId; icon: IconName; key: keyof (typeof STRINGS)["en"]["tools"]}[] = [
   {id:"landmarks",icon:"pin",key:"landmarks"}, {id:"school",icon:"brochure",key:"schools"},
   {id:"health",icon:"heart",key:"health"}, {id:"shopping",icon:"bag",key:"shopping"},
@@ -184,18 +186,20 @@ export default function MapApp({ onMapReady, onMapProgress }: { onMapReady?: () 
   };
   const copyLink=async()=>{try{await navigator.clipboard.writeText(location.href);notify(t.shared);}catch{notify(location.href);}};
   const shareUrl=hydrated?window.location.href:"";
-  return <div className={`app theme-${theme}${projectCard.value?" has-card":""}${drawer?" has-drawer":""}${placeCard.value?" has-place":""}`}>
+  return <div className={`app estate-map theme-${theme}${projectCard.value?" has-card":""}${drawer?" has-drawer":""}${placeCard.value?" has-place":""}`}>
     <div className="map-wrap"><MapCanvas projects={PROJECTS} pois={POIS} lang={lang} theme={theme} layers={layers}
       selectedId={selectedId} selectedPoiId={selectedPoiId} route={route} onSelectProject={select} filterActive={filterActive} matchedIds={matchedIds}      onSelectPoi={id=>{setSelectedPoiId(prev=>prev===id?null:id);setDrawer(false);}}
       onReady={map=>{mapRef.current=map;const requested=new Set<string>();const loaded=new Set<string>();let revealed=false;const finish=()=>{if(revealed)return;revealed=true;onMapProgress?.(100);onMapReady?.();};const keyOf=(event:{sourceId?:string;tile?:{tileID?:{key?:string}}})=>{const key=event.tile?.tileID?.key;return key==null?null:`${event.sourceId??""}:${key}`;};const report=()=>{if(revealed)return;const total=requested.size;onMapProgress?.(total===0?0:Math.min(99,Math.round(loaded.size/total*100)));};map.on("sourcedataloading",event=>{const key=keyOf(event);if(key){requested.add(key);report();}});map.on("data",event=>{const sourceEvent=event as unknown as {sourceId?:string;tile?:{tileID?:{key?:string}}};if(sourceEvent.tile){const key=keyOf(sourceEvent);if(key){requested.add(key);loaded.add(key);report();}}});map.on("sourcedataabort",event=>{const key=keyOf(event);if(key){requested.add(key);loaded.add(key);report();}});map.on("error",event=>{const key=keyOf(event as unknown as {sourceId?:string;tile?:{tileID?:{key?:string}}});if(key){requested.add(key);loaded.add(key);report();}});map.once("load",()=>{report();const start=performance.now();const poll=()=>{if(revealed)return;if((requested.size>0&&map.areTilesLoaded())||performance.now()-start>10000)finish();else window.setTimeout(poll,100);};poll();const id=new URLSearchParams(location.search).get("project");if(id&&!new URLSearchParams(location.search).get("landmark")&&!new URLSearchParams(location.search).get("poi"))flyToProject(id);});map.on("click",event=>{if((event.originalEvent.target as HTMLElement)?.classList.contains("maplibregl-canvas"))setSelectedPoiId(null);});}} /></div>
     <button className="menu-btn" aria-label={t.menu} aria-expanded={menu} aria-controls="settings-menu" onClick={()=>{setMenu(!menu);setSharing(false);}}><Icon name={menu?"close":"menu"} size={18}/></button>
     {menu&&<div className={`menu-panel ${sharing?"with-sharing":""}`} id="settings-menu" role="menu" onKeyDown={event=>{
       if(!['ArrowDown','ArrowUp','Home','End'].includes(event.key))return;
-      const items=Array.from(event.currentTarget.querySelectorAll<HTMLButtonElement>('[role="menuitem"]'));
+      const items=Array.from(event.currentTarget.querySelectorAll<HTMLElement>('[role="menuitem"]'));
       const index=items.indexOf(document.activeElement as HTMLButtonElement);
       const next=event.key==='Home'?0:event.key==='End'?items.length-1:(index+(event.key==='ArrowDown'?1:-1)+items.length)%items.length;
       event.preventDefault();items[next]?.focus();
     }}>
+      <Link role="menuitem" href={`/?lang=${lang}`}>{lang==="ar"?"العودة للموقع":"Back to the website"}<span>↗</span></Link>
+      <Link role="menuitem" href={`/projects?lang=${lang}`}>{lang==="ar"?"استكشف المشاريع":"Explore the collection"}<span>↗</span></Link>
       <button role="menuitem" onClick={()=>{setTheme(theme==="light"?"dark":"light");setMenu(false);setSharing(false);}}><Icon name={theme==="light"?"moon":"sun"} size={18}/>{theme==="light"?t.darkTheme:t.lightTheme}</button>
       <button role="menuitem" onClick={()=>{setLang(lang==="en"?"ar":"en");setMenu(false);setSharing(false);}}><b className="ar-mark">{lang==="en"?"Ar":"En"}</b>{t.language}</button>
       <button role="menuitem" className={sharing?"is-on":""} aria-expanded={sharing} onClick={()=>setSharing(!sharing)}><Icon name="share" size={18}/>{t.share}</button>
@@ -206,7 +210,8 @@ export default function MapApp({ onMapReady, onMapProgress }: { onMapReady?: () 
         <button aria-label={t.copyLink} onClick={copyLink}><Icon name="copy" size={18}/></button>
       </div>}
     </div>}
-    <div className="brand"><span className="brand-mark" aria-hidden="true"><svg viewBox="0 0 28 28" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.2"><path d="M3 24L14 4l11 20H3z M14 4v20 M9 14l5 10 5-10 M7 24l7-7 7 7"/></svg></span><span className="brand-text"><b>{t.brand}</b><i>{t.brandTag}</i></span></div>
+    <Link className="brand estate-map-brand" href={`/?lang=${lang}`} aria-label={lang==="ar"?"نايل إستيتس — الرئيسية":"Nile Estates — Home"}><Seal /><span className="brand-text"><b>NILE ESTATES</b><i>{lang==="ar"?"اكتشف مكانك":"FIND YOUR PLACE"}</i></span></Link>
+    <Link className="estate-map-return" href={`/?lang=${lang}`}>{lang==="ar"?"العودة للموقع":"Back to the website"} ↗</Link>
     <button className="filter-toggle" aria-label={t.layersTitle} aria-expanded={filters} aria-controls="map-tools" onClick={()=>setFilters(!filters)}><span aria-hidden="true">•••</span></button>
     <nav id="map-tools" className={`tools ${filters?"is-open":""}`} aria-label={t.layersTitle}>{TOOLS.map(x=><button key={x.id} className={`tool ${layers.includes(x.id)?"is-on":""}`} aria-label={t.tools[x.key]} aria-pressed={layers.includes(x.id)} onClick={()=>toggleLayer(x.id)}><Icon name={x.icon} size={20}/><span className="tool-tip">{t.tools[x.key]}</span></button>)}</nav>
     <div className={`bottom ${drawer?"is-open":""}`}><div className="zoom"><button aria-label={t.zoomIn} onClick={()=>zoomBy(1)}><Icon name="plus" size={18}/></button><button aria-label={t.fit} onClick={fitAll}><Icon name="expand" size={18}/></button><button aria-label={t.zoomOut} onClick={()=>zoomBy(-1)}><Icon name="minus" size={18}/></button></div>

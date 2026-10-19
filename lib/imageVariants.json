@@ -1,273 +1,300 @@
 {
-"/projects/205-towers-0.webp": [
-480,
-960
-],
-"/projects/205-towers-2.webp": [
-480,
-960,
-1440
-],
-"/projects/al-karma-kay-0.webp": [
-480,
-960
-],
-"/projects/beverly-hills-0.webp": [
-480,
-960
-],
-"/projects/beverly-hills-1.webp": [
-480
-],
-"/projects/beverly-hills-2.webp": [
-480
-],
-"/projects/beverly-hills-3.webp": [
-480
-],
-"/projects/blanca-0.webp": [
-480,
-960
-],
-"/projects/blanca-2.webp": [
-480,
-960
-],
-"/projects/blanca-3.webp": [
-480,
-960
-],
-"/projects/city-gate-0.webp": [
-480,
-960
-],
-"/projects/city-gate-1.webp": [
-480
-],
-"/projects/city-gate-2.webp": [
-480
-],
-"/projects/city-gate-3.webp": [
-480
-],
-"/projects/club-park-0.webp": [
-480,
-960
-],
-"/projects/club-park-2.webp": [
-480
-],
-"/projects/club-park-3.webp": [
-480,
-960
-],
-"/projects/club-park-4.webp": [
-480
-],
-"/projects/club-park-5.webp": [
-480,
-960
-],
-"/projects/eclat-official-0.jpg": [
-480
-],
-"/projects/eclat-official-1.jpg": [
-480
-],
-"/projects/eclat-official-2.jpg": [
-480
-],
-"/projects/eclat-port-said-1.jpg": [
-480,
-960,
-1440
-],
-"/projects/fouka-bay-0.webp": [
-480,
-960
-],
-"/projects/fouka-bay-2.webp": [
-480,
-960
-],
-"/projects/fouka-bay-3.webp": [
-480,
-960
-],
-"/projects/fouka-bay-4.webp": [
-480,
-960
-],
-"/projects/fouka-bay-5.webp": [
-480
-],
-"/projects/garden-lakes-0.webp": [
-480,
-960
-],
-"/projects/garden-lakes-2.webp": [
-480,
-960
-],
-"/projects/garden-lakes-3.webp": [
-480,
-960
-],
-"/projects/hacienda-bay-0.webp": [
-480,
-960
-],
-"/projects/hacienda-bay-2.webp": [
-480,
-960
-],
-"/projects/hacienda-ras-el-hekma-0.webp": [
-480,
-960
-],
-"/projects/hacienda-ras-el-hekma-2.webp": [
-480
-],
-"/projects/hacienda-ras-el-hekma-3.webp": [
-480
-],
-"/projects/hacienda-ras-el-hekma-4.webp": [
-480,
-960
-],
-"/projects/hacienda-ras-el-hekma-5.webp": [
-480,
-960
-],
-"/projects/icity-new-cairo-0.webp": [
-480,
-960
-],
-"/projects/il-bosco-0.webp": [
-480,
-960
-],
-"/projects/il-bosco-2.webp": [
-480
-],
-"/projects/il-bosco-3.webp": [
-480
-],
-"/projects/ivoire-west-0.webp": [
-480,
-960
-],
-"/projects/ivoire-west-2.webp": [
-480,
-960
-],
-"/projects/ivoire-west-3.webp": [
-480,
-960
-],
-"/projects/ivoire-west-4.webp": [
-480,
-960
-],
-"/projects/ivoire-west-5.webp": [
-480,
-960
-],
-"/projects/jade-park-0.webp": [
-480,
-960
-],
-"/projects/jade-park-2.webp": [
-480
-],
-"/projects/jade-park-3.webp": [
-480,
-960
-],
-"/projects/mivida-0.webp": [
-480,
-960
-],
-"/projects/mivida-1.webp": [
-480
-],
-"/projects/mivida-2.webp": [
-480
-],
-"/projects/mivida-3.webp": [
-480
-],
-"/projects/oia-0.webp": [
-480,
-960
-],
-"/projects/scenario-0.webp": [
-480,
-960
-],
-"/projects/scenario-2.webp": [
-480,
-960
-],
-"/projects/scenario-3.webp": [
-480,
-960
-],
-"/projects/scenario-4.webp": [
-480,
-960
-],
-"/projects/scenario-5.webp": [
-480
-],
-"/projects/scene-7-0.webp": [
-480,
-960
-],
-"/projects/scene-7-2.webp": [
-480
-],
-"/projects/the-greens-0.webp": [
-480,
-960
-],
-"/projects/the-greens-2.webp": [
-480,
-960
-],
-"/projects/the-nines-0.webp": [
-480,
-960
-],
-"/projects/vinci-0.webp": [
-480,
-960
-],
-"/projects/vinci-2.webp": [
-480,
-960
-],
-"/projects/vinci-3.webp": [
-480,
-960,
-1440
-],
-"/projects/vinci-4.webp": [
-480,
-960,
-1440
-],
-"/projects/zed-0.webp": [
-480,
-960
-],
-"/projects/zed-1.webp": [
-480
-],
-"/projects/zed-2.webp": [
-480
-],
-"/projects/zed-3.webp": [
-480
-]
+  "/projects/205-towers-0.webp": [
+    480,
+    960
+  ],
+  "/projects/205-towers-2.webp": [
+    480,
+    960,
+    1440,
+    1920
+  ],
+  "/projects/al-karma-kay-0.webp": [
+    480,
+    960
+  ],
+  "/projects/beverly-hills-0.webp": [
+    480,
+    960
+  ],
+  "/projects/beverly-hills-1.webp": [
+    480,
+    960
+  ],
+  "/projects/beverly-hills-2.webp": [
+    480,
+    960
+  ],
+  "/projects/beverly-hills-3.webp": [
+    480,
+    960
+  ],
+  "/projects/blanca-0.webp": [
+    480,
+    960
+  ],
+  "/projects/blanca-2.webp": [
+    480,
+    960
+  ],
+  "/projects/blanca-3.webp": [
+    480,
+    960
+  ],
+  "/projects/city-gate-0.webp": [
+    480,
+    960
+  ],
+  "/projects/city-gate-1.webp": [
+    480,
+    960
+  ],
+  "/projects/city-gate-2.webp": [
+    480,
+    960
+  ],
+  "/projects/city-gate-3.webp": [
+    480,
+    960
+  ],
+  "/projects/club-park-0.webp": [
+    480,
+    960
+  ],
+  "/projects/club-park-2.webp": [
+    480
+  ],
+  "/projects/club-park-3.webp": [
+    480,
+    960
+  ],
+  "/projects/club-park-4.webp": [
+    480
+  ],
+  "/projects/club-park-5.webp": [
+    480,
+    960
+  ],
+  "/projects/eclat-official-0.jpg": [
+    480
+  ],
+  "/projects/eclat-official-1.jpg": [
+    480
+  ],
+  "/projects/eclat-official-2.jpg": [
+    480
+  ],
+  "/projects/eclat-port-said-1.jpg": [
+    480,
+    960,
+    1440
+  ],
+  "/projects/fouka-bay-0.webp": [
+    480,
+    960
+  ],
+  "/projects/fouka-bay-2.webp": [
+    480,
+    960
+  ],
+  "/projects/fouka-bay-3.webp": [
+    480,
+    960
+  ],
+  "/projects/fouka-bay-4.webp": [
+    480,
+    960
+  ],
+  "/projects/fouka-bay-5.webp": [
+    480
+  ],
+  "/projects/garden-lakes-0.webp": [
+    480,
+    960
+  ],
+  "/projects/garden-lakes-2.webp": [
+    480,
+    960
+  ],
+  "/projects/garden-lakes-3.webp": [
+    480,
+    960
+  ],
+  "/projects/hacienda-bay-0.webp": [
+    480,
+    960
+  ],
+  "/projects/hacienda-bay-2.webp": [
+    480,
+    960
+  ],
+  "/projects/hacienda-ras-el-hekma-0.webp": [
+    480,
+    960
+  ],
+  "/projects/hacienda-ras-el-hekma-2.webp": [
+    480
+  ],
+  "/projects/hacienda-ras-el-hekma-3.webp": [
+    480
+  ],
+  "/projects/hacienda-ras-el-hekma-4.webp": [
+    480,
+    960
+  ],
+  "/projects/hacienda-ras-el-hekma-5.webp": [
+    480,
+    960
+  ],
+  "/projects/icity-new-cairo-0.webp": [
+    480,
+    960
+  ],
+  "/projects/il-bosco-0.webp": [
+    480,
+    960
+  ],
+  "/projects/il-bosco-2.webp": [
+    480,
+    960
+  ],
+  "/projects/il-bosco-3.webp": [
+    480,
+    960
+  ],
+  "/projects/ivoire-west-0.webp": [
+    480,
+    960
+  ],
+  "/projects/ivoire-west-2.webp": [
+    480,
+    960
+  ],
+  "/projects/ivoire-west-3.webp": [
+    480,
+    960
+  ],
+  "/projects/ivoire-west-4.webp": [
+    480,
+    960
+  ],
+  "/projects/ivoire-west-5.webp": [
+    480,
+    960
+  ],
+  "/projects/jade-park-0.webp": [
+    480,
+    960
+  ],
+  "/projects/jade-park-2.webp": [
+    480
+  ],
+  "/projects/jade-park-3.webp": [
+    480,
+    960
+  ],
+  "/projects/mivida-0.webp": [
+    480,
+    960
+  ],
+  "/projects/mivida-1.webp": [
+    480,
+    960
+  ],
+  "/projects/mivida-2.webp": [
+    480,
+    960
+  ],
+  "/projects/mivida-3.webp": [
+    480,
+    960
+  ],
+  "/projects/mivida-4.webp": [
+    480,
+    960,
+    1440,
+    1920
+  ],
+  "/projects/mivida-5.webp": [
+    480,
+    960,
+    1440
+  ],
+  "/projects/oia-0.webp": [
+    480,
+    960
+  ],
+  "/projects/scenario-0.webp": [
+    480,
+    960
+  ],
+  "/projects/scenario-2.webp": [
+    480,
+    960
+  ],
+  "/projects/scenario-3.webp": [
+    480,
+    960
+  ],
+  "/projects/scenario-4.webp": [
+    480,
+    960
+  ],
+  "/projects/scenario-5.webp": [
+    480
+  ],
+  "/projects/scene-7-0.webp": [
+    480,
+    960
+  ],
+  "/projects/scene-7-2.webp": [
+    480
+  ],
+  "/projects/the-greens-0.webp": [
+    480,
+    960
+  ],
+  "/projects/the-greens-2.webp": [
+    480,
+    960
+  ],
+  "/projects/the-nines-0.webp": [
+    480,
+    960
+  ],
+  "/projects/vinci-0.webp": [
+    480,
+    960
+  ],
+  "/projects/vinci-2.webp": [
+    480,
+    960
+  ],
+  "/projects/vinci-3.webp": [
+    480,
+    960,
+    1440,
+    1920
+  ],
+  "/projects/vinci-4.webp": [
+    480,
+    960,
+    1440
+  ],
+  "/projects/zed-0.webp": [
+    480,
+    960
+  ],
+  "/projects/zed-1.webp": [
+    480,
+    960
+  ],
+  "/projects/zed-2.webp": [
+    480,
+    960
+  ],
+  "/projects/zed-3.webp": [
+    480,
+    960
+  ]
 }

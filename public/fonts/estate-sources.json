@@ -1,0 +1,14 @@
+{
+  "estate-display": {
+    "file": "estate-display.ttf",
+    "source": "https://fonts.gstatic.com/s/bodonimoda/v28/aFT67PxzY382XsXX63LUYL6GYFcan6NJrKp-VPjfJMShrpsGFUt8oU7awIA.ttf",
+    "family": "Bodoni+Moda:opsz,wght@6..96,400",
+    "license": "SIL Open Font License 1.1"
+  },
+  "estate-script": {
+    "file": "estate-script.ttf",
+    "source": "https://fonts.gstatic.com/s/pinyonscript/v24/6xKpdSJbL9-e9LuoeQiDRQR8aOI.ttf",
+    "family": "Pinyon+Script",
+    "license": "SIL Open Font License 1.1"
+  }
+}

@@ -2,9 +2,11 @@ import type { Metadata, Viewport } from "next";
 import { BRAND, SITE_DESCRIPTION, siteTitle } from "@/lib/i18n";
 import "./fonts.css";
 import "./globals.css";
+import "./estate.css";
+import "./estate-map.css";
 
-const TITLE = siteTitle("en");
-const DESCRIPTION = SITE_DESCRIPTION.en;
+const TITLE = "Nile Estates — A Place to Call Home";
+const DESCRIPTION = "Discover residential destinations across Egypt. Explore the collection and find your next address.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
@@ -32,7 +34,7 @@ export const viewport: Viewport = { width: "device-width", initialScale: 1, maxi
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" dir="ltr">
+    <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>
         {/* The served shell is always English; this runs before first paint so ?lang=ar never ships dir="ltr". */}
         <script dangerouslySetInnerHTML={{ __html: `(()=>{try{const p=new URLSearchParams(location.search),l=p.get("lang")==="ar"?"ar":"en",d=document.documentElement;d.lang=l;d.dir=l==="ar"?"rtl":"ltr";d.dataset.theme=p.get("theme")==="dark"?"dark":"light";}catch(e){}})()` }} />

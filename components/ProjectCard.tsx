@@ -1,6 +1,7 @@
 "use client";
 import { type CSSProperties, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import Link from "next/link";
 import { STRINGS } from "@/lib/i18n";
 import type { Lang, Project } from "@/lib/types";
 import { Icon } from "./Icon";
@@ -106,7 +107,7 @@ export default function ProjectCard({project:p,lang,onClose,exiting=false}:Props
         <div className="gallery-links"><button onClick={openGallery}><Icon name="gallery" size={18}/>{t.photos}</button><button onClick={()=>{setGallery(true);setGroup("site");}}><Icon name="pin" size={18}/>{t.gallery}</button>{media.brochure&&<button onClick={openBrochure}><Icon name="brochure" size={18}/>{documentLabel}</button>}</div>
         {p.areaApprox&&<p className="card-note">{t.coordinatesApprox}</p>}
       </div>
-      <footer className="card-footer"><button className="btn btn-primary" onClick={()=>setDetails(true)}>{t.viewProject}<Icon name="chevronRight" size={16}/></button>{media.brochure?<a className="btn btn-secondary" href={media.brochure} target="_blank" rel="noreferrer" download><Icon name="download" size={16}/>{downloadLabel}</a>:<a className="btn btn-secondary" href={p.url} target="_blank" rel="noreferrer"><Icon name="globe" size={16}/>{t.source}</a>}</footer>
+      <footer className="card-footer"><Link className="btn btn-primary" href={`/projects/${p.id}?lang=${lang}`}>{t.viewProject}<Icon name="chevronRight" size={16}/></Link>{media.brochure?<a className="btn btn-secondary" href={media.brochure} target="_blank" rel="noreferrer" download><Icon name="download" size={16}/>{downloadLabel}</a>:<a className="btn btn-secondary" href={p.url} target="_blank" rel="noreferrer"><Icon name="globe" size={16}/>{t.source}</a>}</footer>
     </aside>
     {(details||gallery)&&createPortal(<div className={`project-overlay ${gallery?"gallery-overlay":"detail-overlay"}`} ref={overlayRef} data-project-overlay role="dialog" aria-modal="true" aria-label={`${p.name[lang]} — ${gallery?t.galleries:t.viewProject}`}>
       {gallery?<>

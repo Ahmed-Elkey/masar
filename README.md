@@ -1,6 +1,19 @@
-# Egypt Investment Map
+# Nile Estates
 
-A full-screen satellite map adapted from the supplied Resimo / Prestige One Dubai reference, using Egyptian developments and Cairo services.
+A bilingual residential discovery website with an ERA Residence-inspired editorial design and an integrated Egyptian investment map.
+
+## Website routes
+
+- `/`: film-led homepage, circular introduction, destination selector, animated project carousel and lifestyle imagery.
+- `/projects`: all 23 projects with search, area/developer/status filters and grid/list views.
+- `/projects/[slug]`: individual project presentation, full-screen photo gallery, amenities, documents, map and enquiry links.
+- `/map`: the existing interactive map, with matching brand, controls, cards and a return to the website. Legacy `/?project=...` links redirect here while retaining all parameters.
+- `/about`: independent directory context and source disclosures.
+- `/contact`: an enquiry preview that opens the visitor’s email app addressed to `ahmed.mahmoud.elkey@gmail.com`. It does not send automatically or collect submissions on a backend.
+
+The public website uses `app/estate.css`, the map’s brand overrides are in `app/estate-map.css`, and shared components are in `components/estate/`. Brand artwork is original SVG. Bodoni Moda and Pinyon Script are locally served OFL alternatives to the reference’s proprietary fonts; their licenses and source URLs are in `public/fonts/estate-*`. The implementation recreates the reference’s visual language rather than importing its source, commercial fonts or project media.
+
+Animation includes the refresh-triggered arch aperture opening, rotating seal, film controls, text/image reveals, scroll-driven image expansion, draggable destination panorama, animated project carousel, hover transitions and a page-change curtain. Reduced-motion preferences disable decorative movement and retain manual carousel controls. Arabic preserves RTL and readable typography.
 
 ## Run and check
 
@@ -13,7 +26,7 @@ npm run build
 npm run start
 ```
 
-Open http://127.0.0.1:3000. `lang=en|ar`, `theme=light|dark`, `project=<id>`, `landmark=<id>` and `poi=<id>` preserve language, theme and the selected project and destination when reloading or sharing. Arabic mirrors the interface and camera offset. `/video-preview` is an unlisted page: reachable by direct URL, disallowed in `robots.txt` and marked `noindex`.
+Open http://127.0.0.1:3000 for the website or `/map` for the map. `lang=en|ar`, `theme=light|dark`, `project=<id>`, `landmark=<id>` and `poi=<id>` preserve language, theme and the selected project and destination when reloading or sharing. Arabic mirrors the interface and camera offset. `/video-preview` is an unlisted page: reachable by direct URL, disallowed in `robots.txt` and marked `noindex`.
 
 For a production check while the development server is running, use `NEXT_BUILD_DIR=.next-verify npm run build`. This avoids changing the development server's generated files.
 

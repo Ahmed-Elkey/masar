@@ -166,15 +166,15 @@
       },
       {
         "src": "/projects/beverly-hills-1.webp",
-        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13978/conversions/beverly-hills-photo-2-8f264676-card.webp"
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13978/beverly-hills-photo-2-8f264676.webp"
       },
       {
         "src": "/projects/beverly-hills-2.webp",
-        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13979/conversions/beverly-hills-photo-3-c2db4ea1-card.webp"
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13979/beverly-hills-photo-3-c2db4ea1.webp"
       },
       {
         "src": "/projects/beverly-hills-3.webp",
-        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13980/conversions/beverly-hills-photo-4-dc36ca5e-card.webp"
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13980/beverly-hills-photo-4-dc36ca5e.webp"
       }
     ],
     "page": "https://www.doestate.co/projects/beverly-hills",
@@ -311,15 +311,15 @@
       },
       {
         "src": "/projects/city-gate-1.webp",
-        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14552/conversions/city-gate-photo-2-3f470623-card.webp"
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14552/city-gate-photo-2-3f470623.webp"
       },
       {
         "src": "/projects/city-gate-2.webp",
-        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14553/conversions/city-gate-photo-3-894bed5b-card.webp"
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14553/city-gate-photo-3-894bed5b.webp"
       },
       {
         "src": "/projects/city-gate-3.webp",
-        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14554/conversions/city-gate-photo-4-a18eca04-card.webp"
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14554/city-gate-photo-4-a18eca04.webp"
       }
     ],
     "page": "https://www.doestate.co/projects/city-gate",
@@ -787,11 +787,11 @@
       },
       {
         "src": "/projects/il-bosco-2.webp",
-        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13998/conversions/il-bosco-new-capital-photo-3-5de88c49-card.webp"
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13998/il-bosco-new-capital-photo-3-5de88c49.webp"
       },
       {
         "src": "/projects/il-bosco-3.webp",
-        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13999/conversions/il-bosco-new-capital-photo-4-20e56fd7-card.webp"
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/13999/il-bosco-new-capital-photo-4-20e56fd7.webp"
       }
     ],
     "page": "https://www.doestate.co/projects/il-bosco-new-capital",
@@ -1020,15 +1020,23 @@
       },
       {
         "src": "/projects/mivida-1.webp",
-        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/21785/conversions/mivida-photo-2-ef4175a9-card.webp"
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/21785/mivida-photo-2-ef4175a9.webp"
       },
       {
         "src": "/projects/mivida-2.webp",
-        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/21786/conversions/mivida-photo-3-525f41cf-card.webp"
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/21786/mivida-photo-3-525f41cf.webp"
       },
       {
         "src": "/projects/mivida-3.webp",
-        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/21787/conversions/mivida-photo-4-0cce10ca-card.webp"
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/21787/mivida-photo-4-0cce10ca.webp"
+      },
+      {
+        "src": "/projects/mivida-4.webp",
+        "source": "https://www.emaarmisr.com/wp-content/uploads/2025/10/Emaar-Misr-Communities-Mivida-New-Cairo-17.jpg"
+      },
+      {
+        "src": "/projects/mivida-5.webp",
+        "source": "https://www.emaarmisr.com/wp-content/uploads/2025/10/Emaar-Misr-Mivida-Blue-Views-Residences-Hero.jpg"
       }
     ],
     "page": "https://www.doestate.co/projects/mivida",
@@ -1295,15 +1303,15 @@
       },
       {
         "src": "/projects/zed-1.webp",
-        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14791/conversions/zed-photo-2-48e8b291-card.webp"
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14791/zed-photo-2-48e8b291.webp"
       },
       {
         "src": "/projects/zed-2.webp",
-        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14792/conversions/zed-photo-3-e9b92260-card.webp"
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14792/zed-photo-3-e9b92260.webp"
       },
       {
         "src": "/projects/zed-3.webp",
-        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14793/conversions/zed-photo-4-1dd04042-card.webp"
+        "source": "https://pub-bcf1515cf7994beb9317c167a237174b.r2.dev/live/14793/zed-photo-4-1dd04042.webp"
       }
     ],
     "page": "https://www.doestate.co/projects/zed",
