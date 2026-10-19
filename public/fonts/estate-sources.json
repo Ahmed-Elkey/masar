@@ -10,5 +10,21 @@
     "source": "https://fonts.gstatic.com/s/pinyonscript/v24/6xKpdSJbL9-e9LuoeQiDRQR8aOI.ttf",
     "family": "Pinyon+Script",
     "license": "SIL Open Font License 1.1"
+  },
+  "estate-arabic-display": {
+    "files": ["estate-arabic-display-ar.woff2", "estate-arabic-display-la.woff2"],
+    "source": "https://fonts.gstatic.com/s/amiri/v30/J7acnpd8CGxBHp2VkaY6zp5gGDAbnCA.woff2",
+    "family": "Amiri:wght@700",
+    "designer": "Khaled Hosny",
+    "license": "SIL Open Font License 1.1",
+    "note": "Amiri Bold is served as the 400 face of the Estate Arabic family, so every display heading in Arabic renders bold without editing each weight."
+  },
+  "estate-arabic-text": {
+    "files": ["estate-arabic-text-ar.woff2", "estate-arabic-text-la.woff2"],
+    "source": "https://fonts.gstatic.com/s/amiri/v30/J7aRnpd8CGxBHpUrtLMS7JNKIjk.woff2",
+    "family": "Amiri:wght@400",
+    "designer": "Khaled Hosny",
+    "license": "SIL Open Font License 1.1",
+    "note": "Amiri Regular, used as the lighter accent voice in place of the Latin script face."
   }
 }
