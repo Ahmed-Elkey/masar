@@ -17,3 +17,25 @@ body:has(.estate-map) .project-overlay{font-family:Inter,'Noto Sans Arabic',sans
 html[dir=rtl] .estate-map-brand{left:auto!important;right:30px!important}html[dir=rtl] .estate-map-return{right:auto;left:85px}
 html[dir=rtl] .estate-map .bottom .all,html[dir=rtl] .estate-map .card-section,html[dir=rtl] .estate-map .gallery-title,html[dir=rtl] .estate-map .rail-foot b,html[dir=rtl] body:has(.estate-map) .intro-wordmark,html[dir=rtl] body:has(.estate-map) .details-summary h1,html[dir=rtl] body:has(.estate-map) .details-summary h2{font-family:'Estate Arabic','Noto Sans Arabic',serif;letter-spacing:0}
 @media(max-width:900px){html[dir=rtl] .estate-map-brand{right:20px!important}}
+/* Markers and the loader carried the old app's Georgia/Helvetica/Arial stacks; the skin only reached their containers. */
+.estate-map .project-wordmark b{font-family:'Estate Display','Noto Sans Arabic',serif;font-weight:400;letter-spacing:-.02em}
+.estate-map .project-wordmark.with-developer-mark b{font-family:var(--font);letter-spacing:0}
+.estate-map .cluster-area,.estate-map .cluster-count,.estate-map .cluster-bubble,.estate-map .project-bubble,.estate-map .landmark-bubble,.estate-map .landmark-caption,.estate-map .poi-name{font-family:var(--font)}
+.map-intro{font-family:var(--font)}
+.estate-map .info{font-family:'Estate Display',Georgia,serif}
+/* Marker bubbles kept the old app's white glass and near-black ink. */
+.estate-map .project-bubble,.estate-map .cluster-bubble,.estate-map .landmark-caption{background:var(--card-bg);color:var(--ink);box-shadow:0 8px 24px #17233b33}
+.estate-map .project-bubble b,.estate-map .is-selected .project-bubble .wordmark-map b{font-family:'Estate Display','Noto Sans Arabic',serif;font-weight:400;letter-spacing:-.02em}
+.estate-map .is-selected .project-bubble{background:var(--blue);color:#f3f0e7}
+.estate-map .cluster-bubble:hover,.estate-map .cluster-bubble:focus-visible{background:var(--blue);color:#f3f0e7}
+.estate-map .cluster-bubble:hover .cluster-count,.estate-map .cluster-bubble:focus-visible .cluster-count{background:#f3f0e7;color:var(--blue)}
+.estate-map .project-bubble:hover,.estate-map .project-bubble:focus-visible{background:var(--surface-hi);color:#f3f0e7}
+.estate-map .landmark-bubble{background:var(--surface)}
+/* The serif wordmark is wider than the old font, so the pill has to follow its content. */
+.estate-map .bottom .all{width:max-content;padding-inline:26px}
+.estate-map .rail-pill{--pill-bg:#331326;--pill-hover:#4b283d;--pill-open:#4b283d}
+.estate-map.theme-dark .rail-pill{--pill-bg:#17233b;--pill-hover:#2c3b54;--pill-open:#2c3b54}
+.estate-map .map,.estate-map .mk-anchor{font-family:var(--font)}
+.estate-map.theme-dark .project-bubble,.estate-map.theme-dark .cluster-bubble,.estate-map.theme-dark .landmark-caption{background:var(--card-bg);color:var(--ink)}
+.estate-map .maplibregl-ctrl-attrib,.estate-map .maplibregl-ctrl-attrib summary,.estate-map .maplibregl-ctrl-attrib a{font-family:var(--font);border-radius:0}
+@media(max-width:900px){.estate-map-brand .brand-text i{font-size:7px!important}}
