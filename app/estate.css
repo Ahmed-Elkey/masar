@@ -368,3 +368,14 @@ html.estate-document::-webkit-scrollbar-thumb{background:#17233b66;border-radius
 .not-found-arabic{margin-top:70px;padding-top:40px;border-top:1px solid #17233b30}
 .not-found-arabic>p{max-width:370px;font-size:12px;margin:18px auto 0!important}
 .not-found-arabic .editorial-link{font-size:20px;min-width:0}
+
+/* Arabic joins its letters, so the Latin tracking, the display faces re-declared for the logo, and the vertical labels all need their own handling. */
+.estate-site.estate-arabic .eyebrow,.estate-site.estate-arabic .hero-location,.estate-site.estate-arabic .hero-motto,.estate-site.estate-arabic .reasons-top,.estate-site.estate-arabic .menu-bottom,.estate-site.estate-arabic .disc-stamp,.estate-site.estate-arabic .footer-legal,.estate-site.estate-arabic .atlas-water-label{letter-spacing:.01em}
+.estate-site.estate-arabic .footer-wordmark{--display:'Estate Arabic','Noto Sans Arabic',serif;letter-spacing:0}
+.estate-site.estate-arabic .footer-wordmark>span,.estate-site.estate-arabic .hero-script{--script:'Estate Arabic Text','Noto Sans Arabic',serif;letter-spacing:0}
+/* The Latin flourish sits across the wordmark; Arabic letters have nowhere to go under it. */
+.estate-site.estate-arabic .footer-wordmark>span{position:static;display:block;transform:none;font-size:.3em;line-height:1.4;margin-top:-.15em}
+.estate-site.estate-arabic .disc-stamp,.estate-site.estate-arabic .menu-bottom,.estate-site.estate-arabic .footer-legal{font-family:'Noto Sans Arabic',sans-serif}
+.estate-site.estate-arabic .lower-destination-title>.eyebrow{writing-mode:horizontal-tb;letter-spacing:0;font-size:13px}
+.estate-site.estate-arabic .atlas-egypt{font-family:'Estate Arabic','Noto Sans Arabic',serif;letter-spacing:0}
+html[dir=rtl] .contact-breadcrumb{writing-mode:horizontal-tb;transform:none}

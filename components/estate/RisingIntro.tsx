@@ -51,7 +51,7 @@ export default function RisingIntro({ children, lang }: { children: ReactNode; l
     {children}
     <div className="hero-rise-disc" ref={disc} aria-hidden="true">
       <svg className="disc-type" viewBox="0 0 1000 1000"><defs><path id={id} d="M100 500A400 400 0 0 1 900 500" /></defs><text><textPath href={`#${id}`} startOffset="50%" textAnchor="middle" textLength={lang === "en" ? 810 : undefined} lengthAdjust="spacing">{c(lang, "THREE WAYS TO FIND YOUR PLACE", "ثلاث طرق لاكتشاف مكانك")}</textPath></text></svg>
-      <div className="disc-stamp"><span>EGYPT</span><Blossom /><span>NILE ESTATES</span></div>
+      <div className="disc-stamp"><span>{c(lang, "EGYPT", "مصر")}</span><Blossom /><span>{c(lang, "NILE ESTATES", "نايل إستيتس")}</span></div>
       <span className="disc-stem" />
     </div>
   </div></div>;

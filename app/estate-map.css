@@ -15,8 +15,10 @@ body:has(.estate-map) .project-overlay{font-family:Inter,'Noto Sans Arabic',sans
 .estate-map-brand{width:auto!important;flex-direction:row!important}.estate-map-brand .brand-text{align-items:flex-start;white-space:nowrap}.estate-map .menu-panel>button{color:var(--ink);width:100%;border-radius:0;background:transparent;min-height:38px;font-size:12px}.estate-map .menu-panel button:hover{background:var(--chip);color:var(--ink)}
 @media(max-width:900px){.estate-map .filter-toggle{top:75px;inset-inline-end:23px;width:28px;height:28px}.estate-map .tools{top:115px;inset-inline-end:20px;bottom:auto}.estate-map-brand .brand-text b{font-size:20px!important}}
 html[dir=rtl] .estate-map-brand{left:auto!important;right:30px!important}html[dir=rtl] .estate-map-return{right:auto;left:85px}
-html[dir=rtl] .estate-map .bottom .all,html[dir=rtl] .estate-map .card-section,html[dir=rtl] .estate-map .gallery-title,html[dir=rtl] .estate-map .rail-foot b,html[dir=rtl] body:has(.estate-map) .intro-wordmark,html[dir=rtl] body:has(.estate-map) .details-summary h1,html[dir=rtl] body:has(.estate-map) .details-summary h2{font-family:'Estate Arabic','Noto Sans Arabic',serif;letter-spacing:0}
+html[dir=rtl] .estate-map .bottom .all,html[dir=rtl] .estate-map-brand .brand-text b,html[dir=rtl] .estate-map .card-section,html[dir=rtl] .estate-map .gallery-title,html[dir=rtl] .estate-map .rail-foot b,html[dir=rtl] body:has(.estate-map) .intro-wordmark,html[dir=rtl] body:has(.estate-map) .details-summary h1,html[dir=rtl] body:has(.estate-map) .details-summary h2{font-family:'Estate Arabic','Noto Sans Arabic',serif;letter-spacing:0}
 @media(max-width:900px){html[dir=rtl] .estate-map-brand{right:20px!important}}
+/* The brand pill is set with an !important font shorthand, so the Arabic swap has to carry !important too. */
+html[dir=rtl] .estate-map-brand .brand-text b{font-family:'Estate Arabic','Noto Sans Arabic',serif!important;letter-spacing:0!important}
 /* Markers and the loader carried the old app's Georgia/Helvetica/Arial stacks; the skin only reached their containers. */
 .estate-map .project-wordmark b{font-family:'Estate Display','Noto Sans Arabic',serif;font-weight:400;letter-spacing:-.02em}
 .estate-map .project-wordmark.with-developer-mark b{font-family:var(--font);letter-spacing:0}
