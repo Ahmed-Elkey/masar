@@ -11,7 +11,7 @@ export function Blossom({ className = "" }: { className?: string }) {
 export function Seal({ className = "", lang = "en" }: { className?: string; lang?: Lang }) {
   const id = useId().replace(/:/g, "");
   return <span className={`estate-seal ${className}`}>
-    <svg className="seal-ring" viewBox="0 0 120 120" aria-hidden="true"><defs><path id={id} d="M60,10 a50,50 0 1,1 -.01,0" /></defs><text><textPath href={`#${id}`} textLength="309">{lang === "ar" ? "نايل إستيتس · مصر · نايل إستيتس · مصر · " : "NILE ESTATES · EGYPT · NILE ESTATES · EGYPT · "}</textPath></text></svg>
+    <svg className="seal-ring" viewBox="0 0 120 120" aria-hidden="true"><defs><path id={id} d="M60,10 a50,50 0 1,1 -.01,0" /></defs><text><textPath href={`#${id}`} textLength="309">{lang === "ar" ? "مَسَار · مصر · مَسَار · مصر · " : "MASAR · EGYPT · MASAR · EGYPT · "}</textPath></text></svg>
     <Blossom />
   </span>;
 }

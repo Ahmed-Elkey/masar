@@ -1,4 +1,4 @@
-/* Nile Estates map: the same paper, wine and editorial type as the website. */
+/* Masar map: the same paper, wine and editorial type as the website. */
 .estate-map{--surface:#331326;--surface-hi:#4b283d;--surface-line:#f3f0e740;--surface-ink:#f3f0e7;--surface-soft:#ffffff15;--surface-soft-hi:#ffffff24;--card-bg:#f3f0e7;--card-inner:#ece9df;--ink:#17233b;--ink-soft:#657080;--blue:#331326;--chip:#e4e8e7;--radius:0px;--radius-card:0px}
 .estate-map.theme-dark{--surface:#17233b;--surface-hi:#2c3b54;--surface-line:#bdcfd840;--card-bg:#202a3b;--card-inner:#17233b;--ink:#f3f0e7;--ink-soft:#b5c1ce;--blue:#bdcfd8;--chip:#334156}
 .estate-map .menu-btn{inset-inline-start:auto;inset-inline-end:25px;top:25px;width:42px;height:42px;border-radius:50%;background:var(--surface);color:#f3f0e7}

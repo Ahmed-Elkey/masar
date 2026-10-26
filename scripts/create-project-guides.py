@@ -10,7 +10,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.utils import ImageReader
 from PIL import Image
 root=Path(__file__).resolve().parents[1]
-BRAND='Nile Estates';BRAND_MARK='NILE ESTATES';MAP_MARK='EGYPT INVESTMENT MAP';BRAND_AR='نايل إستيتس'
+BRAND='Masar';BRAND_MARK='MASAR';MAP_MARK='EGYPT PROPERTY MAP';BRAND_AR='مَسَار'
 projects=json.loads(Path('/tmp/egypt-projects.json').read_text());media=json.loads((root/'lib/media.json').read_text())
 for name,path in [('Body','/System/Library/Fonts/Supplemental/Arial.ttf'),('Bold','/System/Library/Fonts/Supplemental/Arial Bold.ttf')]:pdfmetrics.registerFont(TTFont(name,path))
 W,H=595.28,841.89

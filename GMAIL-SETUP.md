@@ -4,9 +4,9 @@
 
 ## 1. تجهيز Gmail بنفسك
 
-1. استخدم حساب Gmail تملكه. يمكنك تخصيص حساب للمشروع، أو استخدام حسابك الحالي. عنوان الإرسال سيكون Gmail الحقيقي؛ اسم العرض «Nile Estates» فقط ولا ينشئ عنوانًا على دومين آخر. بريد الاستقبال يمكن أن يكون حسابك الحالي.
+1. استخدم حساب Gmail تملكه. يمكنك تخصيص حساب للمشروع، أو استخدام حسابك الحالي. عنوان الإرسال سيكون Gmail الحقيقي؛ اسم العرض «Masar» فقط ولا ينشئ عنوانًا على دومين آخر. بريد الاستقبال يمكن أن يكون حسابك الحالي.
 2. فعّل التحقق بخطوتين من https://myaccount.google.com/security .
-3. افتح https://myaccount.google.com/apppasswords وأنشئ App Password باسم يوضح الخدمة، مثل Nile Estates Website. أنشئ كلمة مستقلة لـSupabase إذا رغبت في إلغائها بشكل منفصل لاحقًا.
+3. افتح https://myaccount.google.com/apppasswords وأنشئ App Password باسم يوضح الخدمة، مثل Masar Website. أنشئ كلمة مستقلة لـSupabase إذا رغبت في إلغائها بشكل منفصل لاحقًا.
 4. انسخ كلمة التطبيق مباشرة في إعدادات الخدمة المقصودة، وليس في الشات أو Git أو أي متغير يبدأ NEXT_PUBLIC. لا تستخدم كلمة مرور حساب Google العادية. إذا لم يظهر خيار App Password، راجع أهلية الحساب: بعض إعدادات الحماية والحسابات المؤسسية تمنعه. لا تعطّل حماية الحساب لتجاوز القيود.
 
 مرجع Google: https://support.google.com/accounts/answer/185833?hl=en
@@ -40,7 +40,7 @@
 | الحقل | القيمة |
 |---|---|
 | Sender email | نفس حساب Gmail المرسل |
-| Sender name | Nile Estates |
+| Sender name | Masar |
 | Host | smtp.gmail.com |
 | Port | 465 |
 | Username | بريد Gmail كاملًا |

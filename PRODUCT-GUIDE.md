@@ -1,4 +1,4 @@
-# Nile Estates: decision tools
+# Masar: decision tools
 
 ## Visitor journey
 - `/projects`: search and filter by destination, developer and status. Filters survive reloads and language changes via URL parameters. Save or compare from project cards.

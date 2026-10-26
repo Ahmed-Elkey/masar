@@ -36,8 +36,8 @@ export async function sendOwnerMail(m:MessageInput){
    auth:{user:settings.user,pass:settings.password},tls:{minVersion:'TLSv1.2'},
    connectionTimeout:10000,greetingTimeout:10000,socketTimeout:15000,
    disableFileAccess:true,disableUrlAccess:true,logger:false,debug:false});
-  try{const result=await transport.sendMail({from:{name:'Nile Estates',address:settings.user},to,
-   ...(m.email?{replyTo:m.email}:{}),subject,text,html,messageId:`<nile-estates-${m.id}@gmail.com>`});
+  try{const result=await transport.sendMail({from:{name:'Masar',address:settings.user},to,
+   ...(m.email?{replyTo:m.email}:{}),subject,text,html,messageId:`<masar-${m.id}@gmail.com>`});
    if(!result.accepted?.some(address=>String(address).toLowerCase()===to.toLowerCase()))throw new Error('Mail not accepted');
    return result.messageId;
   }finally{transport.close();}

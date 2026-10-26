@@ -1,1 +1,1 @@
-{{ if or (eq .RedirectTo "https://nile-estates.vercel.app/auth/callback?lang=ar") (eq .RedirectTo "http://127.0.0.1:3001/auth/callback?lang=ar") }}أكّد بريدك — نايل إستيتس{{ else }}Confirm your email — Nile Estates{{ end }}
+{{ if or (eq .RedirectTo "https://masar.vercel.app/auth/callback?lang=ar") (eq .RedirectTo "http://127.0.0.1:3001/auth/callback?lang=ar") }}أكّد بريدك — مَسَار{{ else }}Confirm your email — Masar{{ end }}

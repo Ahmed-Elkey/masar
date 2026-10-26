@@ -1,4 +1,4 @@
-# Nile Estates
+# Masar
 
 A bilingual residential discovery website with an ERA Residence-inspired editorial design and an integrated Egyptian investment map.
 
@@ -74,7 +74,7 @@ Project photos were obtained from DoEstate, Ahlan Homes, RealEstate.eg and the d
 
 ## Remaining content dependencies
 
-The site brand remains **Nile Estates**, defined once in `BRAND` inside `lib/i18n.ts`: metadata, the map wordmark, the loading screen, the video preview and both guide notes read from it. Published brochures are distinguished from independently prepared project guides; guides explicitly identify their publisher and sources. Fouka Bay’s published document covers The House Hotel & Residence Royale phase, while the 205 document covers the broader Arkan Palm development. No VR/video tour is invented.
+The site brand remains **Masar**, defined once in `BRAND` inside `lib/i18n.ts`: metadata, the map wordmark, the loading screen, the video preview and both guide notes read from it. Published brochures are distinguished from independently prepared project guides; guides explicitly identify their publisher and sources. Fouka Bay’s published document covers The House Hotel & Residence Royale phase, while the 205 document covers the broader Arkan Palm development. No VR/video tour is invented.
 
 Roads use OpenFreeMap vector tiles with custom colors and labels, plus Esri fallback. Rail infrastructure uses OpenRailwayMap. All overlays use Egyptian geography. If an enabled service category has no points in the current viewport, the camera reveals the nearest verified places; the service dataset is curated rather than exhaustive. Railway tiles show infrastructure, not a guarantee that a route is in passenger service. Some pre-existing coordinates are approximate; `areaApprox` is retained where supplied.
 

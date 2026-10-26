@@ -3,7 +3,7 @@ import {useSyncExternalStore} from 'react';
 import {PROJECTS} from './data';
 import {sanitizeSelection,type Shortlist} from './selection';
 export type {Shortlist} from './selection';
-export const SHORTLIST_KEY='nile-estates-shortlist-v1';
+export const SHORTLIST_KEY='masar-shortlist-v1';
 const empty:Shortlist={saved:[],compare:[]};
 let current=empty,serialized='',loaded=false,issue='',memoryOnly=false;
 const listeners=new Set<()=>void>();

@@ -212,7 +212,7 @@ export default function MapApp({ onMapReady, onMapProgress }: { onMapReady?: () 
         <button aria-label={t.copyLink} onClick={copyLink}><Icon name="copy" size={18}/></button>
       </div>}
     </div>}
-    <Link className="brand estate-map-brand" href={`/?lang=${lang}`} aria-label={lang==="ar"?"نايل إستيتس — الرئيسية":"Nile Estates — Home"}><Seal lang={lang} /><span className="brand-text"><b>{lang==="ar"?"نايل إستيتس":"NILE ESTATES"}</b><i>{lang==="ar"?"اكتشف مكانك":"FIND YOUR PLACE"}</i></span></Link>
+    <Link className="brand estate-map-brand" href={`/?lang=${lang}`} aria-label={lang==="ar"?"مَسَار — الرئيسية":"Masar — Home"}><Seal lang={lang} /><span className="brand-text"><b>{lang==="ar"?"مَسَار":"MASAR"}</b><i>{lang==="ar"?"اكتشف مكانك":"FIND YOUR PLACE"}</i></span></Link>
     <Link className="estate-map-return" href={`/?lang=${lang}`}>{lang==="ar"?"العودة للموقع":"Back to the website"} ↗</Link>
     <button className="filter-toggle" aria-label={t.layersTitle} aria-expanded={filters} aria-controls="map-tools" onClick={()=>setFilters(!filters)}><span aria-hidden="true">•••</span></button>
     <nav id="map-tools" className={`tools ${filters?"is-open":""}`} aria-label={t.layersTitle}>{TOOLS.map(x=><button key={x.id} className={`tool ${layers.includes(x.id)?"is-on":""}`} aria-label={t.tools[x.key]} aria-pressed={layers.includes(x.id)} onClick={()=>toggleLayer(x.id)}><Icon name={x.icon} size={20}/><span className="tool-tip">{t.tools[x.key]}</span></button>)}</nav>

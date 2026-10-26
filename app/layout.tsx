@@ -6,7 +6,7 @@ import "./globals.css";
 import "./estate.css";
 import "./estate-map.css";
 
-const TITLE = "Nile Estates — A Place to Call Home";
+const TITLE = "Masar — A Place to Call Home";
 const DESCRIPTION = "Discover residential destinations across Egypt. Explore the collection and find your next address.";
 
 export const metadata: Metadata = {
