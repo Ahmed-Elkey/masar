@@ -1,0 +1,3 @@
+import type { Lang } from './types';
+const names:Record<string,string>={"Akam Developments":"آكام للتطوير العقاري","AlKarma":"الكرمة","Arkan Palm":"أركان بالم","City Edge":"سيتي إيدج","Edge Holding":"إيدج القابضة","Emaar Misr":"إعمار مصر","Hyde Park":"هايد بارك","Misr Italia":"مصر إيطاليا","Mountain View":"ماونتن فيو","New Plan":"نيو بلان","Ora Developers":"أورا للتطوير العقاري","Orascom":"أوراسكوم","PRE Group":"مجموعة بي آر إي","Palm Hills":"بالم هيلز","Qatari Diar":"الديار القطرية","SODIC":"سوديك","Soma Bay":"سوما باي","Tatweer Misr":"تطوير مصر"};
+export function developerName(name:string,lang:Lang){return lang==='ar'?(names[name]??name):name;}

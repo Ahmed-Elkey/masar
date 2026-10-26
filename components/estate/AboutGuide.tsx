@@ -1,6 +1,7 @@
+"use client";
 import Link from "next/link";
-import { PROJECTS } from "@/lib/data";
-import { DESTINATIONS, c, siteHref } from "@/lib/estate";
+import {useProjects} from "./CatalogueProvider";
+import { c, siteHref } from "@/lib/estate";
 import type { Lang } from "@/lib/types";
 import { EditorialLink } from "./SiteShell";
 
@@ -23,12 +24,14 @@ const questions = [
  ["Can I use the website in Arabic?", "الموقع متاح بالعربي؟", "Yes. Switch between Arabic and English using the language link in the footer. The collection, project pages, map and enquiry experience support both languages.", "أيوه. تقدر تبدل بين العربي والإنجليزي من رابط اللغة أسفل الموقع. صفحات المشاريع وتفاصيلها والخريطة وتجهيز الاستفسار متاحين باللغتين."],
 ];
 export default function AboutGuide({lang}:{lang:Lang}) {
+ const PROJECTS=useProjects();
+ const destinations = [...new Map(PROJECTS.map(p=>[p.area.en,{area:p.area.en,en:p.area.en,ar:p.area.ar}])).values()];
  return <>
- <nav className="about-guide-nav" aria-label={c(lang,"About this website","دليل الصفحة")}>
+ <div className="about-product-invitation"><h2>{c(lang,"Turn discovery into a shortlist","حوّل الاستكشاف لاختيارات واضحة")}</h2><p>{c(lang,"Save projects, compare up to three, share your shortlist and estimate journeys to an important place. Your planner works without an account.","احفظ المشاريع وقارن لحد ثلاثة، وشارك قائمتك واحسب مشاويرك لمكان مهم ليك. اختياراتك بتشتغل من غير حساب.")}</p><EditorialLink href={siteHref("/planner",lang)}>{c(lang,"Open my planner","افتح اختياراتي")}</EditorialLink></div><nav className="about-guide-nav" aria-label={c(lang,"About this website","دليل الصفحة")}>
  {[["about-journey","How it works","طريقة الاستخدام"],["about-destinations","Our destinations","المناطق"],["about-questions","Your questions","أسئلة شائعة"]].map(([id,en,ar])=><a key={id} href={`#${id}`}>{c(lang,en,ar)} <span aria-hidden="true">↓</span></a>)}
  </nav>
  <section id="about-journey" className="about-guide-section"><span className="eyebrow">{c(lang,"FROM DISCOVERY TO A CLEARER CHOICE","من الاستكشاف لاختيار أوضح")}</span><h2 className="display">{c(lang,"How it works","تستخدم الموقع إزاي؟")}</h2><div className="about-steps">{steps.map(([en,ar,body,bodyAr],i)=><article key={en}><span className="eyebrow">0{i+1}</span><h3>{c(lang,en,ar)}</h3><p>{c(lang,body,bodyAr)}</p></article>)}</div><EditorialLink href={siteHref("/projects",lang)}>{c(lang,"Start exploring","ابدأ الاستكشاف")}</EditorialLink></section>
- <section id="about-destinations" className="about-guide-section about-destinations"><span className="eyebrow">{c(lang,"ONE COLLECTION · DIFFERENT WAYS OF LIVING","مجموعة واحدة · اختيارات مختلفة للحياة")}</span><h2 className="display">{c(lang,"Places across Egypt","أماكن في أنحاء مصر")}</h2><p className="about-guide-lead">{c(lang,"Explore the destinations currently represented in our collection. Each link opens the projects in that area, so you can begin with the place that matters to you.","استكشف المناطق الموجودة حاليًا في مجموعتنا. كل رابط بيفتح مشاريع المنطقة، عشان تبدأ بالمكان اللي يهمك.")}</p><div className="about-destination-links">{DESTINATIONS.map(d=><Link key={d.area} href={siteHref(`/projects?area=${encodeURIComponent(d.area)}`,lang)}><span>{c(lang,d.en,d.ar)}</span><small>{PROJECTS.filter(p=>p.area.en===d.area).length} {c(lang,"projects","مشروع")}</small><span aria-hidden="true">↗</span></Link>)}</div></section>
+ <section id="about-destinations" className="about-guide-section about-destinations"><span className="eyebrow">{c(lang,"ONE COLLECTION · DIFFERENT WAYS OF LIVING","مجموعة واحدة · اختيارات مختلفة للحياة")}</span><h2 className="display">{c(lang,"Places across Egypt","أماكن في أنحاء مصر")}</h2><p className="about-guide-lead">{c(lang,"Explore the destinations currently represented in our collection. Each link opens the projects in that area, so you can begin with the place that matters to you.","استكشف المناطق الموجودة حاليًا في مجموعتنا. كل رابط بيفتح مشاريع المنطقة، عشان تبدأ بالمكان اللي يهمك.")}</p><div className="about-destination-links">{destinations.map(d=><Link key={d.area} href={siteHref(`/projects?area=${encodeURIComponent(d.area)}`,lang)}><span>{c(lang,d.en,d.ar)}</span><small>{PROJECTS.filter(p=>p.area.en===d.area).length} {c(lang,"projects","مشروع")}</small><span aria-hidden="true">↗</span></Link>)}</div></section>
  <section id="about-questions" className="about-guide-section about-questions"><span className="eyebrow">{c(lang,"BEFORE YOUR NEXT STEP","قبل خطوتك الجاية")}</span><h2 className="display">{c(lang,"A few things to know","كل اللي تحب تعرفه")}</h2><div>{questions.map(([en,ar,answer,answerAr])=><details key={en}><summary>{c(lang,en,ar)}<span aria-hidden="true">+</span></summary><p>{c(lang,answer,answerAr)}</p></details>)}</div><div className="about-guide-ending"><p>{c(lang,"Have a destination or project in mind? Put your priorities into a simple enquiry brief.","في بالك منطقة أو مشروع معين؟ رتب أولوياتك في ملخص استفسار بسيط.")}</p><EditorialLink href={siteHref("/contact",lang)}>{c(lang,"Prepare an enquiry","جهز استفسارك")}</EditorialLink></div></section>
  </>;
 }

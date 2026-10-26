@@ -108,3 +108,13 @@ All 48 education, health, shopping and transport points now have local image bac
 Project identities cover all 23 projects: 11 actual project marks, including four faithful extracts from the existing published brochures; the remaining 12 combine the sourced developer logo with the project's own name. Developer marks are not represented as independent project logos. Transparent monochrome marks receive contrast treatment on dark/light/selected backgrounds. New assets retain their original source URLs in `lib/media.json`.
 
 Mouse-over previews mirror the reference's fixed 333×192 photo card with status, name and area, mirrored for Arabic. They cover project markers, landmarks and all service categories; hover does not change selection, URL, camera or route. Moving away, map movement, clicking, changing layers or Escape dismisses the preview. Keyboard focus has the same preview, and touch focus does not create a sticky hover card.
+
+
+## Decision tools
+Saved projects, comparison, sharing, daily journeys, source transparency and catalogue maintenance are documented in [PRODUCT-GUIDE.md](./PRODUCT-GUIDE.md). Run `npm run test:product` against a running local server.
+
+## Production services on Vercel
+
+See [VERCEL-SETUP.md](VERCEL-SETUP.md) and [.env.example](.env.example) for Supabase Auth/SQL, Resend, Turnstile and approved feed setup. Actual activation needs owner service accounts and permitted data access. `npm run test:services` validates SQL isolation, optimistic writes and atomic feed imports using local PostgreSQL WASM.
+
+No custom domain needed for the Gmail SMTP option: see [GMAIL-SETUP.md](GMAIL-SETUP.md). The server uses a private Gmail app password and a one-time database delivery claim; setup is required before sending becomes available.

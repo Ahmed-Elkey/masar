@@ -1,3 +1,5 @@
+import catalogueUpdates from "./catalogueUpdates.json";
+import {validUpdate} from "./catalogueValidation";
 import type { Landmark, Project, ViewState } from "./types";
 
 /**
@@ -9,7 +11,7 @@ import type { Landmark, Project, ViewState } from "./types";
  * cross-validated. `areaApprox: true` means the pin is an area centre rather
  * than a verified site.
  */
-export const PROJECTS: Project[] = [
+const BASE_PROJECTS: Project[] = [
   {
     id: "il-bosco",
     name: { en: "Il Bosco", ar: "البوسكو" },
@@ -209,7 +211,7 @@ export const PROJECTS: Project[] = [
     status: "underConstruction",
     description: {
       en: "A large residential compound by PRE Group offering villas and apartments across roughly 200–600 sqm.",
-      ar: "كومباوند سكني كبير من PRE Group، فيلات وشقق بمساحات تقارب 200 إلى 600 متر مربع.",
+      ar: "كومباوند سكني كبير من مجموعة بي آر إي، فيلات وشقق بمساحات تقارب 200 إلى 600 متر مربع.",
     },
     amenities: {
       en: ["Villas and apartments", "Swimming pools", "Gym and spa", "Clubhouse", "Green landscapes"],
@@ -449,6 +451,8 @@ export const PROJECTS: Project[] = [
     source: "realestate.eg",
   },
 ];
+export const PROJECTS: Project[] = BASE_PROJECTS.map(project=>{const update=(catalogueUpdates as Record<string,unknown>)[project.id];if(update===undefined)return project;if(!validUpdate(update))throw new Error("Invalid catalogue update: "+project.id);return {...project,status:update.status,url:update.url,lat:update.lat,lng:update.lng};});
+
 
 /**
  * LANDMARKS — reference points in Greater Cairo. Not part of the Dubai design;

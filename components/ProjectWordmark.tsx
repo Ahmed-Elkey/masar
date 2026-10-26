@@ -3,7 +3,7 @@ import { useEffect,useState } from "react";
 import type { Lang, Project } from "@/lib/types";
 import { projectMedia } from "./ProjectImage";
 export default function ProjectWordmark({project,lang,variant="map"}:{project:Project;lang:Lang;variant?:"map"|"hero"|"details"}) {
-  const media=projectMedia(project),logo=media.projectLogo??media.logo;
+  const media=projectMedia(project),logo=lang === "ar" ? undefined : media.projectLogo??media.logo;
   const developer=!media.projectLogo;
   const [failed,setFailed]=useState(false);
   useEffect(()=>setFailed(false),[logo?.src]);

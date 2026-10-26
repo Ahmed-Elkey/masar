@@ -1,3 +1,4 @@
+import {liveCatalogue} from "@/lib/backend/catalogue";
 import { NextRequest,NextResponse } from 'next/server';
 import { LANDMARKS,PROJECTS } from '@/lib/data';
 import { POIS } from '@/lib/poi';
@@ -13,11 +14,11 @@ async function getRoute(from:{lng:number;lat:number},to:{lng:number;lat:number})
   return {distance:route.distance,duration:route.duration,geometry:route.geometry} as DrivingRoute;
 }
 export async function GET(request:NextRequest) {
-  const params=request.nextUrl.searchParams,project=PROJECTS.find(p=>p.id===params.get('project')),destination=params.get('destination');
+  const params=request.nextUrl.searchParams,project=(await liveCatalogue()).projects.find(p=>p.id===params.get('project')),destination=params.get('destination');
   const place=destination?.startsWith('landmark:')?LANDMARKS.find(p=>`landmark:${p.id}`===destination):POIS.find(p=>p.id===destination);
   // Only curated public locations are accepted; no arbitrary URLs or coordinates.
   if(!project||!place)return NextResponse.json({error:'Unknown project or destination'},{status:400});
-  const key=`${project.id}:${destination}`;
+  const key=`${project.id}:${project.lat}:${project.lng}:${destination}`;
   try {
     let route=cache.get(key);
     if(!route){let task=pending.get(key);if(!task){task=getRoute(project,place);pending.set(key,task);}try{route=await task;cache.set(key,route);}finally{pending.delete(key);}}

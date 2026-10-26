@@ -1,3 +1,4 @@
+import CatalogueProvider from "@/components/estate/CatalogueProvider";
 import type { Metadata, Viewport } from "next";
 import { BRAND, SITE_DESCRIPTION, siteTitle } from "@/lib/i18n";
 import "./fonts.css";
@@ -43,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://tiles.openfreemap.org" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://a.tiles.openrailwaymap.org" crossOrigin="anonymous" />
       </head>
-      <body>{children}</body>
+      <body><CatalogueProvider>{children}</CatalogueProvider></body>
     </html>
   );
 }

@@ -1,0 +1,5 @@
+import {NextRequest,NextResponse} from 'next/server';
+import {publicBackend} from '@/lib/backend/server';
+import {PROJECTS} from '@/lib/data';
+export const dynamic='force-dynamic';
+export async function GET(request:NextRequest){const ids=[...new Set((request.nextUrl.searchParams.get('projects')??'').split(','))];if(!ids.length||ids.length>PROJECTS.length||ids.some(id=>!PROJECTS.some(p=>p.id===id)))return NextResponse.json({error:'invalid'},{status:400});const db=publicBackend();if(!db)return NextResponse.json({offers:[],connected:false},{headers:{'Cache-Control':'no-store'}});const {data,error}=await db.from('price_offers').select('project_id,amount,currency,unit_type_en,unit_type_ar,note_en,note_ar,source_url,source_checked_at,valid_until').in('project_id',ids).gt('valid_until',new Date().toISOString()).lte('source_checked_at',new Date().toISOString());if(error)return NextResponse.json({error:'unavailable'},{status:503,headers:{'Cache-Control':'no-store'}});return NextResponse.json({offers:data,connected:true},{headers:{'Cache-Control':'no-store'}});}

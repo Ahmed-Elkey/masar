@@ -1,3 +1,4 @@
+import type { Lang } from "@/lib/types";
 import { useId } from "react";
 
 export function Blossom({ className = "" }: { className?: string }) {
@@ -7,14 +8,16 @@ export function Blossom({ className = "" }: { className?: string }) {
   </svg>;
 }
 
-export function Seal({ className = "" }: { className?: string }) {
+export function Seal({ className = "", lang = "en" }: { className?: string; lang?: Lang }) {
   const id = useId().replace(/:/g, "");
   return <span className={`estate-seal ${className}`}>
-    <svg className="seal-ring" viewBox="0 0 120 120" aria-hidden="true"><defs><path id={id} d="M60,10 a50,50 0 1,1 -.01,0" /></defs><text><textPath href={`#${id}`} textLength="309">NILE ESTATES · EGYPT · NILE ESTATES · EGYPT · </textPath></text></svg>
+    <svg className="seal-ring" viewBox="0 0 120 120" aria-hidden="true"><defs><path id={id} d="M60,10 a50,50 0 1,1 -.01,0" /></defs><text><textPath href={`#${id}`} textLength="309">{lang === "ar" ? "نايل إستيتس · مصر · نايل إستيتس · مصر · " : "NILE ESTATES · EGYPT · NILE ESTATES · EGYPT · "}</textPath></text></svg>
     <Blossom />
   </span>;
 }
 
 export function Arrow({ diagonal = false }: { diagonal?: boolean }) {
-  return <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d={diagonal ? "M7 25 25 7M7 7h18v18" : "M3 16h25M19 7l9 9-9 9"} stroke="currentColor" strokeWidth="1.2" /></svg>;
+  return <svg className="estate-arrow" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d={diagonal ? "M7 25 25 7M7 7h18v18" : "M3 16h25M19 7l9 9-9 9"} stroke="currentColor" strokeWidth="1.2" /></svg>;
 }
+
+export function Chevron({direction}:{direction:"left"|"right"}){return <svg className="estate-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d={direction==="left"?"m14 6-6 6 6 6":"m10 6 6 6-6 6"} stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>;}

@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
       alternates: { languages: { en: `${SITE}/`, ar: `${SITE}/?lang=ar` } },
     },
-    ...["projects", "map", "about", "contact"].map(path => ({ url: `${SITE}/${path}`, lastModified: updated, changeFrequency: "monthly" as const, priority: 0.8 })),
+    ...["projects", "map", "about", "contact", "data", "updates"].map(path => ({ url: `${SITE}/${path}`, lastModified: updated, changeFrequency: "monthly" as const, priority: 0.8 })),
     ...PROJECTS.map(project => ({
       url: `${SITE}/projects/${project.id}`,
       lastModified: updated,

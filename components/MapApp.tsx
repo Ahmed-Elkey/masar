@@ -1,7 +1,8 @@
 "use client";
-import type maplibregl from "maplibre-gl";
+import {useProjects} from "./estate/CatalogueProvider";
+import type * as maplibregl from "maplibre-gl";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { CARD_HALF_WIDTH, LANDMARKS, MAX_ZOOM, MIN_ZOOM, PROJECTS, PROJECT_VIEW } from "@/lib/data";
+import { CARD_HALF_WIDTH, LANDMARKS, MAX_ZOOM, MIN_ZOOM, PROJECT_VIEW } from "@/lib/data";
 import { useDrivingRoute } from "@/lib/useDrivingRoute";
 import { useCardPresence } from "@/lib/useCardPresence";
 import { useCardLayoutMotion } from "@/lib/useCardLayoutMotion";
@@ -25,6 +26,7 @@ const TOOLS: {id: LayerId; icon: IconName; key: keyof (typeof STRINGS)["en"]["to
   {id:"roads",icon:"road",key:"roads"}, {id:"transit",icon:"metro",key:"transit"},
 ];
 export default function MapApp({ onMapReady, onMapProgress }: { onMapReady?: () => void; onMapProgress?: (value: number) => void }) {
+  const PROJECTS=useProjects();
   const [lang,setLang] = useState<Lang>("en");
   const [theme,setTheme] = useState<Theme>("light");
   const [hydrated,setHydrated] = useState(false);
@@ -46,13 +48,13 @@ export default function MapApp({ onMapReady, onMapProgress }: { onMapReady?: () 
   const [fullscreenActive,setFullscreenActive] = useState(false);
   const mapRef = useRef<maplibregl.Map|null>(null);
   const railRef = useRef<HTMLDivElement>(null);
-  const toastTimer = useRef<ReturnType<typeof setTimeout>>();
+  const toastTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const t = STRINGS[lang];
   const projectAreas = useMemo(() => {
     const areas = new Map<string,string>();
     PROJECTS.forEach(p => { if (!areas.has(p.area.en)) areas.set(p.area.en, p.area[lang]); });
     return [...areas].sort((a,b) => a[1].localeCompare(b[1], lang === "ar" ? "ar" : "en"));
-  }, [lang]);
+  }, [lang, PROJECTS]);
   const filteredProjects = useMemo(() => {
     const query = projectQuery.trim().toLowerCase();
     return PROJECTS.filter(p =>
@@ -61,7 +63,7 @@ export default function MapApp({ onMapReady, onMapProgress }: { onMapReady?: () 
       (!query || [p.name[lang], p.name.en, p.name.ar, p.developer, p.area[lang]]
         .some(value => value.toLowerCase().includes(query)))
     );
-  }, [projectQuery, areaFilter, statusFilter, lang]);
+  }, [projectQuery, areaFilter, statusFilter, lang, PROJECTS]);
   const filterActive = projectQuery.trim() !== "" || areaFilter !== "all" || statusFilter !== "all";
   const matchedIds = useMemo(() => new Set(filteredProjects.map(p => p.id)), [filteredProjects]);
   const selected = PROJECTS.find(p => p.id === selectedId);
@@ -199,18 +201,18 @@ export default function MapApp({ onMapReady, onMapProgress }: { onMapReady?: () 
       event.preventDefault();items[next]?.focus();
     }}>
       <Link role="menuitem" href={`/?lang=${lang}`}>{lang==="ar"?"العودة للموقع":"Back to the website"}<span>↗</span></Link>
-      <Link role="menuitem" href={`/projects?lang=${lang}`}>{lang==="ar"?"استكشف المشاريع":"Explore the collection"}<span>↗</span></Link>
+      <Link role="menuitem" href={`/planner?lang=${lang}`}>{lang==="ar"?"اختياراتي والمقارنة":"My planner & comparison"}<span>↗</span></Link><Link role="menuitem" href={`/projects?lang=${lang}`}>{lang==="ar"?"استكشف المشاريع":"Explore the collection"}<span>↗</span></Link>
       <button role="menuitem" onClick={()=>{setTheme(theme==="light"?"dark":"light");setMenu(false);setSharing(false);}}><Icon name={theme==="light"?"moon":"sun"} size={18}/>{theme==="light"?t.darkTheme:t.lightTheme}</button>
-      <button role="menuitem" onClick={()=>{setLang(lang==="en"?"ar":"en");setMenu(false);setSharing(false);}}><b className="ar-mark">{lang==="en"?"Ar":"En"}</b>{t.language}</button>
+      <button role="menuitem" onClick={()=>{setLang(lang==="en"?"ar":"en");setMenu(false);setSharing(false);}}><b className="ar-mark">{lang==="en"?"AR":"إنج"}</b>{t.language}</button>
       <button role="menuitem" className={sharing?"is-on":""} aria-expanded={sharing} onClick={()=>setSharing(!sharing)}><Icon name="share" size={18}/>{t.share}</button>
       <button role="menuitem" aria-pressed={fullscreenActive} onClick={fullscreen}><Icon name="fullscreen" size={18}/>{t.fullscreen}</button>
       {sharing&&<div className="share-options" aria-label={t.share}>
-        <a href={`https://wa.me/?text=${encodeURIComponent(shareUrl)}`} target="_blank" rel="noreferrer" aria-label="WhatsApp"><Icon name="whatsapp" size={18}/></a>
+        <a href={`https://wa.me/?text=${encodeURIComponent(shareUrl)}`} target="_blank" rel="noreferrer" aria-label={lang === "ar" ? "واتساب" : "WhatsApp"}><Icon name="whatsapp" size={18}/></a>
         <a href={`mailto:?body=${encodeURIComponent(shareUrl)}`} aria-label={lang==="ar"?"بريد إلكتروني":"Email"}><Icon name="mail" size={18}/></a>
         <button aria-label={t.copyLink} onClick={copyLink}><Icon name="copy" size={18}/></button>
       </div>}
     </div>}
-    <Link className="brand estate-map-brand" href={`/?lang=${lang}`} aria-label={lang==="ar"?"نايل إستيتس — الرئيسية":"Nile Estates — Home"}><Seal /><span className="brand-text"><b>{lang==="ar"?"نايل إستيتس":"NILE ESTATES"}</b><i>{lang==="ar"?"اكتشف مكانك":"FIND YOUR PLACE"}</i></span></Link>
+    <Link className="brand estate-map-brand" href={`/?lang=${lang}`} aria-label={lang==="ar"?"نايل إستيتس — الرئيسية":"Nile Estates — Home"}><Seal lang={lang} /><span className="brand-text"><b>{lang==="ar"?"نايل إستيتس":"NILE ESTATES"}</b><i>{lang==="ar"?"اكتشف مكانك":"FIND YOUR PLACE"}</i></span></Link>
     <Link className="estate-map-return" href={`/?lang=${lang}`}>{lang==="ar"?"العودة للموقع":"Back to the website"} ↗</Link>
     <button className="filter-toggle" aria-label={t.layersTitle} aria-expanded={filters} aria-controls="map-tools" onClick={()=>setFilters(!filters)}><span aria-hidden="true">•••</span></button>
     <nav id="map-tools" className={`tools ${filters?"is-open":""}`} aria-label={t.layersTitle}>{TOOLS.map(x=><button key={x.id} className={`tool ${layers.includes(x.id)?"is-on":""}`} aria-label={t.tools[x.key]} aria-pressed={layers.includes(x.id)} onClick={()=>toggleLayer(x.id)}><Icon name={x.icon} size={20}/><span className="tool-tip">{t.tools[x.key]}</span></button>)}</nav>
@@ -254,7 +256,7 @@ export default function MapApp({ onMapReady, onMapProgress }: { onMapReady?: () 
     {projectCard.value&&<ProjectCard key={projectCard.value.id} project={projectCard.value} exiting={projectCard.exiting} lang={lang} onClose={()=>select(null)}/>}
     {selected&&selectedPlace&&route.status==="ready"&&<ComparisonConnector key={`${selectedId}:${selectedPoiId}:${lang}`}/>}
     <button className="info" aria-label={t.info} aria-expanded={about} onClick={()=>setAbout(!about)}>i</button>
-    {about&&<div className="about" role="dialog" aria-label={t.info}><a href="https://www.esri.com/" target="_blank" rel="noreferrer">{t.dataSource}: Esri</a><button aria-label={t.close} onClick={()=>setAbout(false)}><Icon name="close" size={14}/></button></div>}
+    {about&&<div className="about" role="dialog" aria-label={t.info}><a href="https://www.esri.com/" target="_blank" rel="noreferrer">{t.dataSource}: {lang === "ar" ? "إزري" : "Esri"}</a><button aria-label={t.close} onClick={()=>setAbout(false)}><Icon name="close" size={14}/></button></div>}
     {toast&&<div className="toast" role="status">{toast}</div>}
   </div>;
 }

@@ -1,9 +1,10 @@
 "use client";
+import {Chevron} from "./Brand";
 
 import Link from "next/link";
 import { type CSSProperties, useCallback, useEffect, useRef, useState } from "react";
 import type { Lang } from "@/lib/types";
-import { PROJECTS } from "@/lib/data";
+import {useProjects} from "./CatalogueProvider";
 import ProjectImage from "@/components/ProjectImage";
 import { Blossom } from "./Brand";
 import { c, siteHref } from "./SiteShell";
@@ -12,6 +13,7 @@ import RisingIntro from "./RisingIntro";
 import LowerHome from "./LowerHome";
 
 export default function Home({ lang }: { lang: Lang }) {
+ const PROJECTS=useProjects();
   const [entryComplete, setEntryComplete] = useState(false);
   const finishEntry = useCallback(() => setEntryComplete(true), []);
   const [night, setNight] = useState(false);
@@ -88,7 +90,7 @@ export default function Home({ lang }: { lang: Lang }) {
     {!entryComplete && <EntryReveal onComplete={finishEntry} />}
     <RisingIntro lang={lang}><section className={`estate-hero${night ? " by-night" : ""}`} data-entering={!entryComplete} aria-label={c(lang, "Welcome to Nile Estates", "أهلًا بك في نايل إستيتس")}>
       <div className="hero-scene"><video ref={videoRef} src="/videos/egypt-property-film.mp4" poster="/projects/mivida-0.webp" autoPlay muted loop playsInline preload="metadata" onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} /><div className="hero-shade" /></div>
-      <div className="hero-title" dir="ltr"><span className="hero-location">{c(lang, "EGYPT", "مصر")}</span><h1 aria-label={c(lang, "Nile Estates", "نايل إستيتس")}>{["NILE", "ESTATES"].map((word, row) => <span className="hero-title-line" key={word} aria-hidden="true">{[...word].map((letter, i) => <span className="hero-letter" key={i} style={{ "--letter-index": row * 4 + i } as CSSProperties}>{letter}</span>)}</span>)}</h1><span className="hero-script">{c(lang, "Egypt", "مصر")}</span></div><div className="hero-time" role="group" aria-label={c(lang, "Film appearance", "مظهر الفيديو")}><button aria-pressed={!night} onClick={() => setNight(false)}>{c(lang, "BY DAY", "نهارًا")}</button><i /><button aria-pressed={night} onClick={() => setNight(true)}>{c(lang, "BY NIGHT", "ليلًا")}</button></div>
+      <div className="hero-title" dir={lang === "ar" ? "rtl" : "ltr"}><span className="hero-location">{c(lang, "EGYPT", "مصر")}</span><h1 aria-label={c(lang, "Nile Estates", "نايل إستيتس")}>{(lang === "ar" ? ["نايل", "إستيتس"] : ["NILE", "ESTATES"]).map((word, row) => <span className="hero-title-line" key={word} aria-hidden="true">{(lang === "ar" ? [word] : [...word]).map((letter, i) => <span className="hero-letter" key={i} style={{ "--letter-index": row * 4 + i } as CSSProperties}>{letter}</span>)}</span>)}</h1><span className="hero-script">{c(lang, "Egypt", "مصر")}</span></div><div className="hero-time" role="group" aria-label={c(lang, "Film appearance", "مظهر الفيديو")}><button aria-pressed={!night} onClick={() => setNight(false)}>{c(lang, "BY DAY", "نهارًا")}</button><i /><button aria-pressed={night} onClick={() => setNight(true)}>{c(lang, "BY NIGHT", "ليلًا")}</button></div>
       <div className="hero-motto"><span>{c(lang, "A PLACE", "مكان")}</span><span>{c(lang, "TO CALL HOME", "يشبهك")}</span></div>
       <Link className="hero-explore" href={siteHref("/projects", lang)}>{c(lang, "Discover your next address", "اكتشف عنوانك القادم")}<span>↓</span></Link>
       <div className="hero-bottom"><span>{c(lang, "EGYPT · PLACES FOR LIVING", "مصر · وجهات للحياة")}</span><button aria-label={c(lang, playing ? "Pause film" : "Play film", playing ? "إيقاف الفيديو" : "تشغيل الفيديو")} onClick={() => { const v = videoRef.current; filmManuallyPaused.current = !v?.paused; if (v?.paused) void v.play().catch(() => setPlaying(false)); else v?.pause(); }}>{playing ? "Ⅱ" : "▷"} <span>{c(lang, "THE FILM", "الفيلم")}</span></button><Link href={siteHref("/map", lang)}>{c(lang, "EXPLORE THE MAP", "استكشف الخريطة")} ↗</Link></div>
@@ -101,7 +103,7 @@ export default function Home({ lang }: { lang: Lang }) {
       <div className="reasons-body" data-phase={reasonPhase}>
         <h2 key={`title-${reason}`} className="display" aria-label={c(lang, current.en, current.ar)}>{c(lang, current.en, current.ar).split(" ").map((word, wi) => <span className="reason-word" key={wi} aria-hidden="true">{(lang === "ar" ? [word] : [...word]).map((letter, li) => <span className="reason-letter" key={li} style={{ "--char-delay": `${(wi * 4 + li) * 18}ms` } as CSSProperties}>{letter}</span>)}{ " " }</span>)}</h2>
         <div className="reason-photo">{reasons.map((r,i)=><div className="reason-slide-image" key={r.id} data-active={reason===i} aria-hidden={reason!==i}><ProjectImage project={PROJECTS.find(p=>p.id===r.id)!} lang={lang} eager sizes="(max-width:760px) 72vw, 28vw" /></div>)}</div>
-        <div className="editorial-pagination"><button aria-label={c(lang, "Previous story", "القصة السابقة")} onClick={() => chooseReason((reason + 2) % 3)}>‹</button><span>{reason + 1}</span><div className="reason-progress-track"><span ref={reasonProgress} className="reason-progress-fill" aria-hidden="true" />{reasons.map((r, i) => <button key={r.id} className={i === reason ? "active" : ""} aria-label={c(lang, r.en, r.ar)} aria-pressed={i === reason} onClick={() => chooseReason(i)} />)}</div><span>3</span><button aria-label={c(lang, "Next story", "القصة التالية")} onClick={() => chooseReason((reason + 1) % 3)}>›</button></div>
+        <div className="editorial-pagination"><button aria-label={c(lang, "Previous story", "القصة السابقة")} onClick={() => chooseReason((reason + 2) % 3)}><Chevron direction="left"/></button><span>{reason + 1}</span><div className="reason-progress-track"><span ref={reasonProgress} className="reason-progress-fill" aria-hidden="true" />{reasons.map((r, i) => <button key={r.id} className={i === reason ? "active" : ""} aria-label={c(lang, r.en, r.ar)} aria-pressed={i === reason} onClick={() => chooseReason(i)} />)}</div><span>3</span><button aria-label={c(lang, "Next story", "القصة التالية")} onClick={() => chooseReason((reason + 1) % 3)}><Chevron direction="right"/></button></div>
         <button className="reason-playback" aria-pressed={reasonPaused} onClick={() => setReasonPaused(value => !value)}>{c(lang, reasonPaused ? "RESUME STORIES ▷" : "PAUSE STORIES Ⅱ", reasonPaused ? "تشغيل العرض ▷" : "إيقاف العرض Ⅱ")}</button>
         <p key={`copy-${reason}`}>{c(lang, current.body, current.bodyAr)}</p>
         <span className="reason-caption">{c(lang, "A PLACE TO LIVE — TO RETURN YEAR AFTER YEAR", "مكان للحياة — تحب ترجع له كل سنة")}</span>

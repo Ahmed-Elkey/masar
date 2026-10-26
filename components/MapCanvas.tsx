@@ -1,6 +1,6 @@
 "use client";
 
-import maplibregl from "maplibre-gl";
+import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
@@ -208,6 +208,7 @@ export default function MapCanvas({
       minZoom: MIN_ZOOM,
       maxZoom: MAX_ZOOM,
       attributionControl: false,
+      locale: {"AttributionControl.ToggleAttribution": lang === "ar" ? "مصادر الخريطة" : "Toggle attribution", "Map.Title": lang === "ar" ? "الخريطة" : "Map"},
     });
 
     } catch { setMapError(true); return; }
@@ -527,6 +528,7 @@ export default function MapCanvas({
     map.setPaintProperty("sat", "raster-saturation", -0.05);
     map.setPaintProperty("sat", "raster-contrast", 0.05);
     map.setLayoutProperty("roads", "visibility", layers.includes("roads") && roadsFallback ? "visible" : "none");
+    map.setLayoutProperty("street-names","text-field",lang === "ar" ? ["coalesce",["get","name:ar"],["get","name_ar"],""] : ["coalesce",["get","name:latin"],["get","name_en"],""]);
     ROAD_LAYER_IDS.forEach(id=>map.setLayoutProperty(id,"visibility",layers.includes("roads")&&!roadsFallback?"visible":"none"));
     map.setLayoutProperty("rail", "visibility", layers.includes("transit") ? "visible" : "none");
     if(map.getLayer("driving-route-line")){
@@ -538,7 +540,7 @@ export default function MapCanvas({
       map.setPaintProperty("ring-halo","line-opacity",theme==="dark"?0:.35);
     }
     setLayerError(null);
-  }, [theme, loaded, layers, roadsFallback]);
+  }, [theme, loaded, layers, roadsFallback, lang]);
 
   // Keep labels whose geographic anchors are visible clear of the viewport edges.
   useEffect(() => {

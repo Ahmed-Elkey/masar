@@ -27,3 +27,4 @@ preview-*
 
 # developer source clips: kept locally, never committed (see public/videos/sources.json)
 public/videos/*-official.mp4
+.env*

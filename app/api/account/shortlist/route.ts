@@ -1,0 +1,9 @@
+import {NextRequest,NextResponse} from 'next/server';
+import {serverBackend} from '@/lib/backend/server';
+import {sameOrigin,smallJson} from '@/lib/backend/request';
+import {sanitizeSelection} from '@/lib/selection';
+import {PROJECTS} from '@/lib/data';
+export const dynamic='force-dynamic';
+const response=(body:unknown,status=200)=>NextResponse.json(body,{status,headers:{'Cache-Control':'private, no-store'}});
+export async function GET(){const client=await serverBackend();if(!client)return response({error:'not_configured'},503);const {data:{user}}=await client.auth.getUser();if(!user)return response({error:'unauthorized'},401);const {data,error}=await client.from('shortlists').select('saved,compare,version').eq('user_id',user.id).maybeSingle();if(error)return response({error:'database_unavailable'},503);return response(data??{saved:[],compare:[],version:0});}
+export async function PUT(request:NextRequest){if(!sameOrigin(request))return response({error:'origin'},403);const client=await serverBackend();if(!client)return response({error:'not_configured'},503);const {data:{user}}=await client.auth.getUser();if(!user)return response({error:'unauthorized'},401);let body;try{body=await smallJson(request);}catch{return response({error:'invalid'},400);}if(!Number.isInteger(body.version)||body.version<0||!Array.isArray(body.saved)||!Array.isArray(body.compare))return response({error:'invalid'},400);const selection=sanitizeSelection(body,PROJECTS.map(p=>p.id));if(selection.saved.length!==body.saved.length||selection.compare.length!==body.compare.length)return response({error:'invalid'},400);const {data,error}=await client.rpc('save_shortlist',{p_saved:selection.saved,p_compare:selection.compare,p_version:body.version});if(error)return response({error:'database_unavailable'},503);if(!data?.ok)return response({error:'conflict'},409);return response({version:data.version});}

@@ -1,0 +1,1 @@
+{{ if or (eq .RedirectTo "https://nile-estates.vercel.app/auth/callback?lang=ar") (eq .RedirectTo "http://127.0.0.1:3001/auth/callback?lang=ar") }}رابط الدخول لحسابك — نايل إستيتس{{ else }}Your sign-in link — Nile Estates{{ end }}

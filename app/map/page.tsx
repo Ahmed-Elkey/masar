@@ -14,20 +14,20 @@ const COPY = {
   ar: { title: siteTitle("ar"), description: SITE_DESCRIPTION.ar },
 };
 
-export function generateMetadata({
-  searchParams,
+export async function generateMetadata({
+  searchParams: searchParamsPromise,
 }: {
-  searchParams: Record<string, string | string[] | undefined>;
-}): Metadata {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}): Promise<Metadata>{const searchParams=await searchParamsPromise;
   const copy = searchParams.lang === "ar" ? COPY.ar : COPY.en;
   return { title: copy.title, description: copy.description };
 }
 
-export default function Page({
-  searchParams,
+export default async function Page({
+  searchParams: searchParamsPromise,
 }: {
-  searchParams: Record<string, string | string[] | undefined>;
-}) {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}){const searchParams=await searchParamsPromise;
   const project = PROJECTS.find(p => p.id === searchParams.project);
   const jsonLd = project
     ? {

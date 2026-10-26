@@ -4,7 +4,7 @@ import HeroVideoPreview from "@/components/HeroVideoPreview";
 
 const isArabic = (lang?: string) => lang === "ar";
 
-export function generateMetadata({ searchParams }: { searchParams: { lang?: string } }): Metadata {
+export async function generateMetadata({ searchParams: searchParamsPromise }: { searchParams: Promise<{lang?:string}> }): Promise<Metadata>{const searchParams=await searchParamsPromise;
   const ar = isArabic(searchParams.lang);
   return {
     title: ar ? `${BRAND.ar.credit} — معاينة الفيديو` : `${BRAND.en.credit} — Video Preview`,
@@ -13,6 +13,6 @@ export function generateMetadata({ searchParams }: { searchParams: { lang?: stri
   };
 }
 
-export default function VideoPreviewPage({ searchParams }: { searchParams: { lang?: string } }) {
+export default async function VideoPreviewPage({ searchParams: searchParamsPromise }: { searchParams: Promise<{lang?:string}> }){const searchParams=await searchParamsPromise;
   return <HeroVideoPreview initialLang={isArabic(searchParams.lang) ? "ar" : "en"} />;
 }

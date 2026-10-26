@@ -1,0 +1,14 @@
+.git
+.next
+.next-*
+node_modules
+tmp
+output
+.env*
+.vercel
+.agents
+.codex
+.aws
+public/brochures/**
+public/videos/*-official.mp4
+*.tsbuildinfo

@@ -1,0 +1,13 @@
+"use client";
+import {useEffect,useRef,useState} from 'react';
+import * as maplibregl from 'maplibre-gl';
+import 'maplibre-gl/dist/maplibre-gl.css';
+import {ESRI_TILE,ESRI_ATTRIBUTION} from '@/lib/geo';
+import {c} from '@/lib/estate';
+import type {Lang} from '@/lib/types';
+export default function PlannerLocationPicker({lang,lat,lng,onPick}:{lang:Lang;lat:number;lng:number;onPick:(lat:number,lng:number)=>void}){
+ const host=useRef<HTMLDivElement>(null),map=useRef<maplibregl.Map|null>(null),marker=useRef<maplibregl.Marker|null>(null),callback=useRef(onPick),[failed,setFailed]=useState(false);callback.current=onPick;
+ useEffect(()=>{if(!host.current)return;let m:maplibregl.Map;try{m=new maplibregl.Map({container:host.current,center:[31.25,30.04],zoom:9,maxBounds:[[24,22],[37,32]],maxZoom:18,attributionControl:{compact:true},locale:{'Map.Title':c(lang,'Choose an important place','اختار مكان مهم'),'NavigationControl.ZoomIn':c(lang,'Zoom in','تكبير'),'NavigationControl.ZoomOut':c(lang,'Zoom out','تصغير'),'NavigationControl.ResetBearing':c(lang,'Reset bearing','إعادة اتجاه الخريطة'),'AttributionControl.ToggleAttribution':c(lang,'Map credits','مصادر الخريطة')},style:{version:8,sources:{satellite:{type:'raster',tiles:[ESRI_TILE],tileSize:256,attribution:ESRI_ATTRIBUTION}},layers:[{id:'satellite',type:'raster',source:'satellite'}]}});map.current=m;m.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-left');m.on('click',event=>{const {lat,lng}=event.lngLat;if(lat>=22&&lat<=32&&lng>=24&&lng<=37)callback.current(lat,lng);});m.on('error',()=>setFailed(true));const observer=new ResizeObserver(()=>m.resize());observer.observe(host.current);return()=>{observer.disconnect();marker.current?.remove();marker.current=null;m.remove();map.current=null;};}catch{setFailed(true);}},[lang]);
+ useEffect(()=>{if(!map.current||!Number.isFinite(lat)||!Number.isFinite(lng)||lat<22||lat>32||lng<24||lng>37)return;if(!marker.current)marker.current=new maplibregl.Marker({color:'#17233b'}).setLngLat([lng,lat]).addTo(map.current);else marker.current.setLngLat([lng,lat]);},[lat,lng,lang]);
+ return <div className="location-picker"><p>{c(lang,'Pan and zoom, then click to mark your workplace or another important place. Or enter coordinates below. Satellite tiles are provided by Esri.','حرّك الخريطة وكبّرها، واضغط لتحديد مكان شغلك أو أي مكان مهم. أو أدخل الإحداثيات تحت. صور الخريطة مقدمة من إزري.')}</p><div ref={host} className="location-picker-map" role="region" aria-label={c(lang,'Pick a place on the map','حدد مكان على الخريطة')}/>{failed&&<p role="status">{c(lang,'Some map tiles could not load. You can still enter coordinates manually.','بعض صور الخريطة ما اتحملتش. تقدر تدخل الإحداثيات يدويًا.')}</p>}</div>;
+}

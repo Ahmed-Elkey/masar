@@ -1,0 +1,6 @@
+// Transfer allowlisted variables through stdin; never print their values.
+import fs from 'node:fs/promises';import {spawn} from 'node:child_process';
+const file=process.argv[2];if(!file)throw new Error('Expected private production override JSON');
+const overrides=JSON.parse(await fs.readFile(file,'utf8'));
+const names=['NEXT_PUBLIC_SITE_URL','NEXT_PUBLIC_SUPABASE_URL','NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY','SUPABASE_SERVICE_ROLE_KEY','MAIL_PROVIDER','GMAIL_USER','GMAIL_APP_PASSWORD','MAIL_TO','RATE_LIMIT_SALT','NEXT_PUBLIC_TURNSTILE_SITE_KEY','TURNSTILE_SECRET_KEY','BROCHURE_ASSET_ORIGIN'];
+for(const name of names){const value=overrides[name]??process.env[name];if(!value)throw new Error('Missing production variable: '+name);const args=['env','add',name,'production','--force','--yes','--scope','dsdsdsasdfhasf-9201s-projects',...(name.startsWith('NEXT_PUBLIC_')||['MAIL_PROVIDER','BROCHURE_ASSET_ORIGIN'].includes(name)?['--no-sensitive']:['--sensitive'])];await new Promise((resolve,reject)=>{const child=spawn('vercel',args,{stdio:['pipe','pipe','pipe']});let output='';child.stdout.on('data',d=>output+=d);child.stderr.on('data',d=>output+=d);child.on('error',reject);child.on('close',code=>code===0?resolve():reject(new Error('Vercel rejected variable '+name)));child.stdin.end(value);});console.log('Configured '+name);}

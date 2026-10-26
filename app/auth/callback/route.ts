@@ -1,0 +1,3 @@
+import {NextRequest,NextResponse} from 'next/server';
+import {serverBackend} from '@/lib/backend/server';
+export async function GET(request:NextRequest){const code=request.nextUrl.searchParams.get('code'),lang=request.nextUrl.searchParams.get('lang')==='ar'?'ar':'en',base=process.env.NEXT_PUBLIC_SITE_URL??request.nextUrl.origin;const client=await serverBackend();if(code&&client){const {error}=await client.auth.exchangeCodeForSession(code);if(!error)return NextResponse.redirect(new URL('/account?lang='+lang,base));}return NextResponse.redirect(new URL('/account?lang='+lang+'&error=auth',base));}

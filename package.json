@@ -6,18 +6,30 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "test:product": "node scripts/check-product-tools.mjs",
+    "test:services": "node scripts/check-services.mjs",
+    "test:updates": "node scripts/check-updates.mjs"
   },
   "dependencies": {
-    "maplibre-gl": "^5.24.0",
-    "next": "14.2.35",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.118.0",
+    "maplibre-gl": "^6.15.0",
+    "next": "^16.4.2",
+    "nodemailer": "^10.1.7",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.10",
     "@types/node": "^20.14.0",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
+    "@types/nodemailer": "^8.0.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "node": "^24.22.0",
     "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": "24.x"
   }
 }

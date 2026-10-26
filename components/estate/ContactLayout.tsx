@@ -2,7 +2,7 @@
 import {useState,useEffect,useRef} from "react";
 import Link from "next/link";
 import ProjectImage from "@/components/ProjectImage";
-import {PROJECTS} from "@/lib/data";
+import {useProjects} from "./CatalogueProvider";
 import {DESTINATIONS,c,siteHref} from "@/lib/estate";
 import type {Lang} from "@/lib/types";
 import {Blossom} from "./Brand";
@@ -10,6 +10,7 @@ import Contact from "./Contact";
 import {PROJECT_EMAIL, PROJECT_EMAIL_ENABLED} from "@/lib/contact";
 
 export default function ContactLayout({lang,initialProject="any"}:{lang:Lang;initialProject?:string}){
+ const PROJECTS=useProjects();
  const root=useRef<HTMLDivElement>(null);
  useEffect(()=>{
   const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.querySelectorAll("[data-reveal]").forEach(el=>el.classList.add("is-revealed"));observer.unobserve(entry.target);}}),{threshold:.01});
@@ -23,7 +24,7 @@ export default function ContactLayout({lang,initialProject="any"}:{lang:Lang;ini
   <nav className="contact-breadcrumb" aria-label={c(lang,"Breadcrumb","مسار التنقل")}><Link href={siteHref("/",lang)}>{c(lang,"HOME","\u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629")}</Link><span>/</span><span>{c(lang,"CONTACT","\u0627\u0644\u062a\u0648\u0627\u0635\u0644")}</span></nav>
   <h1 className="display contact-reveal-title">{c(lang,"CONTACT US","\u062a\u0648\u0627\u0635\u0644 \u0645\u0639\u0627\u0646\u0627")}</h1>
   <div className="contact-info-grid">
-   <div data-reveal><h2>{c(lang,"NO ACCOUNTS","\u0645\u0646 \u063a\u064a\u0631 \u062d\u0633\u0627\u0628\u0627\u062a")}</h2>{PROJECT_EMAIL_ENABLED ? <p className="contact-email">{email}</p> : <p>{c(lang,"Nothing to sign up for and nothing gets sent to us. Build a brief on this page and it stays on your device.","مفيش حساب بتعمله ومفيش حاجة بتتبعتلنا. الملخص اللي بتكتبه هنا بيفضل على جهازك.")}</p>}</div>
+   <div data-reveal><h2>{c(lang,"NO ACCOUNTS","\u0645\u0646 \u063a\u064a\u0631 \u062d\u0633\u0627\u0628\u0627\u062a")}</h2>{PROJECT_EMAIL_ENABLED ? <p className="contact-email">{email}</p> : <p>{c(lang,"No account is needed to prepare your brief. It stays on your device until you choose to send it using the online form.","تجهيز الملخص مش محتاج حساب. بيفضل على جهازك لحد ما تختار تبعته من نموذج الإرسال.")}</p>}</div>
    <div data-reveal><h2>{c(lang,"OUR DESTINATIONS","\u0648\u062c\u0647\u0627\u062a\u0646\u0627")}</h2><p>{DESTINATIONS.map(d=>c(lang,d.en,d.ar)).join(" / ")}</p><h2>{c(lang,"LOCATION","\u0627\u0644\u0645\u0648\u0642\u0639")}</h2><Link href={siteHref("/map",lang)}>{c(lang,"EXPLORE EGYPT ON THE MAP","\u0627\u0633\u062a\u0643\u0634\u0641 \u0645\u0635\u0631 \u0639\u0644\u0649 \u0627\u0644\u062e\u0631\u064a\u0637\u0629")} &#8599;</Link></div>
    <div data-reveal><h2>{c(lang,"LET'S BEGIN","\u0646\u0628\u062f\u0623 \u0627\u0644\u062d\u0643\u0627\u064a\u0629")}</h2><a href="#contact-enquiry" onClick={()=>setOpen(true)}>{enquiry}</a><Link href={siteHref("/projects",lang)}>{c(lang,"EXPLORE THE COLLECTION","\u0627\u0633\u062a\u0643\u0634\u0641 \u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639")} &#8599;</Link></div>
   </div>

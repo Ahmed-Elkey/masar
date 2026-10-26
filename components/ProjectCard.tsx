@@ -1,4 +1,6 @@
 "use client";
+import ProjectActions from "./estate/ProjectActions";
+import { developerName } from "@/lib/developerName";
 import { type CSSProperties, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
@@ -99,7 +101,7 @@ export default function ProjectCard({project:p,lang,onClose,exiting=false}:Props
         {count>1&&<div className="hero-dots">{media.images.map((_,i)=><button key={i} className={photo===i?"is-on":""} aria-label={`${t.imageCount} ${i+1}`} aria-pressed={photo===i} onClick={()=>setPhoto(i)}/>)}</div>}
       </div>
       <div className="card-body">
-        <div className="developer-identity">{media.logo&&<img src={media.logo.src} alt={media.logo.alt}/>}<span><small>{t.developer}</small><b>{p.developer}</b></span></div>
+        <ProjectActions id={p.id} lang={lang}/><div className="developer-identity">{lang === "en" && media.logo&&<img src={media.logo.src} alt={media.logo.alt}/>}<span><small>{t.developer}</small><b>{developerName(p.developer,lang)}</b></span></div>
         <p className="card-desc">{p.description[lang]}</p>
         <div className="card-section"><span>{t.amenities}</span><button aria-label={`${t.next}: ${t.amenities}`} onClick={scrollAmenities}><Icon name="chevronRight" size={18}/></button></div>
         <ul className="chips" ref={amenRef}>{p.amenities[lang].map(a=><li className="chip" key={a}>{a}</li>)}</ul>
@@ -133,7 +135,7 @@ export default function ProjectCard({project:p,lang,onClose,exiting=false}:Props
         <div className="details-background"><ProjectImage project={p} lang={lang} eager sizes="100vw"/></div>
         <button className="btn btn-primary details-back" onClick={()=>setDetails(false)}><Icon name="chevronLeft" size={16}/>{t.back}</button>
         <nav className="details-tools" aria-label={t.galleries}><button onClick={openGallery}><Icon name="gallery" size={22}/>{t.photos}</button><button onClick={()=>{setGallery(true);setGroup("site");}}><Icon name="pin" size={22}/>{t.gallery}</button>{media.brochure&&<button onClick={openBrochure}><Icon name="brochure" size={22}/>{documentLabel}</button>}</nav>
-        <section className="details-summary"><span className="details-status">{t.status[p.status]}</span>{media.projectLogo&&<ProjectWordmark project={p} lang={lang} variant="details"/>}<h1>{p.name[lang]}</h1><p>{p.description[lang]}</p><button className="btn btn-primary" onClick={openGallery}>{t.galleries}</button><h2>{t.amenities}</h2><ul>{p.amenities[lang].map(a=><li key={a}>{a}</li>)}</ul><dl><dt>{t.developer}</dt><dd>{p.developer}</dd><dt>{t.area}</dt><dd>{p.area[lang]}</dd></dl><a className="details-source" href={p.url} target="_blank" rel="noreferrer">{t.source}<Icon name="chevronRight" size={14}/></a></section>
+        <section className="details-summary"><span className="details-status">{t.status[p.status]}</span>{media.projectLogo&&<ProjectWordmark project={p} lang={lang} variant="details"/>}<h1>{p.name[lang]}</h1><p>{p.description[lang]}</p><button className="btn btn-primary" onClick={openGallery}>{t.galleries}</button><h2>{t.amenities}</h2><ul>{p.amenities[lang].map(a=><li key={a}>{a}</li>)}</ul><dl><dt>{t.developer}</dt><dd>{developerName(p.developer,lang)}</dd><dt>{t.area}</dt><dd>{p.area[lang]}</dd></dl><a className="details-source" href={p.url} target="_blank" rel="noreferrer">{t.source}<Icon name="chevronRight" size={14}/></a></section>
       </>}
     </div>,document.body)}
   </>;
